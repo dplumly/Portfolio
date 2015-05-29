@@ -1,0 +1,294 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://www.markmurray.co/codepen/entypostyle.css);
+@font-face { font-family: Nobel; src: url('../fonts/nobel-regular.woff'); } 
+@font-face { font-family: Nobel Book; src: url('../fonts/nobel-book.woff'); } 
+@font-face { font-family: Nobel Bold; src: url('../fonts/nobel-bold.woff'); } 
+@font-face { font-family: Nobel; font-weight: bold; src: url('../fonts/nobel-bold.woff'); }
+@font-face { font-family: nobel-light; font-weight: 200; src: url("../fonts/nobel-light.eot") format("embedded-opentype")}
+
+* {
+margin: 0;
+padding: 0;
+}
+
+body, html {
+  height: 100%;
+  background: url('../img/bg.jpg') no-repeat center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  outline: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #fff;
+}
+
+h1 { font-size: 44px; }
+
+h2 { font-size: 37px; }
+
+h3 { font-size: 27px; }
+
+h4 { font-size: 23px; }
+
+h5 { font-size: 17px; }
+
+h6 { font-size: 14px; }
+
+p { font-size: 12px; }
+
+#nav-bar {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 50px;
+  color: #ffffff;
+  background: #000;
+}
+#nav-items {
+  position: absolute;
+  width: 800px;
+  left: 0px; 
+  right: 0px;
+  top: 0px;
+  margin: auto;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+}
+.nav-item-selected {
+ background-color: #ffffff;
+ color: #aaaaaa;
+}
+
+#text {
+  position: absolute;
+  bottom: 70px;
+  color: white;
+}
+
+#button-text {
+  position: absolute;
+  right: 0;
+  top: 0px;
+  font-size: 14px;
+}
+
+button {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  height: 50px;
+  border: 2px solid white;
+  background-color: transparent;
+  font-family: 'Nobel Bold', sans-serif;
+  outline: none !important;
+  line-height : 27px;
+  padding: 0 30px;
+}
+
+i {
+  position: relative;
+  top: 3px;
+  margin-left: 20px;
+  font-size: 1.3em
+}
+
+hr {
+  border: none;
+  height: 10px;
+  color: #fff; 
+  background-color: #fff;
+}
+
+#social {
+  position: absolute;
+  right: 55px;
+  bottom: -70px;
+}
+
+#right h6 {
+  position: absolute;
+  right: 0px;
+  bottom: -66px;
+  text-decoration: underline;
+}
+
+.columns.three  {
+  padding: 0;
+}
+
+#text h2 {
+  margin-bottom: 20px;
+  font-family: 'Nobel', sans-serif;
+  font-size: 3vw;
+}
+
+#text p {
+  margin-top: 20px;
+  font-family: 'nobel-light', sans-serif;
+  font-weight: 100;
+}
+
+p#press {
+  text-decoration: underline;
+  font-size: 11px;
+}
+
+.gallery {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    
+}
+.gallery h6 {
+    text-align: center;
+}
+
+.gallery img {
+    margin: 5px 0 0 8px;
+}
+
+@media (max-width: 2500px) {
+    #logos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: -50px;
+        left: -65px;
+    }
+}
+
+@media (max-width: 2300px) {
+    #logos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: -50px;
+        left: -70px;
+    }
+}
+
+@media (max-width: 2100px) {
+    #logos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: -50px;
+        left: -80px;
+    }
+}
+
+@media (max-width: 1900px) {
+    #logos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: -50px;
+        left: -90px;
+    }
+}
+
+@media (max-width: 1700px) {
+    #logos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: -50px;
+        left: -100px;
+    }
+}
+
+@media (max-width: 1500px) {
+    #logos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: -50px;
+        left: -100px;
+    }
+}
+
+@media (max-width: 1300px) {
+    #logos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: -50px;
+        left: -105px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #logos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: -50px;
+        left: -115px;
+    }
+}
+
+@media (max-height: 800px) {
+    #logos {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: fixed;
+        top: -55px;
+        left: -110px;
+    }
+}
+
+
+
+
+
+
+
