@@ -478,7 +478,7 @@ section p a {
 section p a:hover { background-color: white; }
 
 #section1 {
-    background: url('../img/backgrounds/home-large-web.jpg') no-repeat center center fixed; 
+    background: url('http://hdwallpapersbase.com/wp-content/uploads/2013/01/Desert_Road_1920x1200-Wallpaper.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -489,7 +489,7 @@ section p a:hover { background-color: white; }
 #section1 h2, h4 { text-align: center; }
 
 #section2 {
-    background: url('../img/backgrounds/dustins-bg.jpg') no-repeat center center; 
+    background-color:#121212;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -497,7 +497,7 @@ section p a:hover { background-color: white; }
 }
 
 #section3 {
-    background: url('../img/backgrounds/paperProto.jpg') no-repeat center center; 
+    background: url('http://www.wallpapermay.com/thumbnails/detail/20120623/apple%20inc%20photography%20nikon%20ipad%20monochrome%20iphone%204%202560x1600%20wallpaper_www.wallpapermay.com_50.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -513,7 +513,7 @@ section p a:hover { background-color: white; }
 }
 
 #section5 {
-    background: url('../img/backgrounds/ctPerspective.jpg') no-repeat center center; 
+    background: url('http://www.sumadroid.com/wp-content/uploads/2014/05/hi-tech-apple-keyboard-mouse-hd-wallpaper.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
