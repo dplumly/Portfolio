@@ -478,7 +478,7 @@ section p a {
 section p a:hover { background-color: white; }
 
 #section1 {
-    background: url('../img/backgrounds/home-large-web.jpg') no-repeat center center fixed; 
+    background: url('http://wpapers.ru/wallpapers/comp/16595/download/1280x800_Sony-Xperia-Tablet-Z.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -489,7 +489,7 @@ section p a:hover { background-color: white; }
 #section1 h2, h4 { text-align: center; }
 
 #section2 {
-    background: url('../img/backgrounds/dustins-bg.jpg') no-repeat center center; 
+    background-color:#000000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -497,7 +497,7 @@ section p a:hover { background-color: white; }
 }
 
 #section3 {
-    background: url('../img/backgrounds/paperProto.jpg') no-repeat center center; 
+    background: url('http://centreforaviation.com/images/stories/2013/jan/24/cx_regional_biz.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -513,7 +513,7 @@ section p a:hover { background-color: white; }
 }
 
 #section5 {
-    background: url('../img/backgrounds/ctPerspective.jpg') no-repeat center center; 
+    background: url('http://www.sumadroid.com/wp-content/uploads/2014/05/hi-tech-apple-keyboard-mouse-hd-wallpaper.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -521,7 +521,7 @@ section p a:hover { background-color: white; }
 }
 
 #section6 {
-    background: url('../img/backgrounds/angerBanger.jpg') no-repeat center center; 
+    background: url('http://i.ytimg.com/vi/WOvJmBocjrc/maxresdefault.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
