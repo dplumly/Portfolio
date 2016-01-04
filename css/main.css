@@ -1,7 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url(http://www.markmurray.co/codepen/entypostyle.css);
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
 
 /* entypo */
 [class*="entypo-"]:before {
@@ -23,6 +24,7 @@ body, html { height: 100%; }
 
 ::-webkit-scrollbar {  display: none; }
 
+
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -35,16 +37,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #ebebeb;
     letter-spacing: 2.5px;
     font-family: 'walkway_boldregular', Arial, sans-serif;
+    text-shadow: 2px 2px #000;
 }
 
-p { font-family: 'Open Sans', sans-serif; color: #ebebeb; font-weight: 600; }
+p { font-family: 'OpenSans-Regular', sans-serif; color: #ebebeb; text-shadow: 2px 2px #000; }
 
-h1 { font-size: 44px; }
-h2 { font-size: 37px; }
-h3 { font-size: 27px; }
-h4 { font-size: 23px; }
-h5 { font-size: 17px; }
-h6 { font-size: 14px; }
+h1 { font-size: 3em; }
+h2 { font-size: 2.5em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: 1.1em; font-weight: 600; }
+h6 { font-size: .75em; }
 
 /*--  Button
 ==============================================================================================*/
@@ -65,6 +68,7 @@ button {
     font-weight: 100;
     letter-spacing: 4px;
     outline: none !important;
+    text-shadow: 2px 2px #000;
     -webkit-transition:All .2s ease;
     -moz-transition:All .2s ease;
     -o-transition:All .2s ease;
@@ -74,13 +78,21 @@ button:hover { background-color: #00adff; }
 
 #black-button   {
     bottom: 0px;
-    border: 2px solid #616161;
+    /*border: 2px solid #616161;*/
     position: absolute;
     left: 50%;
     right: auto;
 }
 
 #black-button:hover { border: 2px solid #ebebeb; color: #ebebeb; }
+
+/*.down-arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -30px;
+}*/
 
 /*--Contact Button in Desktop >>>>>> Takes you to footer
 ==============================================================================================*/
@@ -93,6 +105,11 @@ button:hover { background-color: #00adff; }
 }
 
 .contact-text i { color: #ebebeb; }
+/*i.icon-user-addn {
+	background: ('../img/icon/add-user.svg');
+	color: #ebebeb;
+	background-image: url('../img/icon/add-user.svg');
+}*/
 
 .contact-text a {
     position: absolute;
@@ -443,7 +460,7 @@ Project Styles
     border-bottom: 1px solid #616161; 
 }
 
-.project h2 { margin-bottom: 20px; }
+.project h2 { margin: 20px 0; }
 .project h5 { padding-bottom: 5px; }
 
 .description {
@@ -451,6 +468,7 @@ Project Styles
     margin: 30px auto;
     text-align: justify;
     line-height: 1.5em;
+    letter-spacing: .5px;
 }
 
 .projectContent { 
@@ -478,18 +496,96 @@ section p a {
 section p a:hover { background-color: white; }
 
 #section1 {
-    background: url('../img/backgrounds/home-large-web.jpg') no-repeat center center fixed; 
+    position: relative;
+    background: url('../img/backgrounds/landing-bg.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    border-bottom: none;
 }
 
-#section1 h2 { margin-top: 80px; }
-#section1 h2, h4 { text-align: center; }
+ #heading {
+    margin: 0 auto;
+    max-width: 415px; 
+}
+
+ #heading h1#tech {
+    font-weight: 300;
+    letter-spacing: 6px;
+    padding-top: 5px;
+    font-family: 'walkway_semiboldregular';
+ }
+
+#section1 h1 { 
+    margin: 0px auto 0 auto; 
+    letter-spacing: 2.5px;
+    font-family: 'walkway_blackregular';
+    padding-top: 60px;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 29px;
+    text-shadow: 2px 2px #000;
+} 
+
+#section1 h1#heading {
+    font-weight: 300;
+    padding-top: 0;
+    letter-spacing: 6px;
+    padding-top: 5px;
+    font-family: 'walkway_semiboldregular';
+}
+
+#section1 h6  {
+    text-align: center;
+    padding-top: 5px;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px #000;
+    font-family: 'walkway_blackregular';
+}
+
+#tagline { position: relative; }
+
+#tagline hr {
+    position: absolute;
+    width: 75px;
+    top: 2px;
+}
+
+#secondHR { right: 0; }
+
+#section1 img { margin: 40px auto 0px auto; display: table; }
+
+
+
+
+
+
+
+/*#section1 h1        { margin: 80px 0 5px 0; }
+#section1 h1, h4    { text-align: center; text-transform: uppercase; }
+#section1 .description { 
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    letter-spacing: 2.5px;
+}
+
+#section1 ul { position: relative; top: 40px; }
+*/
 
 #section2 {
-    background: url('../img/backgrounds/dustins-bg.jpg') no-repeat center center; 
+    background: url('../img/backgrounds/moonshot.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -497,7 +593,7 @@ section p a:hover { background-color: white; }
 }
 
 #section3 {
-    background: url('../img/backgrounds/paperProto.jpg') no-repeat center center; 
+    background: url('../img/backgrounds/dustinsWords.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -505,7 +601,7 @@ section p a:hover { background-color: white; }
 }
 
 #section4 {
-    background: url('../img/backgrounds/fcv.jpg') no-repeat center center; 
+    background: url('../img/backgrounds/paperProto.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -513,7 +609,7 @@ section p a:hover { background-color: white; }
 }
 
 #section5 {
-    background: url('../img/backgrounds/ctPerspective.jpg') no-repeat center center; 
+    background: url('../img/backgrounds/fcv.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -521,7 +617,7 @@ section p a:hover { background-color: white; }
 }
 
 #section6 {
-    background: url('../img/backgrounds/angerBanger.jpg') no-repeat center center; 
+    background: url('../img/backgrounds/ctPerspective.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -529,27 +625,19 @@ section p a:hover { background-color: white; }
 }
 
 #section7 {
-    background: url('../img/backgrounds/hydroElectric.jpg') no-repeat center center; 
+    background: url('../img/backgrounds/angerBanger.jpg') no-repeat center center; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-#section8 {
-    background: url('../img/backgrounds/thingsRemembered.jpg') no-repeat center center; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
 /*========================
 
 Project Icon Styles
 
 ========================*/
 .project ul { margin: 0 auto; display: table; }
-
 .project li { padding: 0px 15px; display: inline; margin: 0 auto; }
 
 .project li i, #contact li i {
@@ -594,6 +682,7 @@ Project Icon Styles
     opacity: 0;
     top: 40px;
     text-transform: uppercase;
+    font-family: 'OpenSans-Regular', sans-serif;
     -webkit-transition:All .5s ease;
     -moz-transition:All .5s ease;
     -o-transition:All .5s ease;
@@ -602,10 +691,46 @@ Project Icon Styles
 .contentIcons a:hover span {
     opacity: 1;
     top: 52px;
-    color: #ebebeb;
 }
 
 .project i.scrollme:hover { background-color: #00adff; }
+
+/*
+img.right-gear.gear-play {
+	position: relative;
+}
+
+i.entypo-play.animateme.scrollme {
+	padding: 10px 14px;
+	color: #ebebeb;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 1.5em;
+    position: relative;
+    bottom: 22px;
+    right: 32px;
+}*/
+
+i.entypo-play.animateme.scrollme {
+	padding: 10px 14px;
+}
+
+i.entypo-facebook::before {
+	padding: 0px 5px;
+}
+
+i.entypo-twitter::before, 
+i.entypo-linkedin::before,
+i.entypo-instagrem::before,
+i.entypo-github::before,
+i.entypo-mail::before {
+    padding: 2px;
+}
+
+i.entypo-doc-text::before {
+    padding: 4px;
+}
 /*========================
 
 Bottom button and design lines
@@ -620,7 +745,7 @@ Bottom button and design lines
 #left-long, #left-sm-one, #left-sm-two, #right-sm-one, #right-sm-two, #right-long {
     position: absolute;
     border: 0;
-    border-top: 1px solid #616161;
+    border-top: 1px solid #ebebeb;
 }
 
 #left-sm-one, #left-sm-two {
@@ -655,14 +780,14 @@ footer {
 }
 footer ul {
     position: relative;
-    margin-left: -340px;
     top: 50%;
+    margin: 0 auto;
+    display: table;
 }
 
 #contact li {
     position: relative;
-    left: 50%;
-    float: left;
+    display: inline;
     padding: 0px 5px;
 }
 
@@ -673,7 +798,7 @@ footer ul {
     text-align: center;
 }
 
-#contact i:hover { background-color: #00adff; color: black; }
+#contact i:hover { background-color: #00adff; }
 
 #contact span {
     position: absolute;
@@ -759,6 +884,7 @@ Media Querries
     #right-long { right: 40px; width: 200px; }
 }
 
+/* -- 640px -- */
 @media (max-width: 40.000em) {
     #left-long { left: 40px; width: 150px; }
     #left-sm-one { left: 200px; top: -2px; }
@@ -768,8 +894,13 @@ Media Querries
     #right-long { right: 40px; width: 150px; }
 }
 
-
+/* -- 450px -- */
 @media (max-width: 28.125em) {
+    #heading { max-width: 315px;; }
+    #heading h1 { font-size: 2em; letter-spacing: 25px; }
+    #heading h1#tech { letter-spacing: 8px; }
+    #tagline h6 { font-size: .9em; }
+    #tagline hr { width: 17px; }
     .project { min-height: 775px; }
     .project h2 { margin: 0; }
     .project h5 { padding-bottom: 5px; }

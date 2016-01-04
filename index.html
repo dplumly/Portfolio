@@ -3,24 +3,24 @@
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="keywords" content="Donnie Plumly Work">
-    <meta name="Work" content="Donnie Plumly Work">
-    <meta name="Donnie Plumly" content="Donnie Plumly Work">
-    <title>Donnie Plumly's Work</title>
+    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino">
+    <meta name="author" content="Donnie Plumly">
+    <meta name="description" content="Donnie Plumly's Portfolio">
+    <title>Donnie Plumly</title>
 
 	<link rel="stylesheet" href="css/reset.css"> 
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.ico">
-	<link rel="stylesheet" href="walkway/walkway.css">
+	<link rel="stylesheet" href="fonts/walkway/walkway.css">
+	<link rel="stylesheet" href="fonts/Open_Sans/Open_Sans.css">
 	<link rel="stylesheet" href="css/gallery.css"> 
 	<link rel="stylesheet" href="css/main.css">
-	<script src="js/modernizr.js"></script>
+	<script src="js/modernizr-minified.js"></script>
 </head>
 <body>
 	<!-- in desktop -->
 	<div class="contact-text">
-		<a href="#contact"><i class="icon-user-add"></i><span>CONTACT</span></a>
+		<a href="#contact"><i class="entypo-user-add"></i><!--<i class="icon-user-add">--></i><span>CONTACT</span></a>
 	</div>
 
 
@@ -47,15 +47,22 @@
 
 
 	<section id="section1" class="project">
-			<h2>CREATIVE TECHNOLOGIST</h2> 
-			<h4>Think, Make, Repeat.</h4>
-
-			<div class="button">
-				<a href="#section2"><button>WORK</button></a>
+		<div id="heading">
+			<h1>Creative</h1>
+			<h1 id="tech">Technologist</h1>
+			<div id="tagline">
+				<hr>
+				<h6>THINK, MAKE, REPEAT.</h6>
+				<hr id="secondHR">
 			</div>
+		</div>
+		<img src="img/logo/logo.png">
+
+		<a class="button" href="#section2"><button>WORK</button></a>
     </section><!-- project -->
 
-    <!-- Project 1 -->
+
+     <!-- Project 1 -->
 	<section id="section2" class="project">
 		<div class="projectContent">
 				<h2 class="animateme scrollme" 
@@ -65,7 +72,7 @@
 	        		data-opacity="0"
 	        		data-translatex="0"
 	        		data-translatey="0"
-	        		data-rotatez="0">DUSTIN'S WORDS</h2>
+	        		data-rotatez="0">MOONSHOT BUILD</h2>
 
 				<p class="description animateme scrollme"
 					data-when="enter"
@@ -74,7 +81,12 @@
 	        		data-opacity="0"
 	        		data-translatex="0"
 	        		data-translatey="0"
-	        		data-rotatez="0">Imagine a life where you could understand everything that is being said, but physically can’t communicate back. That is a common occurrence for people who suffer from Autism. The project started with Matt Reamer making a device for his brother Dustin to be able to communicate with his Mom over text messages. We started with Dustin, but are now looking to help others. We are finding issues with the cost and functionality of similar divides on the market. Our goal is to come up with solutions for anyone that has communications complications and make these devices obtainable to them. For more info go to <span><a href="http://www.dustinswords.com" target="_blank">dustinswords.com.</a></span></p>
+	        		data-rotatez="0">At Team One we have a series called Moonshot where people come in and tell us about the  work they are a part of. At this one was Brent Bushnell from Two Bit Circus. Two Bit Circus does really cool builds to help kids learn core principles in an interactive way.
+
+	        		<br><br>
+
+					For this event the creative technologist group was asked to build an installation with the concept “Science is then new rock and roll.” With that in mind we built a carnival like installation “Brain vs Brawn.”
+					We made 7ft guitars with a ladder of LEDs up the neck. The bass guitar was the brawn in which we made a high-striker carnival game. The second guitar was a hacked EEG that gave readings on how hard you could concentrate. </p>
 
 	        	<h5 class="animateme scrollme"
 	        		data-when="exit"
@@ -94,12 +106,105 @@
 	        		data-translatex="0"
 	        		data-translatey="0"
 	        		data-rotatez="0"
-	        		>3D Modeling/Printing, Spark.io, Web Dev, Photography</p>
+	        		>3D Modeling/Printing, Woodworking, Arduino</p>
 
 			<!--Icons -->
 	     	<div class="contentIcons">
      			<ul>
-					<li><a class="gallery1" href="img/work/dustinsWords/buttons.jpg"><i class='icon-camera animateme scrollme'
+					<li><a class="moonshot" href="img/work/moonshot/guitars.jpg"><i class='entypo-camera animateme scrollme'
+	        		data-when="span"
+	        		data-from="0.25"
+	        		data-to="0"
+	        		data-opacity=".2"
+	        		data-translatex="-30"
+	        		data-translatey="0"
+	        		data-rotatez="0"><img class="left-gear" src="img/icon/gear.svg" alt="Moonshot guitar build"><span class="photos">photos</span></i></a></li>
+			
+					<!-- hidden thumbs  -->
+                    <a class="moonshot" href="img/work/moonshot/guitar1.jpg" alt="Moonshot guitar build">
+                    <img src="#" style="width:0; height: 0; display:none;"/></a>
+
+                    <a class="moonshot" href="img/work/moonshot/guitar2.jpg" alt="Moonshot guitar build">
+                    <img src="#" style="width:0; height: 0; display:none;"/></a>
+
+                    <a class="moonshot" href="img/work/moonshot/guitar3.jpg" alt="Moonshot guitar build">
+                    <img src="#" style="width:0; height: 0; display:none;"/></a>
+
+                    <a class="moonshot" href="img/work/moonshot/guitar4.jpg" alt="Dustin's Words 3D printed">
+                    <img src="#" style="width:0; height: 0; display:none;"/></a>
+
+                    <a class="moonshot" href="img/work/moonshot/drum.jpg" alt="Dustin's Words 3D printed">
+                    <img src="#" style="width:0; height: 0; display:none;"/></a>
+
+                    <a class="moonshot" href="img/work/moonshot/eeg.jpg" alt="Dustin's Words 3D printed">
+                    <img src="#" style="width:0; height: 0; display:none;"/></a>
+
+                    <a class="moonshot" href="img/work/moonshot/stage.jpg" alt="Dustin's Words 3D printed">
+                    <img src="#" style="width:0; height: 0; display:none;"/></a>
+				</ul>
+	     	</div><!-- End contentIcons-->
+     	</div><!-- End projectContent-->
+
+     	<!-- Next Project -->
+     	<div id="next-project">
+ 			<hr id="left-long">
+ 			<hr id="left-sm-one">
+ 			<hr id="left-sm-two">
+
+ 			<!--<img class="down-arrow" src="img/arrows/cd-icon-arrow-desktop.svg">-->
+
+			<a class="button" href="#section3"><button id="black-button">NEXT</button></a>
+ 			<hr id="right-sm-one">
+ 			<hr id="right-sm-two">
+ 			<hr id="right-long">
+     	</div><!-- End Next Project -->
+     </section><!-- End Project 1 -->
+
+    <!-- Project 2 -->
+	<section id="section3" class="project">
+		<div class="projectContent">
+				<h2 class="animateme scrollme" 
+					data-when="enter"
+	        		data-from="1"
+	        		data-to="0"
+	        		data-opacity="0"
+	        		data-translatex="0"
+	        		data-translatey="0"
+	        		data-rotatez="0">DUSTIN'S WORDS</h2>
+
+				<p class="description animateme scrollme"
+					data-when="enter"
+	        		data-from="1"
+	        		data-to="0"
+	        		data-opacity="0"
+	        		data-translatex="0"
+	        		data-translatey="0"
+	        		data-rotatez="0">Imagine a life where you could understand everything that is being said, but physically can’t communicate back. That is a common occurrence for people who suffer from Autism. The project started with Matt Reamer making a device for his brother Dustin to be able to communicate with his Mom over text messages. We started with Dustin, but are now looking to help others. We are finding issues with the cost and functionality of similar devices on the market. Our goal is to come up with solutions for anyone that suffers from communication complications and make devices obtainable. For more info go to <span><a href="http://www.dustinswords.com" target="_blank">DUSTINSWORDS</a>.</span></p>
+
+	        	<h5 class="animateme scrollme"
+	        		data-when="exit"
+	        		data-from="1"
+	        		data-to="0"
+	        		data-opacity="0"
+	        		data-translatex="0"
+	        		data-translatey="0"
+	        		data-rotatez="0"
+	        		>SKILLS USED:</h5>
+
+	        	<p class="animateme scrollme"
+	        		data-when="enter"
+	        		data-from="1"
+	        		data-to="0"
+	        		data-opacity="0"
+	        		data-translatex="0"
+	        		data-translatey="0"
+	        		data-rotatez="0"
+	        		>3D Modeling/Printing, Particle.io, Web Dev, Photography</p>
+
+			<!--Icons -->
+	     	<div class="contentIcons">
+     			<ul>
+					<li><a class="gallery1" href="img/work/dustinsWords/buttons.jpg"><i class='entypo-camera animateme scrollme'
 	        		data-when="span"
 	        		data-from="0.25"
 	        		data-to="0"
@@ -124,7 +229,7 @@
                     <a class="gallery1" href="img/work/dustinsWords/3d_printed_prototype2.jpg" alt="Dustin's Words 3D printed">
                     <img src="#" style="width:0; height: 0; display:none;"/></a>
 
-					<li><a href="http://www.dustinswords.com" target="_blank"><i class='icon-tools animateme scrollme' 
+					<li><a href="http://www.dustinswords.com" target="_blank"><i class='entypo-tools animateme scrollme' 
 					data-when="span"
 	        		data-from="0.25"
 	        		data-to="0"
@@ -141,9 +246,7 @@
  			<hr id="left-long">
  			<hr id="left-sm-one">
  			<hr id="left-sm-two">
- 			<div class="button">
-				<a href="#section3"><button id="black-button">NEXT</button></a>
-			</div>
+			<a class="button" href="#section3"><button id="black-button">NEXT</button></a>
  			<hr id="right-sm-one">
  			<hr id="right-sm-two">
  			<hr id="right-long">
@@ -239,8 +342,8 @@
      	</div>
      </section> -->
 
-     <!-- Project 2 -->
-	<section id="section3" class="project">
+     <!-- Project 3 -->
+	<section id="section4" class="project">
 		<div class="projectContent">
 				<h2 class="animateme scrollme" 
 					data-when="enter"
@@ -258,7 +361,7 @@
 	        		data-opacity="0"
 	        		data-translatex="0"
 	        		data-translatey="0"
-	        		data-rotatez="0">My partner Matt Reamer and I are always looking for ways to make prototyping better for users. In this search we found a prototyping tool called the Iron phone. It was a great tool, but the people that made it didn’t release it for the public. Obviously we saw this opportunity to help the community so we created <span><a href="http://www.paperproto.com" target="_blank">PAPERPROTO</a></span>.</p>
+	        		data-rotatez="0">Matt Reamer and I are always looking for ways to make prototyping better for users. In this search we found a prototyping tool called the Iron phone. It was a great tool, but the people that made it didn’t release it to the public. Obviously, we saw this opportunity to help the community so we created to create an open source prototyping tool called <span><a href="http://www.paperproto.com" target="_blank">PAPERPROTO</a></span>.</p>
 
 	        	<h5 class="animateme scrollme"
 	        		data-when="exit"
@@ -283,7 +386,7 @@
 			<!--Icons -->
 	     	<div class="contentIcons">
      			<ul>
-					<li><a class="gallery2" href="img/work/paperproto/paperproto_paper.jpg"><i class='icon-camera animateme scrollme'
+					<li><a class="gallery2" href="img/work/paperproto/paperproto_paper.jpg"><i class='entypo-camera animateme scrollme'
 	        		data-when="span"
 	        		data-from="0.25"
 	        		data-to="0"
@@ -305,7 +408,7 @@
                     <a class="gallery2" href="img/work/paperproto/paperproto_screens.jpg" alt="PAPERPROTO screens">
                     <img src="#" style="width:0; height: 0; display:none;"/></a>
 
-					<li><a href="http://paperproto.com/" target="_blank" ><i class='icon-tools animateme scrollme' 
+					<li><a href="http://paperproto.com/" target="_blank" ><i class='entypo-tools animateme scrollme' 
 					data-when="span"
 	        		data-from="0.25"
 	        		data-to="0"
@@ -322,17 +425,15 @@
  			<hr id="left-long">
  			<hr id="left-sm-one">
  			<hr id="left-sm-two">
- 			<div class="button">
-				<a href="#section4"><button id="black-button">NEXT</button></a>
-			</div>
+			<a class="button" href="#section4"><button id="black-button">NEXT</button></a>
  			<hr id="right-sm-one">
  			<hr id="right-sm-two">
  			<hr id="right-long">
      	</div><!-- End Next Project -->
      </section><!-- End Project 2 -->
 	
-	<!-- Project 3 -->
-	<section id="section4" class="project">
+	<!-- Project 4 -->
+	<section id="section5" class="project">
 		<div class="projectContent">
 				<h2 class="animateme scrollme" 
 					data-when="enter"
@@ -377,7 +478,7 @@
 			<!--Icons -->
 	     	<div class="contentIcons">
      			<ul>
-					<li><a class="gallery3" href="img/work/fcv/fcv_screens.jpg"><i class='icon-camera animateme scrollme'
+					<li><a class="gallery3" href="img/work/fcv/fcv_screens.jpg"><i class='entypo-camera animateme scrollme'
 	        		data-when="span"
 	        		data-from="0.25"
 	        		data-to="0"
@@ -399,7 +500,7 @@
                     <a class="gallery3" href="img/work/fcv/grid_prototype.gif" alt="Future Concept Vehicle gif of grid prototype">
                     <img src="#" style="width:0; height: 0; display:none;"/></a>
 
-					<li><a href="lexus-prototypes/home-page/index.html" target="_blank" ><i class='icon-tools animateme scrollme' 
+					<li><a href="lexus-prototypes/home-page/index.html" target="_blank" ><i class='entypo-tools animateme scrollme' 
 					data-when="span"
 	        		data-from="0.25"
 	        		data-to="0"
@@ -416,17 +517,15 @@
  			<hr id="left-long">
  			<hr id="left-sm-one">
  			<hr id="left-sm-two">
- 			<div class="button">
-				<a href="#section5"><button id="black-button">NEXT</button></a>
-			</div>
+			<a class="button" href="#section5"><button id="black-button">NEXT</button></a>
  			<hr id="right-sm-one">
  			<hr id="right-sm-two">
  			<hr id="right-long">
      	</div><!-- End Next Project -->
 	</section><!-- End Project 3 -->
 
-	<!-- Project 4 -->
-	<section id="section5" class="project">
+	<!-- Project 5 -->
+	<section id="section6" class="project">
 		<div class="projectContent">
 				<h2 class="animateme scrollme" 
 					data-when="enter"
@@ -470,7 +569,7 @@
 			<!--Icons -->
 	     	<div class="contentIcons">
      			<ul>
-					<li><a class="gallery4" href="img/work/ctPerspective/ct_wall.jpg"><i class='icon-camera animateme scrollme'
+					<li><a class="gallery4" href="img/work/ctPerspective/ct_wall.jpg"><i class='entypo-camera animateme scrollme'
 	        		data-when="span"
 	        		data-from="0.25"
 	        		data-to="0"
@@ -518,17 +617,15 @@
  			<hr id="left-long">
  			<hr id="left-sm-one">
  			<hr id="left-sm-two">
- 			<div class="button">
-				<a href="#section6"><button id="black-button">NEXT</button></a>
-			</div>
+			<a class="button" href="#section6"><button id="black-button">NEXT</button></a>
  			<hr id="right-sm-one">
  			<hr id="right-sm-two">
  			<hr id="right-long">
      	</div><!-- End Next Project -->
 	</section><!-- End Project 4 -->
 
-	<!-- Project 5 -->
-	<section id="section6" class="project">
+	<!-- Project 6 -->
+	<section id="section7" class="project">
 		<div class="projectContent">
 				<h2 class="animateme scrollme" 
 					data-when="enter"
@@ -571,7 +668,7 @@
 			<!--Icons -->
 	     	<div class="contentIcons">
      			<ul>
-					<li><a class="gallery5" href="img/work/angerBanger/anger_bamger.jpg" alt="Anger Banger bag and box"><i class='icon-camera animateme scrollme'
+					<li><a class="gallery5" href="img/work/angerBanger/anger_bamger.jpg" alt="Anger Banger bag and box"><i class='entypo-camera animateme scrollme'
 	        		data-when="span"
 	        		data-from="0.25"
 	        		data-to="0"
@@ -590,7 +687,7 @@
                     <a class="gallery5" href="img/work/angerBanger/guts_anger_banger.jpg" alt="Anger Banger box">
                     <img src="#" style="width:0; height: 0; display:none;"/></a>
 
-					<li><a class="gallery5" href="http://www.youtube.com/watch?v=PfNiByzvdBU"><i class='icon-play animateme scrollme' 
+					<li><a class="gallery5" href="http://www.youtube.com/watch?v=PfNiByzvdBU"><i class='entypo-play animateme scrollme' 
 					data-when="span"
 	        		data-from="0.25"
 	        		data-to="0"
@@ -607,224 +704,41 @@
  			<hr id="left-long">
  			<hr id="left-sm-one">
  			<hr id="left-sm-two">
- 			<div class="button">
-				<a href="#section7"><button id="black-button">NEXT</button></a>
-			</div>
+			<a class="button" href="#section7"><button id="black-button">NEXT</button></a>
  			<hr id="right-sm-one">
  			<hr id="right-sm-two">
  			<hr id="right-long">
 	    </div><!-- End Next Project -->
 	</section><!-- End Project 5 -->
 
-	<!-- Project 6 -->
-	<section id="section7" class="project">
-		<div class="projectContent">
-				<h2 class="animateme scrollme" 
-					data-when="enter"
-	        		data-from="1"
-	        		data-to="0"
-	        		data-opacity="0"
-	        		data-translatex="0"
-	        		data-translatey="0"
-	        		data-rotatez="0">HYDROELECTRIC PUMP</h2>
 
-				<p class="description animateme scrollme"
-					data-when="enter"
-	        		data-from="1"
-	        		data-to="0"
-	        		data-opacity="0"
-	        		data-translatex="0"
-	        		data-translatey="0"
-	        		data-rotatez="0">The Science Museum in Richmond, Va is an awesome place for kids to learn. When we visited the museum we noticed one problem in the water exhibit. There was no water! We wanted to change that by making an interactive educational device.</p>
 
-	        	<h5 class="animateme scrollme"
-	        		data-when="enter"
-	        		data-from="1"
-	        		data-to="0"
-	        		data-opacity="0"
-	        		data-translatex="0"
-	        		data-translatey="0"
-	        		data-rotatez="0"
-	        		>SKILLS USED:</h5>
-
-	        	<p class="animateme scrollme"
-	        		data-when="enter"
-	        		data-from="1"
-	        		data-to="0"
-	        		data-opacity="0"
-	        		data-translatex="0"
-	        		data-translatey="0"
-	        		data-rotatez="0"
-	        		>Carpentry, Analog Circuitry</p>
-
-			<!--Icons -->
-	     	<div class="contentIcons">
-     			<ul>
-					<li><a class="gallery6" href="img/work/hydroElectric/hydroelectric_prototype.jpg" alt="Hydroelectric"><i class='icon-camera animateme scrollme'
-	        		data-when="span"
-	        		data-from="0.25"
-	        		data-to="0"
-	        		data-opacity=".2"
-	        		data-translatex="-30"
-	        		data-translatey="0"
-	        		data-rotatez="0"><img class="left-gear" src="img/icon/gear.svg"><span class="photos">photos</span></i></a></li>
-			
-					<!-- hidden thumbs  -->
-                    <a class="gallery6" href="img/work/hydroElectric/leds.jpg" alt="Hydroelectric lights">
-                    <img src="#" style="width:0; height: 0; display:none;"/></a>
-
-                    <a class="gallery6" href="img/work/hydroElectric/back_hydoelectric.jpg" alt="Hydroelectric electronics">
-                    <img src="#" style="width:0; height: 0; display:none;"/></a>
-
-                    <a class="gallery6" href="img/work/hydroElectric/intergrated_circuit.jpg" alt="Hydroelectric electronics close">
-                    <img src="#" style="width:0; height: 0; display:none;"/></a>
-
-                    <a class="gallery6" href="img/work/hydroElectric/water_container.jpg" alt="Hydroelectric water container">
-                    <img src="#" style="width:0; height: 0; display:none;"/></a>
-
-					<li><a class="gallery6" href="https://www.youtube.com/watch?v=JQjVSTwH7Fg" ><i class='icon-play animateme scrollme' 
-					data-when="span"
-	        		data-from="0.25"
-	        		data-to="0"
-	        		data-opacity=".2"
-	        		data-translatex="30"
-	        		data-translatey="0"
-	        		data-rotatez="0"><img class="right-gear" src="img/icon/gear.svg"><span class="video">video</span></i></a></li>
-				</ul>
-	     	</div><!-- End contentIcons-->
-     	</div><!-- End projectContent-->
-
-     	<!-- Next Project -->
-     	<div id="next-project">
- 			<hr id="left-long">
- 			<hr id="left-sm-one">
- 			<hr id="left-sm-two">
- 			<div class="button">
-				<a href="#section8"><button id="black-button">NEXT</button></a>
-			</div>
- 			<hr id="right-sm-one">
- 			<hr id="right-sm-two">
- 			<hr id="right-long">
-     	</div><!-- End Next Project -->
-	</section><!-- End Project 6 -->
-
-	<!-- Project 7 -->
-	<section id="section8" class="project">
-		<div class="projectContent">
-				<h2 class="animateme scrollme" 
-					data-when="enter"
-	        		data-from="1"
-	        		data-to="0"
-	        		data-opacity="0"
-	        		data-translatex="0"
-	        		data-translatey="0"
-	        		data-rotatez="0">THINGS REMEMBERED</h2>
-
-				<p class="description animateme scrollme" 
-					data-when="enter"
-	        		data-from="1"
-	        		data-to="0"
-	        		data-opacity="0"
-	        		data-translatex="0"
-	        		data-translatey="0"
-	        		data-rotatez="0">Engravings are like tattoos; they are permanent. The good thing about a tattoo is you can see a stencil on before you commit. Unfortunately, I can’t say the same for engraving. This kiosk would solve for that problem by letting you preview the engraving. The way it was built was with a series of mirrors, a projector, a tablet running custom software, and an Arduino.</p>
-
-	        	<h5 class="animateme scrollme"
-	        		data-when="enter"
-	        		data-from="1"
-	        		data-to="0"
-	        		data-opacity="0"
-	        		data-translatex="0"
-	        		data-translatey="0"
-	        		data-rotatez="0"
-	        		>SKILLS USED:</h5>
-
-	        	<p class="animateme scrollme"
-	        		data-when="enter"
-	        		data-from="1"
-	        		data-to="0"
-	        		data-opacity="0"
-	        		data-translatex="0"
-	        		data-translatey="0"
-	        		data-rotatez="0"
-	        		>Carpentry, Web Design, Arduino</p>
-
-			<!--Icons -->
-	     	<div class="contentIcons">
-     			<ul>
-					<li><a class="gallery7" rel="gallery-7" href="img/work/thingsRemembered/things_remembered_prototype.jpg" alt="Things Remembered Device"><i class='icon-camera animateme scrollme'
-	        		data-when="span"
-	        		data-from="0.25"
-	        		data-to="0"
-	        		data-opacity=".2"
-	        		data-translatex="-30"
-	        		data-translatey="0"
-	        		data-rotatez="0"><img class="left-gear" src="img/icon/gear.svg"><span class="photos">photos</span></i></a></li>
-			
-						<!-- hidden thumbs  -->
-                    <a class="gallery7" href="img/work/thingsRemembered/things_remembered_projector2.jpg"  alt="Things Remembered projector">
-                    <img src="#" style="width:0; height: 0; display:none;"/></a>
-
-                    <a class="gallery7" href="img/work/thingsRemembered/things_remembered_projector.jpg"  alt="Things Remembered projector">
-                    <img src="#" style="width:0; height: 0; display:none;"/></a>
-
-                    <a class="gallery7" href="img/work/thingsRemembered/things_remembered_mirror.jpg"  alt="Things Remembered mirror">
-                    <img src="#" style="width:0; height: 0; display:none;"/></a>
-
-                    <a class="gallery7" href="img/work/thingsRemembered/things_remembered_diagram.jpg"  alt="Things Remembered schematic">
-                    <img src="#" style="width:0; height: 0; display:none;"/></a>
-
-					<li><a class="gallery7" href="https://www.youtube.com/watch?v=hVebJnytk80" ><i class='icon-play animateme scrollme' 
-					data-when="span"
-	        		data-from="0.25"
-	        		data-to="0"
-	        		data-opacity=".2"
-	        		data-translatex="30"
-	        		data-translatey="0"
-	        		data-rotatez="0"><img class="right-gear" src="img/icon/gear.svg"><span class="video">video</span></i></a></li>
-				</ul>
-	     	</div><!-- End contentIcons-->
-     	</div><!-- End projectContent-->
-
-     	<!-- Next Project -->
-     	<div id="next-project">
- 			<hr id="left-long">
- 			<hr id="left-sm-one">
- 			<hr id="left-sm-two">
- 			<div class="button">
-				<a href="#section1"><button id="black-button">TOP</button></a>
-			</div>
- 			<hr id="right-sm-one">
- 			<hr id="right-sm-two">
- 			<hr id="right-long">
-     	</div><!-- End Next Project -->
-	</section><!-- End Project 7 -->
 
 	<footer id="contact">
 		<ul>
-			<li><a href="http://www.facebook.com/donnieplumly" target="_blank"><i class='icon-facebook'></i><span>FACEBOOK</span></a></li>
+			<li><a href="http://www.facebook.com/donnieplumly" target="_blank"><i class='entypo-facebook'></i><span>FACEBOOK</span></a></li>
 
-			<li><a href="http://twitter.com/donnieplumly" target="_blank"><i class='icon-twitter'></i><span id="twitter">TWITTER</span></a></li>
+			<li><a href="http://twitter.com/donnieplumly" target="_blank"><i class='entypo-twitter'></i><span id="twitter">TWITTER</span></a></li>
 
-			<li><a href="http://www.linkedin.com/pub/donnie-plumly/27/347/b07/" target="_blank"><i class='icon-linkedin'></i><span id="linkedin">LINKEDIN</span></a></li>
+			<li><a href="http://www.linkedin.com/pub/donnie-plumly/27/347/b07/" target="_blank"><i class='entypo-linkedin'></i><span id="linkedin">LINKEDIN</span></a></li>
 
-			<li><a href="http://instagram.com/donnieplumly" target="_blank"><i class='icon-instagram'></i><span id="instagram">INSTAGRAM</span></a></li>
+			<li><a href="http://instagram.com/donnieplumly" target="_blank"><i class='entypo-instagrem'></i><span id="instagram">INSTAGRAM</span></a></li>
 
-			<li><a href="https://github.com/dplumly" target="_blank"><i class='icon-github'></i><span id="github">GITHUB</span></a></li>
+			<li><a href="https://github.com/dplumly" target="_blank"><i class='entypo-github'></i><span id="github">GITHUB</span></a></li>
 
-			<li><a href="mailto:donnie.plumly@gmail.com"><i class='icon-mail'></i><span id="gmail">GMAIL</span></a></li>
+			<li><a href="mailto:donnie.plumly@gmail.com"><i class='entypo-mail'></i><span id="gmail">GMAIL</span></a></li>
 
-			<li><a href="#" download="Donnie Plumly's Awesome Resume!"><i class='icon-text'></i><span id="resume">RESUME</span></a></li>
+			<li><a href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!"><i class='entypo-doc-text'></i><span id="resume">RESUME</span></a></li>
 		</ul>
 		<p>COPYRIGHT 2015 | DONNIE PLUMLY</p>
 	</footer>
 
 	<!-- JavaScript -->	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-	<script src="js/scrollme.js"></script>
+	<script src="js/scrollme-minified.js"></script>
 	<script src="js/gallery.js"></script>
-	<script src="js/scrolline.js"></script>
-    <script src="js/menu.js"></script>
+	<script src="js/scrolline-minified.js"></script>
+    <script src="js/menu-minified.js"></script>
 
 	
 	<script>
@@ -849,7 +763,7 @@
 
     <script>
 		$(function() {
-		  $('.button a, .contact-text a').click(function() {
+		  $('a.button, .contact-text a').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -866,13 +780,12 @@
 
 	<script type="text/javascript">
 	   $(document).ready(function() {
+	   	  $(".moonshot").tosrus();
 	      $(".gallery1").tosrus();
 	      $(".gallery2").tosrus();
 	      $(".gallery3").tosrus();
 	      $(".gallery4").tosrus();
 	      $(".gallery5").tosrus();
-	      $(".gallery6").tosrus();
-	      $(".gallery7").tosrus();
 	   });
 	</script>
 </body>
