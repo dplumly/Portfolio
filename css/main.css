@@ -558,7 +558,14 @@ section p a:hover { background-color: white; }
 #section1 img { margin: 40px auto 0px auto; display: table; }
 
 
-
+.down-arrow {
+    position: absolute;
+    bottom: 0;
+    margin: 40px auto 0px auto;
+    display: table;
+    right: 0;
+    left: 0;
+}
 
 
 
@@ -583,6 +590,14 @@ section p a:hover { background-color: white; }
 
 #section1 ul { position: relative; top: 40px; }
 */
+
+#zombie-selfie {
+    background: url('../img/backgrounds/zombie-bg.jpg') no-repeat center center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 #section2 {
     background: url('../img/backgrounds/moonshot.jpg') no-repeat center center; 
