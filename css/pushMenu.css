@@ -1,0 +1,130 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    height: 100%;
+}
+
+::-webkit-scrollbar { 
+    display: none; 
+}
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a { text-decoration: none; }
+ul { list-style-type: none; }
+
+
+
+/*--Slide Menu
+==============================================================================================*/
+#transformicon {
+    width: 40px;
+    height: 45px;
+    position: fixed;
+    right: 0;
+    margin: 10px;
+    top: 5px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#transformicon span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #616161;
+    border-radius: 6px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+
+#transformicon:hover span { background: #a0a0a0; }
+#transformicon span:nth-child(1) { top: 0px; }
+#transformicon span:nth-child(2) { top: 10px; } 
+#transformicon span:nth-child(3) { top: 20px; }
+
+#transformicon.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#transformicon.open span:nth-child(2) { opacity: 0; left: -60px; }
+
+#transformicon.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+#transformiconSpace {
+    height: 75px;
+    width: 175px;
+    background-color: #00adff;
+    border-bottom: 1px solid #000000;
+}
+
+.cbp-spmenu { position: fixed; background: #00adff; }
+
+.cbp-spmenu-vertical {
+    width: 175px;
+    height: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+.cbp-spmenu-vertical a {
+    border-bottom: 1px solid #000000;
+    padding: 15px;
+    color: #616161;
+    cursor: pointer;
+    text-align: left; 
+}
+
+.cbp-spmenu-vertical a:hover { color: #a0a0a0; }
+.cbp-spmenu-right { right: -240px; }
+.cbp-spmenu-right.cbp-spmenu-open { right: 0px; }
+.cbp-spmenu a { display: block; }
+
+.cbp-spmenu {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
