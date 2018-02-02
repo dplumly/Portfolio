@@ -660,7 +660,7 @@ paperproto
 ===================================*/
 #paperproto-landing {
     position: relative;
-    background: url('../img/backgrounds/paperproto1.jpg') no-repeat center center;
+    background: url('../img/backgrounds/paperproto.jpg') no-repeat center center;
     min-height: 500px;
     height: 50%;
     width: 100%;
@@ -752,7 +752,7 @@ footer p {
     #hologram-landing  { background: url('../img/backgrounds/large/hologram.jpg') no-repeat center center; }
     #eeg-landing { background: url('../img/backgrounds/large/eeg_big.jpg') no-repeat center center; }
     #the-huddles-landing { background: url('../img/backgrounds/large/huddles_big.jpg') no-repeat center center; }
-    #paperproto-landing { background: url('../img/backgrounds/large/paperproto1_big.jpg') no-repeat center center; }
+    #paperproto-landing { background: url('../img/backgrounds/large/paperproto_big.jpg') no-repeat center center; }
     #dustins-words-landing  { background: url('../img/backgrounds/large/dustins-words_big.jpg') no-repeat center center; }
 }
 
@@ -787,6 +787,16 @@ footer p {
 
 /* 500 */
 @media only screen and (max-width: 31.250em) {
+    #landing { background: url('../img/backgrounds/mobile/landingMobile.jpg') no-repeat center center; }
+    #visceral_reality-landing  { background: url('../img/backgrounds/mobile/viceralMobile.jpg') no-repeat center center; }
+    #LC_soundbooth-landing  { background: url('../img/backgrounds/mobile/soundboothMobile.jpg') no-repeat center center; }
+    #litIS-landing  { background: url('../img/backgrounds/mobile/litisMobile.jpg') no-repeat center center; }
+    #hologram-landing  { background: url('../img/backgrounds/mobile/hologramMobile.jpg') no-repeat center center; }
+    #eeg-landing { background: url('../img/backgrounds/mobile/eegMobile.jpg') no-repeat center center; }
+    #the-huddles-landing { background: url('../img/backgrounds/mobile/huddleMobile.jpg') no-repeat center center; }
+    #paperproto-landing { background: url('../img/backgrounds/mobile/paperprotoMobile.jpg') no-repeat center center; }
+    #dustins-words-landing  { background: url('../img/backgrounds/mobile/dustinsWordsMobile.jpg') no-repeat center center; }
+
     #about h4, .project-container h4  { font-size: 1.5em; line-height: 30px; }
     .project-landing h1 { line-height: 45px; padding: 50px 20px 0 20px; letter-spacing: 0; }
     footer ul li#resume { display: none; }
