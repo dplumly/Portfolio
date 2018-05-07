@@ -1,7 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-@import url(http://weloveiconfonts.com/api/?family=entypo);
 @import url(https://fonts.googleapis.com/css?family=Lato:300);
 /*@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);*/
 
@@ -13,11 +12,6 @@
          url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-}
-
-/* entypo */
-[class*="entypo-"]:before {
-  font-family: 'entypo', sans-serif;
 }
 
 * { 
@@ -421,6 +415,7 @@ Thumbnails
     float: left; 
     background: #000;
     overflow: hidden;
+    height: 265px;
 }
 
 #thumbnails figurecaption h2 span { color: #61e3d3; font-weight: 400; }
@@ -660,7 +655,7 @@ paperproto
 ===================================*/
 #paperproto-landing {
     position: relative;
-    background: url('../img/backgrounds/paperproto.jpg') no-repeat center center;
+    background: url('../img/backgrounds/paperproto1.jpg') no-repeat center center;
     min-height: 500px;
     height: 50%;
     width: 100%;
@@ -731,7 +726,24 @@ footer ul li a {
     transition: .3s ease-in-out;
 }
 
-footer ul li a:hover { color: #61e3d3; }
+footer ul li a svg {
+    height: 27px;
+    fill: #e9ece5; 
+}
+footer ul li a svg path.social,
+footer ul li a svg rect.social,
+footer ul li a svg ellipse.social  {
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; 
+}
+
+footer ul li a svg:hover path.social,
+footer ul li a svg:hover rect.social,  
+footer ul li a svg:hover ellipse.social
+ { fill: #61e3d3; }
+
 
 footer p {
     position: relative;
@@ -749,7 +761,7 @@ footer p {
     #visceral_reality-landing  { background: url('../img/backgrounds/large/visceral_reality_big.jpg') no-repeat center center; }
     #LC_soundbooth-landing  { background: url('../img/backgrounds/large/LC_soundbooth_big.jpg') no-repeat center center; }
     #litIS-landing  { background: url('../img/backgrounds/large/litIS_big.jpg') no-repeat center center; }
-    #hologram-landing  { background: url('../img/backgrounds/large/hologram.jpg') no-repeat center center; }
+    #hologram-landing  { background: url('../img/backgrounds/large/hologram_big.jpg') no-repeat center center; }
     #eeg-landing { background: url('../img/backgrounds/large/eeg_big.jpg') no-repeat center center; }
     #the-huddles-landing { background: url('../img/backgrounds/large/huddles_big.jpg') no-repeat center center; }
     #paperproto-landing { background: url('../img/backgrounds/large/paperproto_big.jpg') no-repeat center center; }
@@ -787,16 +799,6 @@ footer p {
 
 /* 500 */
 @media only screen and (max-width: 31.250em) {
-    #landing { background: url('../img/backgrounds/mobile/landingMobile.jpg') no-repeat center center; }
-    #visceral_reality-landing  { background: url('../img/backgrounds/mobile/viceralMobile.jpg') no-repeat center center; }
-    #LC_soundbooth-landing  { background: url('../img/backgrounds/mobile/soundboothMobile.jpg') no-repeat center center; }
-    #litIS-landing  { background: url('../img/backgrounds/mobile/litisMobile.jpg') no-repeat center center; }
-    #hologram-landing  { background: url('../img/backgrounds/mobile/hologramMobile.jpg') no-repeat center center; }
-    #eeg-landing { background: url('../img/backgrounds/mobile/eegMobile.jpg') no-repeat center center; }
-    #the-huddles-landing { background: url('../img/backgrounds/mobile/huddleMobile.jpg') no-repeat center center; }
-    #paperproto-landing { background: url('../img/backgrounds/mobile/paperprotoMobile.jpg') no-repeat center center; }
-    #dustins-words-landing  { background: url('../img/backgrounds/mobile/dustinsWordsMobile.jpg') no-repeat center center; }
-
     #about h4, .project-container h4  { font-size: 1.5em; line-height: 30px; }
     .project-landing h1 { line-height: 45px; padding: 50px 20px 0 20px; letter-spacing: 0; }
     footer ul li#resume { display: none; }
