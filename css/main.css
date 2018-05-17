@@ -731,7 +731,24 @@ footer ul li a {
     transition: .3s ease-in-out;
 }
 
-footer ul li a:hover { color: #61e3d3; }
+footer ul li a svg {
+    height: 27px;
+    fill: #e9ece5; 
+}
+footer ul li a svg path.social,
+footer ul li a svg rect.social,
+footer ul li a svg ellipse.social  {
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; 
+}
+
+footer ul li a svg:hover path.social,
+footer ul li a svg:hover rect.social,  
+footer ul li a svg:hover ellipse.social
+ { fill: #61e3d3; }
+
 
 footer p {
     position: relative;
@@ -820,7 +837,6 @@ footer p {
     #about hr, .project-container hr   { width: 180px; }
     figurecaption h5 { font-size: 1em; }
     footer ul { margin: 75px auto 0 auto; }
-    footer ul li a { font-size: 2.3em; }
 
     div.gallery div.row { display: none; }
 }
