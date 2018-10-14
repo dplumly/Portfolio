@@ -1115,7 +1115,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     .more-projects-doubled a, .more-projects-single a { padding: 15px 110px !important; }
     footer { height: 800px; }
     footer ul li {     
-        display: grid;
+        display: block;
         margin: 15px;
         font-size: 25px;
         text-align: center;
