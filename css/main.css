@@ -930,7 +930,7 @@ footer ul li a {
 footer ul li a svg {
     height: 27px;
     fill: #eaeaea;
-    display: table; 
+    display: block; 
     margin: 0 auto;
 }
 footer ul li a#blog::after, footer ul li a#instagram::after, footer ul li a#thingiverse::after,
