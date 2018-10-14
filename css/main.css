@@ -1003,9 +1003,8 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
 /* 1000 */
 @media only screen and (max-width: 62.500em) {
     #description { padding: 0 10px; }
-    #about h2 { padding: 30px 20px 0 20px; }
+    #about h2 { padding: 20px 0 0 0; }
     #about div  { margin: 0 20px; }
-    #about hr { margin: 10px 20px 35px 20px; }
     .left-info { margin-right: 20px; float: right; }
     .project-container h2, .project-container h4 { padding: 0 20px; }
     .header-copy h4 {margin-top: 20px}
@@ -1104,7 +1103,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
                 margin: 0 auto;
                 width: 350%; 
             }
-    #landing h1 { font-size: 1.4em; margin: 4px 0; }
+    #landing h1 { font-size: 1.2em; margin: 4px 0; }
     #about h2, .project-container h2  { font-size: 2em; }
     figurecaption h2  { font-size: 1.8em;  }
     #about hr, .project-container hr   { width: 180px; }
