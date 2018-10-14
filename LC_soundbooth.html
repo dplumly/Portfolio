@@ -3,45 +3,85 @@
 	<head>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino">
+	    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino,3d printing">
 	    <meta name="author" content="Donnie Plumly">
-	    <meta name="description" content="Donnie Plumly's LC 500 Soundbooth">
-		<title>LC 500 Sounbooth</title>
+	    <meta name="description" content="Donnie Plumly's LC 500 Sound Booth Challenge premiered at SEMA in 2016 and has travelled all over the US">
+	    <meta name="robots" content="SEMA, LA Auto Show, Lexus, Harmon, Mark Levinson, speaker, movie theaters, Surround Sound, audio, audiofile, event space, installation,ux design, experience design, prototype, paper prototyping, web design, app design, ui design, ux design, LA, product, 3d printing, tools, tool, user experience, designers"/>
+      	<meta name="googlebot" content="SEMA, LA Auto Show, Lexus, Harmon, Mark Levinson, speaker, movie theaters, Surround Sound, audio, audiofile, event space, installation,ux design, experience design, prototype, paper prototyping, web design, app design, ui design, ux design, LA, product, 3d printing, tools, tool, user experience, designers"/>
+		<title>LC 500 Sound Booth</title>
 
 		<!-- <css> -->
 		<link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.ico">
 		<link rel="stylesheet" href="css/reset.css"> 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/gallery.css">
+		<link rel="stylesheet" href="fonts/Lato/latofonts.css">
+		<link rel="stylesheet" href="fonts/OpenSans/open-sans.css">
 		<link rel="stylesheet" href="css/grid.css"> 
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr-minified.js"></script>
 	</head>
  
 	<body>
-		<div id="transformicon" class="toggle-menu menu-right">
-	  		<span></span>
-	  		<span></span>
-	  		<span></span>
+		<!-- Navigation Bar -->
+		<nav>
+			<ul class="row">
+				<li class="columns four"><a href="index.html">home</a></li> 
+				<li class="columns four toggle-menu menu-right"><a href="#">menu</a></li>
+				<li class="columns four"><a id="nav-contact" href="#contact">contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Mobile Navigation Bar -->
+		<div id="mobile-nav">
+			<ul class="row">
+				<li class="mobile-four">
+					<a id="menu-home" href="index.html">
+						<img src="img/icons/mobileIcons/mobile-home.svg">
+					</a>
+				</li> 
+				<li class="mobile-four">
+					<a href="#">
+						<div class="hamburger-menu toggle-menu menu-right">
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						</div>
+					</a>
+				</li>
+				<li class="mobile-four">
+					<a id="nav-contact" href="#contact">
+						<img src="img/icons/mobileIcons/mobile-contact.svg">
+					</a>
+				</li>
+			</ul>
 		</div>
 
 
-
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
-			<div id="transformiconSpace"></div> 	
+		<!-- Push SIde Menu -->
+		<div id="push-nav" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+			<div id="top-space" class="toggle-menu menu-right">
+				<div id="close-button">
+					<span></span>
+					<span></span>
+				</div>
+			</div> 	
 			<ul>
 				<li><img src="img/icons/logo-icon.svg"><a href="index.html">HOME</a></li>
-				<li><img src="img/icons/visceral_reality.svg"><a href="visceral_reality.html">Viceral Reality</a></li>
-				<li><img src="img/icons/soundbooth.svg"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
-				<li><img src="img/icons/litIS.svg"><a href="litIS.html">Lit IS</a></li>
-				<li><img src="img/icons/hologram.svg"><a href="hologram.html">hologram</a></li>
-				<li><img src="img/icons/eeg.svg"><a href="eeg.html">EEG Hacking</a></li>
-				<li><img src="img/icons/huddle.svg"><a href="huddles.html">The Huddles</a></li>
-				<li><img src="img/icons/dustins-words.svg"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
-				<li><img src="img/icons/paperproto.svg"><a href="paperproto.html">PAPERPROTO</a></li>
-				<li><img src="img/icons/contact.svg"><a href="#contact">CONTACT</a></li>
+				<li><img src="img/icons/soundbooth.svg" alt="Sound booth icon"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
+				<li><img src="img/icons/litIS.svg" alt="Led icon"><a href="litIS.html">Lit IS</a></li>
+				<li><img src="img/icons/dustins-words.svg" alt="Dustin's Words icon"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
+				<li><img src="img/icons/visceral_reality.svg" alt="VR icon"><a href="visceral_reality.html">Visceral Reality</a></li>
+				<li><img src="img/icons/huddle.svg" alt="Huddle room icon"><a href="huddles.html">The Huddles</a></li>
+				<li><img src="img/icons/chingonPong.svg" alt="Chingon Pong icon"><a href="chingon_pong.html">Chingon Pong</a></li>
+				<li><img src="img/icons/paperproto.svg" alt="Phone icon"><a href="paperproto.html">PAPERPROTO</a></li>
+				<li><img src="img/icons/origami.svg" alt="Origami icon"><a href="origami.html">LS Origami</a></li>
+				<li><img src="img/icons/contact.svg" alt="Contact icon"><a id="menu-contact" href="#contact">CONTACT</a></li>
 			</ul>
-		</nav>
+		</div>
 
 
 
@@ -63,91 +103,164 @@
 					<hr>
 
 				<div class="project-copy">
-					<h4>The Lexus audio experiment was the perfect way to introduce the Lexus LC to the audience at SEMA. The sound of the LC is in comparison with other high grade  performance cars. 
+					<h4>The Lexus audio experiment was the perfect way to introduce the Lexus LC to the audience at SEMA. The sound of the LC is in comparison with other high-grade performance cars.   
 
 					<br>
 					<br>
 
-					As a way to position Lexus as a serious contender in the performance category, this installation was the perfect fit. This gave the car industry audience at SEMA the chance to guess the brand to the sound through a 9.1 surround sound experience. 
+					As a way to position Lexus as a serious contender in the performance category, this installation was the perfect fit. This gave the car industry audience at SEMA the chance to guess the brand to the sound through a 9.1 surround sound experience.   At first this project started out as a virtual reality project. This time in history everyone is pushing the newest hottest thing, VR. One has to look at what is trying to achieved and pick the best platform for the concept. The Creative Technology team knew that VR was not the best option for this vehicle. 
 
 					<br>
 					<br>
 
-					Our task was to figure out all the technical requirements, how all the different parts were going to work together, and get this idea sold to client in a realistic manner. To do this we built a room to the exact same size as the actual experience inside of Team One. It was a long week of testing and weekend of framing to get it green lighted within seconds.
+					The new LC 500 being in a class of its own we knew we needed to be as realistic as possible. We wanted to show the vehicle without actually showing the vehicle. We stripped away all the senses except sound to have people feel the raw power of the LC 500. 
+
+					<br>
+					<br>
+
+					We had to figure out all the technical requirements, how all the different parts were going to work together, and sell the idea to client. To do this we built a room to the exact same size as the actual experience inside of Team One. It was a long week of testing and weekend of framing to get the thumbs up by the client in seconds.  
 
 					<br>
 					<br>
 					
-					Our team prototyped the entire sound booth experience, worked with ASV on the build, helped get the idea sold through, and went with the installation at SEMA and the LA Auto Show to make sure everything ran smooth.
+					We went above what we usually do for this project . We were heavily involved in  the whole flow of the project from creation to production. We travelled with the experience and gave support to ensure it was done to Lexus standards. 
 					</h4>
 				</div><!-- end of project-copy -->
 			</div><!-- end of row -->
 
 
-
-			<div class="project-links">
-				<div class="row">
-					<div class="project-copy-right">
-
-
-						<h4>site to listen and guess the car brand:</h4>
-						<a href="http://www.carsoundchallenge.com/" target="_blank">Challenge Website</a>
-
-						<br>
-						<br>
-
-						<h4>case study video:</h4>
-						<a href="https://www.youtube.com/watch?v=gDHtPP-zPno" target="_blank">YouTube</a>
-
-						<br>
-						<br>
-					</div><!-- end project-copy-right -->
-				</div><!-- end row -->
-			</div><!-- end project-links -->
-		</div><!-- end of project-container -->
-
-
-
-		<div class="gallery">
-			<ul class="row">
-				<div class="work">
-					<img src="img/logo/work.svg" alt="logo">
+			<!-- Video for project -->
+			<div class="video-container">
+				<div class="work-img">
+					<img src="img/logo/work.svg" alt="Donnie Plumly Work logo">
 				</div>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/prototype1.jpg" alt="prototype build"><img src="img/work/LC_soundbooth/prototype1-thumb.jpg"></a></li>	
+				<div class="row">
+					<div class="video-description nine columns centered">
+						<h3>Team One case study video.
+						</h3>
+					</div>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/prototype2.jpg" alt="prototype build"><img src="img/work/LC_soundbooth/prototype2-thumb.jpg"></a></li>
+					<div class="fadeIn" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/220500261?title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+					</div>
+			</div><!-- end video container -->
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/prototype3.jpg" alt="sound processors"><img src="img/work/LC_soundbooth/prototype3-thumb.jpg"></a></li>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/prototype4.jpg" alt="sound processors"><img src="img/work/LC_soundbooth/prototype4-thumb.jpg"></a></li>
-					
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/truck_back.jpg" alt="Build at ASV"><img src="img/work/LC_soundbooth/truck_back-thumb.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/soundbooth_ASV.jpg" alt="Build at ASV"><img src="img/work/LC_soundbooth/soundbooth_ASV-thumb.jpg"></a></li>
+			<div class="gallery">
+				<div id="project-color"></div>
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>LC 500 Sonic Challenge premiered at SEMA 2016.</h3>
+					</div>
+				</div>
+				<ul class="row">
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/hero.jpg" alt="Hero image"><img src="img/work/LC_soundbooth/hero.jpg"></a></li>	
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/testing_lights.jpg" alt="programming leds"><img src="img/work/LC_soundbooth/testing_lights-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/site.jpg" alt="Sound booth site"><img src="img/work/LC_soundbooth/site.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/sema.jpg"><img src="img/work/LC_soundbooth/sema-thumb.jpg" alt="Build at SEMA"></a></li> 	
-			</ul>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/end-card.jpg" alt="Video End Card"><img src="img/work/LC_soundbooth/end-card.jpg"></a></li>
 
-			<div class="row">
-				<h2>Other Projects</h2>
-					<hr>
-				<ul class="project-buttons">
-					<li><a class="button" href="litIS.html">Lit IS</a></li>
-					<li><a class="home-logo" href="index.html"><img src="img/logo/button-logo.svg" alt="Home logo button"></a></li>
-					<li><a class="button" href="hologram.html">holograms</a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/sema.jpg"><img src="img/work/LC_soundbooth/sema.jpg" alt="Build at SEMA"></a></li> 
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/lc500.jpg" alt="LC 500"><img src="img/work/LC_soundbooth/lc500.jpg"></a></li>
 				</ul>
-			</div><!-- end row -->	
-		</div><!-- end gallery -->
+			</div><!-- end gallery -->
+
+
+			<div class="gallery">
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>Prototype we built inside a war room at Team One.
+						</h3>
+						<div class="header-copy ten columns centered">
+							<h4>It was the exact size of the trailer to give the clients a feel of the confinement and volume.</h4>
+						</div>
+					</div>
+				</div>
+				<ul class="row">
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/prototype1.jpg" alt="prototype build"><img src="img/work/LC_soundbooth/prototype1.jpg"></a></li>	
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/prototype2.jpg" alt="prototype build"><img src="img/work/LC_soundbooth/prototype2.jpg"></a></li>
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/prototype3.jpg" alt="sound processors"><img src="img/work/LC_soundbooth/prototype3.jpg"></a></li>
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/prototype4.jpg" alt="sound processors"><img src="img/work/LC_soundbooth/prototype4.jpg"></a></li>
+						
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/truck_back.jpg" alt="Build at ASV"><img src="img/work/LC_soundbooth/truck_back.jpg"></a></li>
+
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/soundbooth_ASV.jpg" alt="Build at ASV"><img src="img/work/LC_soundbooth/soundbooth_ASV.jpg"></a></li>
+
+				  	<li class="push-four four column fadeIn"><a class="img-gallery" href="img/work/LC_soundbooth/testing_lights.jpg" alt="programming leds"><img src="img/work/LC_soundbooth/testing_lights.jpg"></a></li>	
+				</ul>
+			</div><!-- end gallery -->
+
+
+
+			<!-- Link to project site  -->
+			<div id="soundbooth-site-bg" class="site-link">
+				<div class="row">
+					<div class="six columns centered">
+						<a href="http://www.carsoundchallenge.com/" target="blank">
+							<img src="img/page-img/soundbooth/soundbooth-logo.svg" alt="LC 500 Sound Booth logo">
+						</a>
+						<h4>Click the logo to check out the LC 500 Sonic Challenge Website.</h4>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Files associated with project -->
+			<div class="project-files">
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>
+							The LC 500 Sonic Challenge had an extended life span with many branded extensions.
+						</h3>
+					</div>
+				</div>
+
+				<div class="left-content"> 
+					<div class="row>">
+						<div class="columns six">
+							<img class="left-img" src="img/page-img/soundbooth/intro_soundwave_mobile.png" alt="3D model photo">
+						</div>
+
+						<div class="left-info columns six">
+							<h4>This was an experience like no other. At this time everyone was pushing  VR but, we knew that isolating senses was the best option. The project went on for an extremely long time. It was being shipped all over the US over a year after the premiere at SEMA.
+							</h4>
+							<img src="img/icons/projectIcons/travel.svg" alt="3d icon">
+							<!--<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">Dustin's Word's Thingiverse</a>-->
+						</div>
+					</div>
+				</div>
+
+				<div class="right-content">
+					<div class="row">
+						<div class="right-info columns six">
+							<h4>This project branched off into many extensions. At events with the trailer we had listening kiosks set up with 7.1 surround sound headphones. These traveled to smaller venues when the trailer was too large. The audio was also inside of select movie theaters. We remastered the audio for their systems to reach as large of an audience possible.</h4>
+
+							<img src="img/icons/projectIcons/movie.svg" alt="Github icon">
+							<!--<a href="https://github.com/Dustins-Words" target="_blank">Dustin's Word's Github</a>-->
+							<div class="more-projects-doubled row>">
+								<a class="toggle-menu menu-right" href="#">More Projects</a>
+							</div>
+						</div>
+						<div class="columns six">
+							<img class="soundbooth-right-img " src="img/page-img/soundbooth/LC_soundbooth.png" alt="Dustin's Words Code photo">
+						</div>
+					</div>	
+				</div>
+			</div><!-- end project files -->
+		</div><!-- end of project-container -->
+
 
 
 		
 		<footer id="contact">
 			<ul>
 				<li class="fadeIn">
-					<a href="http://donnieplumly.tumblr.com/" target="_blank">
+					<a id="blog" href="http://donnieplumly.tumblr.com/" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -176,7 +289,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="http://instagram.com/donnieplumly" target="_blank">
+					<a id="instagram" href="http://instagram.com/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -216,7 +329,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">
+					<a id="thingiverse" href="https://www.thingiverse.com/dplumly/designs" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<style type="text/css">
@@ -240,7 +353,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://github.com/dplumly" target="_blank">
+					<a id="github" href="https://github.com/dplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -261,7 +374,7 @@
 
 
 				<li class="fadeIn">
-					<a href="http://www.linkedin.com/in/donnieplumly" target="_blank">
+					<a id="linkedin" href="http://www.linkedin.com/in/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -286,7 +399,7 @@
 				</li>
 
 				<li id="resume" class="fadeIn">
-					<a href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
+					<a id="resume" href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -319,10 +432,8 @@
 					</a>
 				</li>
 
-
-
 				<li class="fadeIn">
-					<a href="mailto:donnie.plumly@gmail.com" target="_blank">
+					<a id="email" href="mailto:donnie.plumly@gmail.com" target="_blank">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 			viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -341,8 +452,11 @@
 					</a>
 				</li>
 			</ul>
-			<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
-			<p>Think, Make, Repeat.</p>
+			<div id="footer-info" class="column eight centered">
+				<p>donnie.plumly@gmail.com</p>
+				<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
+				<p>Think, Make, Repeat.</p>
+			</div>
 		</footer>
 
 
@@ -368,30 +482,10 @@
 
 
 
-    <!-- Scroll Reveal Script -->
-    <script>
-    	// Changing the defaults
-		window.sr = ScrollReveal({ reset: false});
-
-		// Customizing a reveal set
-		sr.reveal('.fadeIn', { duration: 800 });
-    </script>
-
-
-    <!-- Code for scroll line at top of page -->
-    <script>
-    	$.scrolline({
-		    reverse : false,
-		    position : 'top',
-		    backColor : '#262626',
-		    frontColor : '#61e3d3',
-		    weight : 8
-		});
-    </script>
 
     <script>
 		$(function() {
-		  $('nav ul li a').click(function() {
+		  $('nav ul li a, #menu-contact, #nav-contact').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -407,18 +501,44 @@
     </script>
 
    
-    <!--push menu-->
+    
 	<script>
+		// Scroll Reveal Script /////////////////////////////////////
+    	// Changing the defaults
+		window.sr = ScrollReveal({ reset: false});
+		// Customizing a reveal set
+		sr.reveal('.fadeIn', { duration: 800 });
+
+
+
+		// Code for scroll line at top of page /////////////////////////////////////
+    	$.scrolline({
+		    reverse : false,
+		    position : 'top', 
+		    backColor : '#9e1c2c',
+		    frontColor : '#61e3d3',
+		    weight : 3
+		});
+
+
+		// Push Menu Script /////////////////////////////////////
 		jQuery(document).ready(function($) {
 			$('.toggle-menu').jPushMenu();
 		});
-	</script>
 
-	<script type="text/javascript">
-	   $(document).ready(function() {
+
+		// Transformicon Script /////////////////////////////////////
+		$(document).ready(function(){
+			$('.hamburger-menu').click(function(){
+				$(this).toggleClass('open');
+			});
+		});
+		
+
+		// Image Gallery Script /////////////////////////////////////
+	    $(document).ready(function() {
 	      $(".img-gallery").tosrus();
-
-	   });
+	    });	
 	</script>
 	</body>
 </html>

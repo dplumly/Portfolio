@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino">
+	    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino,3d printing">
 	    <meta name="author" content="Donnie Plumly">
-	    <meta name="description" content="Donnie Plumly's LC 500 Soundbooth">
+	    <meta name="description" content="Donnie Plumly's Visceral Reality the sim of the future today">
+	    <meta name="robots" content="Long Beach Grad Prix, VR, Virtual Reality, Sim, Simulation, Oculus, 3d video, Haptic feedback, CXC, LA Auto Show, Lexus, event space, installation,ux design, experience design, prototype, paper prototyping, web design, app design, ui design, ux design, LA, product, 3d printing, tools, tool, user experience, designers"/>
+      	<meta name="googlebot" content="Long Beach Grad Prix, VR, Virtual Reality, Sim, Simulation, Oculus, 3d video, Haptic feedback, CXC, LA Auto Show, Lexus, event space, installation,ux design, experience design, prototype, paper prototyping, web design, app design, ui design, ux design, LA, product, 3d printing, tools, tool, user experience, designers"/>
 		<title>Visceral Reality</title>
 
 		<!-- <css> -->
@@ -13,35 +15,73 @@
 		<link rel="stylesheet" href="css/reset.css"> 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/gallery.css">
+		<link rel="stylesheet" href="fonts/Lato/latofonts.css">
+		<link rel="stylesheet" href="fonts/OpenSans/open-sans.css">
 		<link rel="stylesheet" href="css/grid.css"> 
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr-minified.js"></script>
 	</head>
  
 	<body>
-		<div id="transformicon" class="toggle-menu menu-right">
-	  		<span></span>
-	  		<span></span>
-	  		<span></span>
+		<!-- Navigation Bar -->
+		<nav>
+			<ul class="row">
+				<li class="columns four"><a href="index.html">home</a></li> 
+				<li class="columns four toggle-menu menu-right"><a href="#">menu</a></li>
+				<li class="columns four"><a id="nav-contact" href="#contact">contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Mobile Navigation Bar -->
+		<div id="mobile-nav">
+			<ul class="row">
+				<li class="mobile-four">
+					<a id="menu-home" href="index.html">
+						<img src="img/icons/mobileIcons/mobile-home.svg">
+					</a>
+				</li> 
+				<li class="mobile-four">
+					<a href="#">
+						<div class="hamburger-menu toggle-menu menu-right">
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						</div>
+					</a>
+				</li>
+				<li class="mobile-four">
+					<a id="nav-contact" href="#contact">
+						<img src="img/icons/mobileIcons/mobile-contact.svg">
+					</a>
+				</li>
+			</ul>
 		</div>
 
 
-
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
-			<div id="transformiconSpace"></div> 	
+		<!-- Push SIde Menu -->
+		<div id="push-nav" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+			<div id="top-space" class="toggle-menu menu-right">
+				<div id="close-button">
+					<span></span>
+					<span></span>
+				</div>
+			</div> 	
 			<ul>
 				<li><img src="img/icons/logo-icon.svg"><a href="index.html">HOME</a></li>
-				<li><img src="img/icons/visceral_reality.svg"><a href="visceral_reality.html">Viceral Reality</a></li>
-				<li><img src="img/icons/soundbooth.svg"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
-				<li><img src="img/icons/litIS.svg"><a href="litIS.html">Lit IS</a></li>
-				<li><img src="img/icons/hologram.svg"><a href="hologram.html">hologram</a></li>
-				<li><img src="img/icons/eeg.svg"><a href="eeg.html">EEG Hacking</a></li>
-				<li><img src="img/icons/huddle.svg"><a href="huddles.html">The Huddles</a></li>
-				<li><img src="img/icons/dustins-words.svg"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
-				<li><img src="img/icons/paperproto.svg"><a href="paperproto.html">PAPERPROTO</a></li>
-				<li><img src="img/icons/contact.svg"><a href="#contact">CONTACT</a></li>
+				<li><img src="img/icons/soundbooth.svg" alt="Sound booth icon"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
+				<li><img src="img/icons/litIS.svg" alt="Led icon"><a href="litIS.html">Lit IS</a></li>
+				<li><img src="img/icons/dustins-words.svg" alt="Dustin's Words icon"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
+				<li><img src="img/icons/visceral_reality.svg" alt="VR icon"><a href="visceral_reality.html">Visceral Reality</a></li>
+				<li><img src="img/icons/huddle.svg" alt="Huddle room icon"><a href="huddles.html">The Huddles</a></li>
+				<li><img src="img/icons/chingonPong.svg" alt="Chingon Pong icon"><a href="chingon_pong.html">Chingon Pong</a></li>
+				<li><img src="img/icons/paperproto.svg" alt="Phone icon"><a href="paperproto.html">PAPERPROTO</a></li>
+				<li><img src="img/icons/origami.svg" alt="Origami icon"><a href="origami.html">LS Origami</a></li>
+				<li><img src="img/icons/contact.svg" alt="Contact icon"><a id="menu-contact" href="#contact">CONTACT</a></li>
 			</ul>
-		</nav>
+		</div>
 
 
 
@@ -63,77 +103,150 @@
 					<hr>
 
 				<div class="project-copy">
-					<h4>Giving great experiences for our users is what we strive for and one way to do so is by delivering the most realistic experience possible.  The Visceral Reality is the future of simulators in the present. By using technologies such as, VR, ambisonic audio, haptic feedback, intense motion simulation, and a world class driver in the Lexus RC F, we have created an experience, like no other.
+					<h4>Giving great experiences for event goers is what we strive for. One way to accomplish that is by delivering the most realistic experience possible. Visceral Reality is the future of simulators in the present. By using technologies such as, VR, ambisonic audio, haptic feedback, intense real captured motion, and a world class driver in the Lexus RC F, we have created an experience like no other. 
 
 					<br>
 					<br>
 
-					Team One and Lexus aren’t in the business of building one off experiences, we create platforms. We worked with the production company SCPS to create an experience that will live far past it’s debut at the Long Beach Grad Prix. With the way this experience is built, we are able to add new footage, motion, VR headsets, peripheral devices (scents, heat…), and branding to create a totally new experience based on the needs of the project. 
+					Team One and Lexus aren’t in the business of building one off experiences, we create platforms. We worked with the production company SCPS to create an experience that will live far past its debut at the Long Beach Grand Prix. With the way this experience is built, we are able to add new footage, motion, VR headsets, peripheral devices (scents, heat…), and branding to create a totally new experience based on the project needs. 
 
 					<br>
 					<br>
 
-					This motion sim isn’t just a motion sim, but is the first of its kind. Not only can we update this device, we can scale this platform to be in many areas and situations all over the globe. The goal is not to have just one of these but many. Having these experiences at car shows, sporting arenas, live events, and even dealerships to gain brand awareness allows the user to experience vehicles they never have.
+					This sim isn’t just another motion sim, but is the first of its kind. Not only can we update this device, we can scale this platform to be in many areas and situations all over the globe. The goal is not to have just one of these but many. Having these experiences at car shows, sporting arenas, live events, and even dealerships to gain brand awareness allows the user to experience vehicles they never have or couldn’t.
+
+					<br>
+					<br>
+
+					The most unique thing about this sim is the fact we captured the actual motion from the car being driven. In post, we were seamlessly able to synch up the motion with the visuals. One thing on one wants in a VR experience is any visuals not being synched with motion. If it wasn’t synched perfectly, we definitely would’ve needed a bucket!
+
+					<br>
+					<br>
+
 					</h4>
 				</div><!-- end of project-copy -->
 			</div><!-- end of row -->
 
+			<div class="gallery">
+				<div id="project-color"></div>
+				<ul class="row">
+					<div class="work-img">
+						<img src="img/logo/work.svg" alt="logo">
+					</div>
 
-
-			<div class="project-links">
 				<div class="row">
-					<div class="project-copy-right">
+					<div class="nine columns centered">
+						<h3>Visceral Reality premiering  at the Long Beach Grand Prix. 
+						</h3>
+						<div class="header-copy ten columns centered">
+							<h4>It has also been ported to other devices such as Samsung Gear for other events.</h4>
+						</div>
+					</div>
+				</div>
 
-						<h4>premiered at:</h4>
-							<h3 style="font-size: 1em; font-family: 'Lato', sans-serif; color: #61e3d3; line-height: 22px;text-transform: uppercase;">long beach gran prix</h3>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality1.jpg" alt="Visceral Reality installation"><img src="img/work/visceral_reality/visceral_reality1.jpg"></a></li>	
 
-						<br>
-						<br>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality2.jpg" alt="Visceral Reality installation"><img src="img/work/visceral_reality/visceral_reality2.jpg"></a></li>	
 
-						<h4>SCPS case study:</h4>
-							<a href="https://www.youtube.com/watch?v=3AeJ1mex300" target="_blank">YouTube</a>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality3.jpg" alt="Visceral Reality up close"><img src="img/work/visceral_reality/visceral_reality3.jpg"></a></li>	
 
-						<br>
-						<br>
-					</div><!-- end project-copy-right -->
-				</div><!-- end row -->
-			</div><!-- end project-links -->
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality4.jpg" alt="Visceral Reality with someone in it"><img src="img/work/visceral_reality/visceral_reality4.jpg"></a></li>	
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality5.jpg" alt="Visceral Reality Samdung Gear "><img src="img/work/visceral_reality/visceral_reality5.jpg"></a></li>	
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/Lexus-VR-viewer.jpg" alt="Visceral Reality Samdung Gear "><img src="img/work/visceral_reality/Lexus-VR-viewer.jpg"></a></li>
+				</ul>
+			</div><!-- end gallery -->
+
+
+			<div class="gallery">
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>At Team One we have experimented with Haptic Feedback for many years. 
+						</h3>
+						<div class="header-copy ten columns centered">
+							<h4>Visceral Reality was equipped with wind and we installed this prototype on our sim at Team One.</h4>
+						</div>
+					</div>
+				</div>
+
+				<ul class="row">
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality-fan2.jpg" alt="Visceral Reality installation"><img src="img/work/visceral_reality/visceral_reality-fan2.jpg"></a></li>	
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality-fan.jpg" alt="Visceral Reality installation"><img src="img/work/visceral_reality/visceral_reality-fan.jpg"></a></li>	
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality-fan-blade.jpg" alt="Visceral Reality up close"><img src="img/work/visceral_reality/visceral_reality-fan-blade.jpg"></a></li>	
+				</ul>
+			</div><!-- end gallery -->
+
+
+			<!-- Video for project -->
+			<div class="video-container">
+				<div class="row">
+					<div class="video-description nine columns centered">
+						<h3>Demo testing the fan mapped to the speed in a video game.
+						</h3>
+					</div>
+
+					<div class="fadeIn youtube-responsive">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/5TY61rPqiqo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+
+
+
+				<!-- Files associated with project -->
+			<div class="project-files">
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>
+							Haptics in VR installations is a must for user experience.
+						</h3>
+					</div>
+				</div>
+
+				<div class="left-content"> 
+					<div class="row>">
+						<div class="columns six">
+							<img class="haptics left-img" src="img/page-img/vr/haptic.png" alt="Haptics photo">
+						</div>
+
+						<div class="left-info columns six">
+							<h4>Haptics are the subtle points of contact that truly immerse a person. We take most haptics for granted since we don't notice them. Apple has done a great job of integrating haptics that feel natural to the user experience.
+							</h4>
+							<img src="img/page-img/vr/vibration-logo.svg" alt="Vibration icon">
+						</div>
+					</div>
+				</div>
+
+				<div class="right-content">
+					<div class="row">
+						<div class="right-info columns six">
+							<h4>I was lucky enough to go with the experience while it was at the Long Beach Grand Prix. Sure, I had to work for free all weekend, but I also got to help people through the experience and get feedback. It was extremely rewarding to see how well the machine performed and people's reactions.</h4>
+
+							<img src="img/page-img/vr/ux-logo.svg" alt="UX icon">
+							<div class="more-projects-doubled row>">
+								<a class="toggle-menu menu-right" href="#">More Projects</a>
+							</div>
+						</div>
+						<div class="columns six">
+							<img id="vr-platform" class="right-img" src="img/work/visceral_reality/VR-platform.png" alt="Dustin's Words Code photo">
+						</div>
+					</div>	
+				</div>
+			</div><!-- end project files -->
 		</div><!-- end of project-container -->
 
 
 
-		<div class="gallery">
-			<ul class="row">
-				<div class="work">
-					<img src="img/logo/work.svg" alt="logo">
-				</div>
-
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality1.jpg" alt="Visceral Reality Photo"><img src="img/work/visceral_reality/visceral_reality1-thumb.jpg"></a></li>	
-
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality2.jpg" alt="Visceral Reality Photo"><img src="img/work/visceral_reality/visceral_reality2-thumb.jpg"></a></li>	
-
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality3.jpg" alt="Visceral Reality Photo"><img src="img/work/visceral_reality/visceral_reality3-thumb.jpg"></a></li>	
-
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/visceral_reality/visceral_reality4.jpg" alt="Visceral Reality Photo"><img src="img/work/visceral_reality/visceral_reality4-thumb.jpg"></a></li>	
-			</ul>
-
-			<div class="row">
-				<h2>Other Projects</h2>
-					<hr>
-				<ul class="project-buttons">
-					<li><a class="button" href="LC_soundbooth.html">LC Sound booth</a></li>
-					<li><a class="home-logo" href="index.html"><img src="img/logo/button-logo.svg" alt="Home logo button"></a></li>
-					<li><a class="button" href="litIS.html">Lit IS</a></li>
-				</ul>
-			</div><!-- end row -->	
-		</div><!-- end gallery -->
 
 
 		
 		<footer id="contact">
 			<ul>
 				<li class="fadeIn">
-					<a href="http://donnieplumly.tumblr.com/" target="_blank">
+					<a id="blog" href="http://donnieplumly.tumblr.com/" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -162,7 +275,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="http://instagram.com/donnieplumly" target="_blank">
+					<a id="instagram" href="http://instagram.com/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -202,7 +315,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">
+					<a id="thingiverse" href="https://www.thingiverse.com/dplumly/designs" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<style type="text/css">
@@ -226,7 +339,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://github.com/dplumly" target="_blank">
+					<a id="github" href="https://github.com/dplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -247,7 +360,7 @@
 
 
 				<li class="fadeIn">
-					<a href="http://www.linkedin.com/in/donnieplumly" target="_blank">
+					<a id="linkedin" href="http://www.linkedin.com/in/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -272,7 +385,7 @@
 				</li>
 
 				<li id="resume" class="fadeIn">
-					<a href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
+					<a id="resume" href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -305,10 +418,8 @@
 					</a>
 				</li>
 
-
-
 				<li class="fadeIn">
-					<a href="mailto:donnie.plumly@gmail.com" target="_blank">
+					<a id="email" href="mailto:donnie.plumly@gmail.com" target="_blank">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 			viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -327,8 +438,11 @@
 					</a>
 				</li>
 			</ul>
-			<p>COPYRIGHT 20168| DONNIE PLUMLY</p>
-			<p>Think, Make, Repeat.</p>
+			<div id="footer-info" class="column eight centered">
+				<p>donnie.plumly@gmail.com</p>
+				<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
+				<p>Think, Make, Repeat.</p>
+			</div>
 		</footer>
 
 
@@ -354,30 +468,10 @@
 
 
 
-    <!-- Scroll Reveal Script -->
-    <script>
-    	// Changing the defaults
-		window.sr = ScrollReveal({ reset: false});
-
-		// Customizing a reveal set
-		sr.reveal('.fadeIn', { duration: 800 });
-    </script>
-
-
-    <!-- Code for scroll line at top of page -->
-    <script>
-    	$.scrolline({
-		    reverse : false,
-		    position : 'top',
-		    backColor : '#262626',
-		    frontColor : '#61e3d3',
-		    weight : 8
-		});
-    </script>
 
     <script>
 		$(function() {
-		  $('nav ul li a').click(function() {
+		  $('nav ul li a, #menu-contact, #nav-contact').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -393,18 +487,44 @@
     </script>
 
    
-    <!--push menu-->
+    
 	<script>
+		// Scroll Reveal Script /////////////////////////////////////
+    	// Changing the defaults
+		window.sr = ScrollReveal({ reset: false});
+		// Customizing a reveal set
+		sr.reveal('.fadeIn', { duration: 800 });
+
+
+
+		// Code for scroll line at top of page /////////////////////////////////////
+    	$.scrolline({
+		    reverse : false,
+		    position : 'top', 
+		    backColor : '#9e1c2c',
+		    frontColor : '#61e3d3',
+		    weight : 3
+		});
+
+
+		// Push Menu Script /////////////////////////////////////
 		jQuery(document).ready(function($) {
 			$('.toggle-menu').jPushMenu();
 		});
-	</script>
 
-	<script type="text/javascript">
-	   $(document).ready(function() {
+
+		// Transformicon Script /////////////////////////////////////
+		$(document).ready(function(){
+			$('.hamburger-menu').click(function(){
+				$(this).toggleClass('open');
+			});
+		});
+		
+
+		// Image Gallery Script /////////////////////////////////////
+	    $(document).ready(function() {
 	      $(".img-gallery").tosrus();
-
-	   });
+	    });	
 	</script>
 
 	</body>

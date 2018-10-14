@@ -1,47 +1,88 @@
 <!DOCTYPE html PUBLIC>
 <html lang="en">
 	<head>
+		<head>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino">
+	    <meta name="keywords" content="Installation, LEDs, Lexus,mLit car, lit is, lexus is, neopixels, ux design, experience design, envirorment design prototype, web design, app design, ui design, ux design, LA, product, user experience, designers">
+	    <meta name="robots" content="Installation, LEDs, Lexus,mLit car, lit is, lexus is, neopixels, ux design, experience design, envirorment design prototype, web design, app design, ui design, ux design, LA, product, user experience, designers"/>
+      	<meta name="googlebot" content="Installation, LEDs, Lexus,mLit car, lit is, lexus is, neopixels, ux design, experience design, envirorment design prototype, web design, app design, ui design, ux design, LA, product, user experience, designers"/>
 	    <meta name="author" content="Donnie Plumly">
-	    <meta name="description" content="Donnie Plumly's LC 500 Soundbooth">
-		<title>Lit IS</title>
+	    <meta name="description" content="Donnie Plumly's Lit Is, a Lexus wrapped in 41,999 LEDs that amazes viewers">
+		<title>Lit IS </title>
 
 		<!-- <css> -->
 		<link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.ico">
 		<link rel="stylesheet" href="css/reset.css"> 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/gallery.css">
+		<link rel="stylesheet" href="fonts/Lato/latofonts.css">
+		<link rel="stylesheet" href="fonts/OpenSans/open-sans.css">
 		<link rel="stylesheet" href="css/grid.css"> 
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr-minified.js"></script>
 	</head>
  
 	<body>
-		<div id="transformicon" class="toggle-menu menu-right">
-	  		<span></span>
-	  		<span></span>
-	  		<span></span>
+		<!-- Navigation Bar -->
+		<nav>
+			<ul class="row">
+				<li class="columns four"><a href="index.html">home</a></li> 
+				<li class="columns four toggle-menu menu-right"><a href="#">menu</a></li>
+				<li class="columns four"><a id="nav-contact" href="#contact">contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Mobile Navigation Bar -->
+		<div id="mobile-nav">
+			<ul class="row">
+				<li class="mobile-four">
+					<a id="menu-home" href="index.html">
+						<img src="img/icons/mobileIcons/mobile-home.svg">
+					</a>
+				</li> 
+				<li class="mobile-four">
+					<a href="#">
+						<div class="hamburger-menu toggle-menu menu-right">
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						</div>
+					</a>
+				</li>
+				<li class="mobile-four">
+					<a id="nav-contact" href="#contact">
+						<img src="img/icons/mobileIcons/mobile-contact.svg">
+					</a>
+				</li>
+			</ul>
 		</div>
 
 
-
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
-			<div id="transformiconSpace"></div> 	
+		<!-- Push SIde Menu -->
+		<div id="push-nav" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+			<div id="top-space" class="toggle-menu menu-right">
+				<div id="close-button">
+					<span></span>
+					<span></span>
+				</div>
+			</div> 	
 			<ul>
 				<li><img src="img/icons/logo-icon.svg"><a href="index.html">HOME</a></li>
-				<li><img src="img/icons/visceral_reality.svg"><a href="visceral_reality.html">Viceral Reality</a></li>
-				<li><img src="img/icons/soundbooth.svg"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
-				<li><img src="img/icons/litIS.svg"><a href="litIS.html">Lit IS</a></li>
-				<li><img src="img/icons/hologram.svg"><a href="hologram.html">hologram</a></li>
-				<li><img src="img/icons/eeg.svg"><a href="eeg.html">EEG Hacking</a></li>
-				<li><img src="img/icons/huddle.svg"><a href="huddles.html">The Huddles</a></li>
-				<li><img src="img/icons/dustins-words.svg"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
-				<li><img src="img/icons/paperproto.svg"><a href="paperproto.html">PAPERPROTO</a></li>
-				<li><img src="img/icons/contact.svg"><a href="#contact">CONTACT</a></li>
+				<li><img src="img/icons/soundbooth.svg" alt="Sound booth icon"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
+				<li><img src="img/icons/litIS.svg" alt="Led icon"><a href="litIS.html">Lit IS</a></li>
+				<li><img src="img/icons/dustins-words.svg" alt="Dustin's Words icon"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
+				<li><img src="img/icons/visceral_reality.svg" alt="VR icon"><a href="visceral_reality.html">Visceral Reality</a></li>
+				<li><img src="img/icons/huddle.svg" alt="Huddle room icon"><a href="huddles.html">The Huddles</a></li>
+				<li><img src="img/icons/chingonPong.svg" alt="Chingon Pong icon"><a href="chingon_pong.html">Chingon Pong</a></li>
+				<li><img src="img/icons/paperproto.svg" alt="Phone icon"><a href="paperproto.html">PAPERPROTO</a></li>
+				<li><img src="img/icons/origami.svg" alt="Origami icon"><a href="origami.html">LS Origami</a></li>
+				<li><img src="img/icons/contact.svg" alt="Contact icon"><a id="menu-contact" href="#contact">CONTACT</a></li>
 			</ul>
-		</nav>
+		</div>
 
 
 
@@ -68,7 +109,7 @@
 					<br>
 					<br>
 
-					Besides having 41,999 LEDs, the Lit IS also is comprised or 20 microcontrollers, a six 12 volt battery bank in the back seat, and is 175,000 lumens. The Lit IS is a unique form of advertising because it doesn’t seem like a typical form of advertising. The Lit IS really excels in the event space by being a passive mind blowing attraction. 
+					Besides having 41,999 LEDs, the Lit IS also is comprised or 20 microcontrollers, a six 12-volt battery bank in the back seat, and is 175,000 lumens. The Lit IS creates a unique form of advertising because it doesn’t seem like a typical form of advertising. The Lit IS really excels in the event space by being a passive mind-blowing attraction. 
 
 					<br>
 					<br>
@@ -78,114 +119,167 @@
 					<br>
 					<br>
 					
-					We have built many things with Neopixels, such as, a sound reactive prototype to show a small scale version of the sound reactive mode on the Lit IS to one of a kind Neopixel mini Lexus grill. The Lit IS was produced by the production companies TOOL and SPCS. We have continued to work with SCPS on Lit IS and other projects.
+					We have built many things with Neopixels, such as, a sound reactive prototype to show a small-scale version of the sound reactive mode on the Lit IS to one of a kind Neopixel mini Lexus grill. The Lit IS was produced by the production companies TOOL and SPCS. We have continued to work with SCPS on Lit IS and other projects.
 					</h4>
 				</div><!-- end of project-copy -->
 			</div><!-- end of row -->
 
 
-
-			<div class="project-links">
-				<div class="row">
-					<div class="project-copy-right">
-
-						<h4>Press</h4>
-							<ul>
-								<li><a href="http://www.theverge.com/2016/12/5/13846396/lexus-led-lit-is-colors-dua-lipa-vevo" target="_blank">The Verge</a>
-								</li>
-
-								<li><a href="http://autoweek.com/article/wait-theres-more/lexus-wants-you-get-lit-led-equipped-sedan" target="_blank">Autoweek</a>
-								</li>
-
-								<li><a href="http://www.businessinsider.com/lexus-lit-ls-lights-40000-leds-car-rainbow-lumens-wire-special-edition-2016-12" target="_blank">Business insider</a>
-								</li>
-							</ul>
-
-							<br>
-							<br>
-
-						<h4>Music Video Feature:</h4>
-							<a href="https://www.youtube.com/watch?v=mgI_pH8TOVY" target="_blank">Dua Lipa "Be the One"</a>
-
-						<br>
-						<br>
-
-						<h4>Lit IS Video:</h4>
-							<a href="https://www.youtube.com/watch?v=A8jSdgT3Drc" target="_blank">Signals</a>
-							
-
-						<br>
-						<br>
-
-						<h4>Lit IS Sound Reactive Prototype:</h4>
-							<ul>
-								<li><a href="https://www.youtube.com/watch?v=3JRYYKgTp-8&feature=youtu.be" target="_blank">Demo</a></li>
-								<li><a href="https://github.com/dplumly/Arduino/tree/master/Sound_Reactive_Neopixel" target="_blank">Code</a></li>
-							</ul>
-
-						<br>
-						<br>
-
-						<h4>Desktop Prototype</h4>
-							<a href="https://www.youtube.com/watch?v=uWoFtpu2-oA&feature=youtu.be" target="_blank">Demo</a>
-						
-
-						<br>
-						<br>
-					</div><!-- end project-copy-right -->
-				</div><!-- end row -->
-			</div><!-- end project-links -->
-		</div><!-- end of project-container -->
-
-
-
-		<div class="gallery">
-			<ul class="row">
-				<div class="work">
-					<img src="img/logo/work.svg" alt="logo">
+			<!-- Video for project -->
+			<div class="video-container">
+				<div class="work-img">
+					<img src="img/logo/work.svg" alt="Donnie Plumly Work logo">
 				</div>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS1.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS1-thumb.jpg"></a></li>	
+				<div class="row">
+					<div class="video-description nine columns centered">
+						<h3>Dua Lipa "Be the One" music video featuring the Lit IS.
+						</h3>
+					</div>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS2.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS2-thumb.jpg"></a></li>	
+					<div class="fadeIn youtube-responsive">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/mgI_pH8TOVY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div><!-- end video container -->
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS3.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS3-thumb.jpg"></a></li>	
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS4.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS4-thumb.jpg"></a></li>	
+			<!-- Video for project -->
+			<div class="video-container">
+				<div class="row">
+					<div class="video-description nine columns centered">
+						<h3>Signals: The Lexus LIT IS Reveal Video.
+						</h3>
+					</div>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS5.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS5-thumb.jpg"></a></li>	
+					<div class="fadeIn youtube-responsive">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/A8jSdgT3Drc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div><!-- end video container -->
+			
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS6.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS6-thumb.jpg"></a></li>	
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litLog.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litLog-thumb.jpg"></a></li>	
+			<div class="gallery">
+				<div id="project-color"></div>
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>Been on many shoots, trainings, and mechanical calls for Lit IS. 
+						</h3>
+					</div>
+				</div>
+				<ul class="row">
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS1.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS1.jpg"></a></li>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litProto1.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litProto1-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS2.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS2.jpg"></a></li>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litProto2.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litProto2-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS3.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS3.jpg"></a></li>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/2_part_cast.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/2_part_cast-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS4.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS4.jpg"></a></li>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/LitIS/litProto3.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litProto3-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS5.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS5.jpg"></a></li>
 
-			</ul>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litIS6.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litIS6.jpg"></a></li>
 
-			<div class="row">
-				<h2>Other Projects</h2>
-					<hr>
-				<ul class="project-buttons">
-					<li><a class="button" href="hologram.html">Hologram</a></li>
-					<li><a class="home-logo" href="index.html"><img src="img/logo/button-logo.svg" alt="Home logo button"></a></li>
-					<li><a class="button" href="eeg.html">eeg</a></li>
+					<li class="push-four four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litLog.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litLog.jpg"></a></li>
 				</ul>
-			</div><!-- end row -->	
-		</div><!-- end gallery -->
+			</div><!-- end gallery -->
+
+
+			<div class="gallery">
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>Photos of prototypes we built for the idea of Lit IS. 
+						</h3>
+						<div class="header-copy ten columns centered">
+							<h4>This even turned into a different project for a Lexus Desktop Trophy. This is 3d printed with electronics inside that shines through a logo we created from a mold.</h4>
+						</div>
+					</div>
+				</div>
+				<ul class="row">
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litCar-prototype1.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litCar-prototype1.jpg"></a></li>
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litCar-prototype2.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litCar-prototype2.jpg"></a></li>
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litProto1.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litProto1.jpg"></a></li>
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litProto2.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litProto2.jpg"></a></li>
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/2_part_cast.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/2_part_cast.jpg"></a></li>
+
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/LitIS/litProto3.jpg" alt="Lit Is Photo"><img src="img/work/LitIS/litProto3.jpg"></a></li>
+				</ul>
+			</div><!-- end gallery -->
+
+
+			<!-- Video for project -->
+			<div class="video-container">
+				<div class="row">
+					<div class="video-description nine columns centered">
+						<h3>Demo of the Lit IS sound reactive prototype.
+						</h3>
+					</div>
+
+					<div class="fadeIn youtube-responsive">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/3JRYYKgTp-8?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div><!-- end video container -->
+
+
+			<!-- Files associated with project -->
+			<div class="project-files">
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>
+							Here are the files to make your own!
+						</h3>
+						<div class="header-copy ten columns centered">
+							<h4>Project files are below. On the github page you will see a list of the parts with links.</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="left-content"> 
+					<div class="row>">
+						<div class="columns six">
+							<img class="left-img" src="img/page-img/litIS/lit-model.png" alt="3D model photo">
+						</div>
+
+						<div class="left-info columns six">
+							<h4>Model can be found at Thingiverse from the link below. You will need an Arduino Uno, a microphone sound sensor, Neopixel strip, and an external 5v power supply.
+							</h4>
+							<img src="img/icons/projectIcons/3d.svg" alt="3d icon">
+							<a href="https://www.thingiverse.com/thing:3116657" target="_blank">Lit IS Model</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-content">
+					<div class="row">
+						<div class="right-info columns six">
+							<h4>The code can be found at Github. As with any code I post publically this is open source. Feel free to do whatever with it you would like!</h4>
+
+							<img src="img/icons/projectIcons/github.svg" alt="Github icon">
+							<a href="https://github.com/dplumly/Arduino/tree/master/Sound_Reactive_Neopixel" target="_blank">Lit IS Code</a>
+							<div class="more-projects-doubled row>">
+								<a class="toggle-menu menu-right" href="#">More Projects</a>
+							</div>
+						</div>
+						<div class="columns six">
+							<img class="right-img" src="img/page-img/litIS/litIS-code.jpg" alt="Dustin's Words Code photo">
+						</div>
+					</div>	
+				</div>
+			</div><!-- end project files -->
+		</div><!-- end of project-container -->
 
 
 		
 		<footer id="contact">
 			<ul>
 				<li class="fadeIn">
-					<a href="http://donnieplumly.tumblr.com/" target="_blank">
+					<a id="blog" href="http://donnieplumly.tumblr.com/" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -214,7 +308,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="http://instagram.com/donnieplumly" target="_blank">
+					<a id="instagram" href="http://instagram.com/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -254,7 +348,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">
+					<a id="thingiverse" href="https://www.thingiverse.com/dplumly/designs" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<style type="text/css">
@@ -278,7 +372,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://github.com/dplumly" target="_blank">
+					<a id="github" href="https://github.com/dplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -299,7 +393,7 @@
 
 
 				<li class="fadeIn">
-					<a href="http://www.linkedin.com/in/donnieplumly" target="_blank">
+					<a id="linkedin" href="http://www.linkedin.com/in/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -324,7 +418,7 @@
 				</li>
 
 				<li id="resume" class="fadeIn">
-					<a href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
+					<a id="resume" href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -357,10 +451,8 @@
 					</a>
 				</li>
 
-
-
 				<li class="fadeIn">
-					<a href="mailto:donnie.plumly@gmail.com" target="_blank">
+					<a id="email" href="mailto:donnie.plumly@gmail.com" target="_blank">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 			viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -379,8 +471,11 @@
 					</a>
 				</li>
 			</ul>
-			<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
-			<p>Think, Make, Repeat.</p>
+			<div id="footer-info" class="column eight centered">
+				<p>donnie.plumly@gmail.com</p>
+				<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
+				<p>Think, Make, Repeat.</p>
+			</div>
 		</footer>
 
 
@@ -406,30 +501,10 @@
 
 
 
-    <!-- Scroll Reveal Script -->
-    <script>
-    	// Changing the defaults
-		window.sr = ScrollReveal({ reset: false});
-
-		// Customizing a reveal set
-		sr.reveal('.fadeIn', { duration: 800 });
-    </script>
-
-
-    <!-- Code for scroll line at top of page -->
-    <script>
-    	$.scrolline({
-		    reverse : false,
-		    position : 'top',
-		    backColor : '#262626',
-		    frontColor : '#61e3d3',
-		    weight : 8
-		});
-    </script>
 
     <script>
 		$(function() {
-		  $('nav ul li a').click(function() {
+		  $('nav ul li a, #menu-contact, #nav-contact').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -445,18 +520,44 @@
     </script>
 
    
-    <!--push menu-->
+    
 	<script>
+		// Scroll Reveal Script /////////////////////////////////////
+    	// Changing the defaults
+		window.sr = ScrollReveal({ reset: false});
+		// Customizing a reveal set
+		sr.reveal('.fadeIn', { duration: 800 });
+
+
+
+		// Code for scroll line at top of page /////////////////////////////////////
+    	$.scrolline({
+		    reverse : false,
+		    position : 'top', 
+		    backColor : '#9e1c2c',
+		    frontColor : '#61e3d3',
+		    weight : 3
+		});
+
+
+		// Push Menu Script /////////////////////////////////////
 		jQuery(document).ready(function($) {
 			$('.toggle-menu').jPushMenu();
 		});
-	</script>
 
-	<script type="text/javascript">
-	   $(document).ready(function() {
+
+		// Transformicon Script /////////////////////////////////////
+		$(document).ready(function(){
+			$('.hamburger-menu').click(function(){
+				$(this).toggleClass('open');
+			});
+		});
+		
+
+		// Image Gallery Script /////////////////////////////////////
+	    $(document).ready(function() {
 	      $(".img-gallery").tosrus();
-
-	   });
+	    });	
 	</script>
 
 	</body>

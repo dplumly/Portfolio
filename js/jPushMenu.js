@@ -27,6 +27,7 @@
 			
 			$(this).toggleClass(o.activeClass);
 			$(target).toggleClass(o.menuOpenClass);
+
 			
 			if($(this).is('.'+o.pushBodyClass)) {
 				$('body').toggleClass( 'cbp-spmenu-push-'+push_direction );
@@ -39,7 +40,7 @@
 		});
 		var jPushMenu = {
 			close: function (o) {
-				$('.jPushMenuBtn,body,.cbp-spmenu').removeClass('disabled active cbp-spmenu-open cbp-spmenu-push-toleft cbp-spmenu-push-toright');
+				$('.jPushMenuBtn,body,.cbp-spmenu').removeClass('disabled active cbp-spmenu-open cbp-spmenu-push-toleft cbp-spmenu-push-toright open');
 			}
 		}
 
@@ -81,7 +82,7 @@
 		menuOpenClass   : 'cbp-spmenu-open',
 		pushBodyClass   : 'push-body',
 		closeOnClickOutside: false,
-		closeOnClickInside: false,
+		closeOnClickInside: true,
 		closeOnClickLink: true
 	};
 })(jQuery);

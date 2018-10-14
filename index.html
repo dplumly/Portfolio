@@ -1,9 +1,11 @@
-<!doctype html>
-<html lang="en" class="no-js">
+<!DOCTYPE html PUBLIC>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino">
+    <meta name="keywords" content="Advertising, creative, creative tech, creative technology, UX, UI, UX Designer, UI Designer, Experience Designer, Intallations, bulder, comcepting, html, css, photography, videography, building, woodworking, web design, hacking, prototyping, rapid prototying, 3d modeling, 3d printing, arduino, raspberry pi">
+    <meta name="googlebot" content="Advertising, creative, creative tech, creative technology, UX, UI, UX Designer, UI Designer, Experience Designer, Intallations, bulder, comcepting, html, css, photography, videography, building, woodworking, web design, hacking, prototyping, rapid prototying, 3d modeling, 3d printing, arduino, raspberry pi"/>
+     <meta name="robots" content="Advertising, creative, creative tech, creative technology, UX, UI, UX Designer, UI Designer, Experience Designer, Intallations, bulder, comcepting, html, css, photography, videography, building, woodworking, web design, hacking, prototyping, rapid prototying, 3d modeling, 3d printing, arduino, raspberry pi"/>
     <meta name="author" content="Donnie Plumly">
     <meta name="description" content="Donnie Plumly's Work">
     <title>Donnie Plumly</title>
@@ -13,50 +15,94 @@
 		<link rel="stylesheet" href="css/reset.css"> 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/gallery.css">
+		<link rel="stylesheet" href="fonts/Lato/latofonts.css">
+		<link rel="stylesheet" href="fonts/OpenSans/open-sans.css">
 		<link rel="stylesheet" href="css/grid.css"> 
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr-minified.js"></script>
 	</head>
  
 	<body>
-
-		<div id="transformicon" class="toggle-menu menu-right">
-	  		<span></span>
-	  		<span></span>
-	  		<span></span>
-		</div>
-
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
-			<div id="transformiconSpace"></div> 	
-			<ul>
-				<li><img src="img/icons/logo-icon.svg"><a href="index.html">HOME</a></li>
-				<li><img src="img/icons/visceral_reality.svg"><a href="visceral_reality.html">Viceral Reality</a></li>
-				<li><img src="img/icons/soundbooth.svg"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
-				<li><img src="img/icons/litIS.svg"><a href="litIS.html">Lit IS</a></li>
-				<li><img src="img/icons/hologram.svg"><a href="hologram.html">hologram</a></li>
-				<li><img src="img/icons/eeg.svg"><a href="eeg.html">EEG Hacking</a></li>
-				<li><img src="img/icons/huddle.svg"><a href="huddles.html">The Huddles</a></li>
-				<li><img src="img/icons/dustins-words.svg"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
-				<li><img src="img/icons/paperproto.svg"><a href="paperproto.html">PAPERPROTO</a></li>
-				<li><img src="img/icons/contact.svg"><a href="#contact">CONTACT</a></li>
+		<!-- Navigation Bar -->
+		<nav>
+			<ul class="row">
+				<li class="columns four"><a href="index.html">home</a></li> 
+				<li class="columns four toggle-menu menu-right"><a href="#">menu</a></li>
+				<li class="columns four"><a id="nav-contact" href="#contact">contact</a></li>
 			</ul>
 		</nav>
 
-	
+		<!-- Mobile Navigation Bar -->
+		<div id="mobile-nav">
+			<ul class="row">
+				<li class="mobile-four">
+					<a id="menu-home" href="index.html">
+						<img src="img/icons/mobileIcons/mobile-home.svg">
+					</a>
+				</li> 
+				<li class="mobile-four">
+					<a href="#">
+						<div class="hamburger-menu toggle-menu menu-right">
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						</div>
+					</a>
+				</li>
+				<li class="mobile-four">
+					<a id="nav-contact" href="#contact">
+						<img src="img/icons/mobileIcons/mobile-contact.svg">
+					</a>
+				</li>
+			</ul>
+		</div>
 
-		<div id="landing">
-			<div id="heading">
-				<h1>Creative</h1>
-				<h1 id="heading">Technologist</h1>
-				<div id="tagline">
-					<hr>
-					<h6>THINK, MAKE, REPEAT.</h6>
-					<hr id="secondHR">
+
+		<!-- Push SIde Menu -->
+		<div id="push-nav" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+			<div id="top-space" class="toggle-menu menu-right">
+				<div id="close-button">
+					<span></span>
+					<span></span>
 				</div>
-			</div>
-			<img src="img/logo/gear.svg" alt="logo">
-		</div><!-- end landing -->
+			</div> 	
+			<ul>
+				<li><img src="img/icons/logo-icon.svg"><a href="index.html">HOME</a></li>
+				<li><img src="img/icons/soundbooth.svg" alt="Sound booth icon"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
+				<li><img src="img/icons/litIS.svg" alt="Led icon"><a href="litIS.html">Lit IS</a></li>
+				<li><img src="img/icons/dustins-words.svg" alt="Dustin's Words icon"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
+				<li><img src="img/icons/visceral_reality.svg" alt="VR icon"><a href="visceral_reality.html">Visceral Reality</a></li>
+				<li><img src="img/icons/huddle.svg" alt="Huddle room icon"><a href="huddles.html">The Huddles</a></li>
+				<li><img src="img/icons/chingonPong.svg" alt="Chingon Pong icon"><a href="chingon_pong.html">Chingon Pong</a></li>
+				<li><img src="img/icons/paperproto.svg" alt="Phone icon"><a href="paperproto.html">PAPERPROTO</a></li>
+				<li><img src="img/icons/origami.svg" alt="Origami icon"><a href="origami.html">LS Origami</a></li>
+				<li><img src="img/icons/contact.svg" alt="Contact icon"><a id="menu-contact" href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
 
+		<!-- Landing photo base by Jamko Seboek -->
+		<div id="landing">
+			<div id="color"></div>
+			<div class="row">
+				<ul>
+					<li><h1>nerd,</h1></li>
+					<li><h1>entrepreneur,</h1></li>
+					<li><h1>experiential designer,</h1></li>
+					<li><h1>creative technologist.</h1></li>
+				</ul>
+			</div>
+			<!--<div id="heading">
+				<span></span>
+				<span></span>
+				<h1>X</h1>
+				<h1>D</h1>
+				<h1>C</h1>
+				<h1>T</h1>
+			</div> -->
+		</div><!-- end landing -->
 
 
 		<div id="about">
@@ -66,14 +112,19 @@
 			<div class="row">
 				<h2>About <span>me</span></h2>
 				<hr>
-				<div>
+	
 					<h4>
-						I was asked as a kid, “What do you want to be when you grow up?” Fireman? Engineer? Nintendo Track and Field champion? I could never figure out what to do and dreamed of having an epiphany fall from the sky describing the path to take. Easy right? Well, things weren’t that easy, and if something falls from the sky, get out of the way!
-
+						As most young boys born in the 80’s I admired comic book superheroes. Well, maybe more than just admired; probably borderline obsessed. My favorite time as a kid was reading comics on the porch with my friends. It was a time where I could fly, jump over a mountain, or develop potions to enhance my abilities.
+						
 						<br>
 						<br>
 
-						Since I didn’t know where to start, but couldn’t sit in a bean bag forever, I began to think of what made me happy.  The activities I did in my free time came to mind. Obviously, becoming a Nintendo Track and Field champion was out so, I went with my second choice; to build and create. Creating has been the driving force in my life, and luckily I found a career path to enable this. Now I have a job where I work all the time, but at the same time, I don’t work at all. 
+						Like Peter Parker, Boba Fett, and Tony Stark I have been fascinated with technology. I use technology the way it’s intended, to positively impact others lives. Tech blurs the line of what’s possible and makes fantasy a reality. One company utilizing tech for experience design extremely well is Disney. Their parks experience is the best of any company combined with mystifying technology. Now that Disney is the parent company of Marvel and Star Wars I get to see these universes collide.
+						
+						<br>
+						<br>
+
+						Marvel and Star Wars are packed full of awesome tech and concepts that give Disney leverage for even better experiences. My goal in life is to take the genres I love and share those with others in unique ways. To take others back to their place of reading comics on the porch.
 
 						<br>
 						<br>
@@ -86,25 +137,10 @@
 
 
 		<div id="thumb-container">
-			<div id="thumbnails" class="row">
-				<div class="work">
+			<div class="work-img">
 					<img src="img/logo/work.svg" alt="logo">
 				</div>
-
-
-				<div class="six columns fadeIn">
-					<a href="visceral_reality.html">
-						<figure class="tint">
-							<img src="img/thumbnails/visceral_reality.jpg" alt="Viceral Reality project image">
-						</figure>
-						<figurecaption>
-							<h2>Viceral<span> Reality</span></h2>
-							<h5>RC F hot lap in 360</h5>
-						</figurecaption>
-					</a>
-				</div><!-- end six columns -->
-				
-
+			<div id="thumbnails" class="row">
 				<div class="six columns fadeIn">
 					<a href="LC_soundbooth.html">
 						<figure class="tint">
@@ -132,30 +168,29 @@
 
 
 				<div class="six columns fadeIn">
-					<a href="hologram.html">
+					<a href="dustins_words.html">
 						<figure class="tint">
-							<img src="img/thumbnails/hologram.jpg" alt="hologram">
+							<img src="img/thumbnails/dustins_words.jpg" alt="dustin's words project image">
 						</figure>
 						<figurecaption>
-							<h2>LDA<span> Holograms</span></h2>
-							<h5>Hologram installations at sporting arenas</h5>
+							<h2>Dustin's <span>Words</span></h2>
+							<h5>Helping give autism a voice</h5>
 						</figurecaption>
 					</a>
 				</div><!-- end six columns -->
 
 
 				<div class="six columns fadeIn">
-					<a href="eeg.html">
+					<a href="visceral_reality.html">
 						<figure class="tint">
-							<img src="img/thumbnails/eeg.jpg" alt="eeg project image">
+							<img src="img/thumbnails/visceral_reality.jpg" alt="Viceral Reality project image">
 						</figure>
 						<figurecaption>
-							<h2>EEG <span>Hacking</span></h2>
-							<h5>Lexus RC F Campaign and Virtual Reality</h5>
+							<h2>Visceral<span> Reality</span></h2>
+							<h5>RC F hot lap in 360</h5>
 						</figurecaption>
 					</a>
 				</div><!-- end six columns -->
-
 				
 
 				<div class="six columns fadeIn">
@@ -166,6 +201,19 @@
 						<figurecaption>
 							<h2>The <span>Huddles</span></h2>
 							<h5>Team One Real-time sensor based room status</h5>
+						</figurecaption>
+					</a>
+				</div><!-- end six columns -->
+
+
+				<div class="six columns fadeIn">
+					<a href="chingon_pong.html">
+						<figure class="tint">
+							<img src="img/thumbnails/chingon-pong.jpg" alt="chingon-pong beer pong for adults">
+						</figure>
+						<figurecaption>
+							<h2>Chingon<span> Pong</span></h2>
+							<h5>Four Corner Brewery Beer Pong for Adults</h5>
 						</figurecaption>
 					</a>
 				</div><!-- end six columns -->
@@ -185,13 +233,13 @@
 
 
 				<div class="six columns fadeIn">
-					<a href="dustins_words.html">
+					<a href="origami.html">
 						<figure class="tint">
-							<img src="img/thumbnails/dustins_words.jpg" alt="dustin's words project image">
+							<img src="img/thumbnails/origami.jpg" alt="Lexus LS Origami Events">
 						</figure>
 						<figurecaption>
-							<h2>Dustin's <span>Words</span></h2>
-							<h5>Helping give autism a voice</h5>
+							<h2>LS<span> Origami</span></h2>
+							<h5>Lexus LS Origami Press Events</h5>
 						</figurecaption>
 					</a>
 				</div><!-- end six columns -->
@@ -203,7 +251,7 @@
 		<footer id="contact">
 			<ul>
 				<li class="fadeIn">
-					<a href="http://donnieplumly.tumblr.com/" target="_blank">
+					<a id="blog" href="http://donnieplumly.tumblr.com/" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -232,7 +280,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="http://instagram.com/donnieplumly" target="_blank">
+					<a id="instagram" href="http://instagram.com/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -272,7 +320,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">
+					<a id="thingiverse" href="https://www.thingiverse.com/dplumly/designs" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<style type="text/css">
@@ -296,7 +344,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://github.com/dplumly" target="_blank">
+					<a id="github" href="https://github.com/dplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -317,7 +365,7 @@
 
 
 				<li class="fadeIn">
-					<a href="http://www.linkedin.com/in/donnieplumly" target="_blank">
+					<a id="linkedin" href="http://www.linkedin.com/in/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -342,7 +390,7 @@
 				</li>
 
 				<li id="resume" class="fadeIn">
-					<a href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
+					<a id="resume" href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -375,10 +423,8 @@
 					</a>
 				</li>
 
-
-
 				<li class="fadeIn">
-					<a href="mailto:donnie.plumly@gmail.com" target="_blank">
+					<a id="email" href="mailto:donnie.plumly@gmail.com" target="_blank">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 			viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -397,8 +443,11 @@
 					</a>
 				</li>
 			</ul>
-			<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
-			<p>Think, Make, Repeat.</p>
+			<div id="footer-info" class="column eight centered">
+				<p>donnie.plumly@gmail.com</p>
+				<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
+				<p>Think, Make, Repeat.</p>
+			</div>
 		</footer>
 
 
@@ -407,9 +456,9 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="js/scrolline-minified.js"></script>
     <script src="js/menu-minified.js"></script>
-    <script src="js/scrollreveal.js"></script>
     <script src="js/jPushMenu.js"></script>
-
+    <script src="js/scrollreveal.js"></script>
+    <script src="js/gallery.js"></script>
 
 	
 	<script>
@@ -422,30 +471,12 @@
         ga('send', 'pageview');
     </script>
 
-    <!-- Scroll Reveal Script -->
-    <script>
-    	// Changing the defaults
-		window.sr = ScrollReveal({ reset: false});
 
-		// Customizing a reveal set
-		sr.reveal('.fadeIn', { duration: 800 });
-    </script>
 
-    <!-- Code for scroll line at top of page -->
-    <script>
-    	$.scrolline({
-		    reverse : false,
-		    position : 'top',
-		    backColor : '#262626',
-		    frontColor : '#61e3d3',
-		    weight : 8
-		});
-    </script>
 
-    <!-- Scroll to section script -->
     <script>
 		$(function() {
-		  $('nav ul li a').click(function() {
+		  $('nav ul li a, #menu-contact, #nav-contact').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -461,11 +492,44 @@
     </script>
 
    
-    <!--push menu-->
+    
 	<script>
+		// Scroll Reveal Script /////////////////////////////////////
+    	// Changing the defaults
+		window.sr = ScrollReveal({ reset: false});
+		// Customizing a reveal set
+		sr.reveal('.fadeIn', { duration: 800 });
+
+
+
+		// Code for scroll line at top of page /////////////////////////////////////
+    	$.scrolline({
+		    reverse : false,
+		    position : 'top', 
+		    backColor : '#9e1c2c',
+		    frontColor : '#61e3d3',
+		    weight : 3
+		});
+
+
+		// Push Menu Script /////////////////////////////////////
 		jQuery(document).ready(function($) {
 			$('.toggle-menu').jPushMenu();
 		});
+
+
+		// Transformicon Script /////////////////////////////////////
+		$(document).ready(function(){
+			$('.hamburger-menu').click(function(){
+				$(this).toggleClass('open');
+			});
+		});
+		
+
+		// Image Gallery Script /////////////////////////////////////
+	    $(document).ready(function() {
+	      $(".img-gallery").tosrus();
+	    });	
 	</script>
 
 

@@ -5,7 +5,9 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino">
 	    <meta name="author" content="Donnie Plumly">
-	    <meta name="description" content="Donnie Plumly's The Huddles">
+	    <meta name="description" content="Donnie Plumly's The Huddles system is to help Team One employees find a meeting room with little trouble">
+	    <meta name="robots" content="Huddles, meetings, arduino, beaglebone, beaglebone black, moteino, radio, office, Team One, ux design, experience design, prototype, web design, app design, ui design, ux design, LA, product, 3d printing, tools, tool, user experience, designers"/>
+      	<meta name="googlebot" content="Huddles, meetings, arduino, beaglebone, beaglebone black, moteino, radio, office, Team One, ux design, experience design, prototype, web design, app design, ui design, ux design, LA, product, 3d printing, tools, tool, user experience, designers"/>
 		<title>The Huddles</title>
 
 		<!-- <css> -->
@@ -13,37 +15,73 @@
 		<link rel="stylesheet" href="css/reset.css"> 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/gallery.css">
+		<link rel="stylesheet" href="fonts/Lato/latofonts.css">
+		<link rel="stylesheet" href="fonts/OpenSans/open-sans.css">
 		<link rel="stylesheet" href="css/grid.css"> 
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr-minified.js"></script>
 	</head>
  
 	<body>
-		<div id="transformicon" class="toggle-menu menu-right">
-	  		<span></span>
-	  		<span></span>
-	  		<span></span>
-		</div>
-
-
-
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
-			<div id="transformiconSpace"></div> 	
-			<ul>
-				<li><img src="img/icons/logo-icon.svg"><a href="index.html">HOME</a></li>
-				<li><img src="img/icons/visceral_reality.svg"><a href="visceral_reality.html">Viceral Reality</a></li>
-				<li><img src="img/icons/soundbooth.svg"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
-				<li><img src="img/icons/litIS.svg"><a href="litIS.html">Lit IS</a></li>
-				<li><img src="img/icons/hologram.svg"><a href="hologram.html">hologram</a></li>
-				<li><img src="img/icons/eeg.svg"><a href="eeg.html">EEG Hacking</a></li>
-				<li><img src="img/icons/huddle.svg"><a href="huddles.html">The Huddles</a></li>
-				<li><img src="img/icons/dustins-words.svg"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
-				<li><img src="img/icons/paperproto.svg"><a href="paperproto.html">PAPERPROTO</a></li>
-				<li><img src="img/icons/contact.svg"><a href="#contact">CONTACT</a></li>
+		<!-- Navigation Bar -->
+		<nav>
+			<ul class="row">
+				<li class="columns four"><a href="index.html">home</a></li> 
+				<li class="columns four toggle-menu menu-right"><a href="#">menu</a></li>
+				<li class="columns four"><a id="nav-contact" href="#contact">contact</a></li>
 			</ul>
 		</nav>
 
+		<!-- Mobile Navigation Bar -->
+		<div id="mobile-nav">
+			<ul class="row">
+				<li class="mobile-four">
+					<a id="menu-home" href="index.html">
+						<img src="img/icons/mobileIcons/mobile-home.svg">
+					</a>
+				</li> 
+				<li class="mobile-four">
+					<a href="#">
+						<div class="hamburger-menu toggle-menu menu-right">
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						</div>
+					</a>
+				</li>
+				<li class="mobile-four">
+					<a id="nav-contact" href="#contact">
+						<img src="img/icons/mobileIcons/mobile-contact.svg">
+					</a>
+				</li>
+			</ul>
+		</div>
 
+
+		<!-- Push SIde Menu -->
+		<div id="push-nav" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+			<div id="top-space" class="toggle-menu menu-right">
+				<div id="close-button">
+					<span></span>
+					<span></span>
+				</div>
+			</div> 	
+			<ul>
+				<li><img src="img/icons/logo-icon.svg"><a href="index.html">HOME</a></li>
+				<li><img src="img/icons/soundbooth.svg" alt="Sound booth icon"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
+				<li><img src="img/icons/litIS.svg" alt="Led icon"><a href="litIS.html">Lit IS</a></li>
+				<li><img src="img/icons/dustins-words.svg" alt="Dustin's Words icon"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
+				<li><img src="img/icons/visceral_reality.svg" alt="VR icon"><a href="visceral_reality.html">Visceral Reality</a></li>
+				<li><img src="img/icons/huddle.svg" alt="Huddle room icon"><a href="huddles.html">The Huddles</a></li>
+				<li><img src="img/icons/chingonPong.svg" alt="Chingon Pong icon"><a href="chingon_pong.html">Chingon Pong</a></li>
+				<li><img src="img/icons/paperproto.svg" alt="Phone icon"><a href="paperproto.html">PAPERPROTO</a></li>
+				<li><img src="img/icons/origami.svg" alt="Origami icon"><a href="origami.html">LS Origami</a></li>
+				<li><img src="img/icons/contact.svg" alt="Contact icon"><a id="menu-contact" href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
 
 		<div id="the-huddles-landing" class="project-landing">
 			<div class="row">
@@ -63,17 +101,17 @@
 					<hr>
 
 				<div class="project-copy">
-					<h4>Team One is an open concept agency and since no one has an office we have meeting rooms called Huddle rooms. These rooms are dedicated for teams to meet in for a brief amount of time. In total we have 33 rooms that can project managers or others schedule meetings in. Since the project managers don't know what rooms are currently open they have to walk down the aisles looking for a room and then update the team on what room they are in. 
+					<h4>Team One is an open concept agency and since no one has an office we have meeting rooms called Huddle rooms. These rooms are dedicated for teams to meet in for a brief amount of time. In total, we have 33 rooms where anyone can hold meetings. Since Team Oners don't know what rooms are currently open they have to walk down the aisles looking for a room which is inefficient. 
 
 					<br>
 					<br>
 
-					The Creative Technologist group came up with a way to make this process more effiecient and has made the office as a whole more productive. We created sensors that reside in each Huddle room that detect motion. This motion sensor is attached to an Arduino clone that is capable of sending radio frequecies (RF). This Arduino talks to a Beaglebone Black that runs MQTT. This Beaglebone Black or mini computer is the middle man sending messages to a website.</a>
+					The Creative Technologist group came up with a way to make this process more efficient  and has made the office as a whole more productive. We created sensors that reside in each Huddle room that detect motion. This motion sensor is attached to an Arduino clone that is capable of sending radio frequencies (RF). This Arduino talks to a Windows Machine. This computer is the middle man in sending messages to update a website.
 
 					<br>
 					<br>
 
-					Everytime a person walks into a huddle room it will update this website in real-time informing anyone what Huddle rooms are open or occupied.  The website also hosts the functionality of checking into rooms, Therefore a Project Manager can update the team of what room number they are in.
+					Every time a person walks into a huddle room it will update this website in real-time informing anyone what Huddle rooms are open or occupied. The website also hosts the functionality of checking into rooms, Therefore, a Project Manager can update the team of where the meeting will be held.
 					</h4>
 
 					<br>
@@ -82,71 +120,108 @@
 			</div><!-- end row -->
 
 
-			<div class="project-links">
-				<div class="row">
-					<div class="project-copy-right">
-
-						
-					<h4>Website:</h4>
-					<a href="http://huddle.t1.la" target="blank">THe Huddles</a>
-
-								
-					<br>
-					<br>
-
-					<h4>Code:</h4>
-					<a href="https://github.com/Team-One/huddlebuddy" target="_blank">Github</a>
-
-					<br>
-					<br>
-
-					<h4>Video:</h4>
-					<a href="https://www.youtube.com/watch?v=0IM0OmvwUSM&feature=youtu.be" target="_blank">YouTube</a>
-
-					</div><!-- end project-copy-right -->
-				</div><!-- end row -->
-			</div><!-- end project-links -->
-		</div><!-- end project-container -->
-
-
-		<div class="gallery">
-			<ul class="row">
-				<div class="work">
-					<img src="img/logo/work.svg" alt="logo">
+			<!-- Video for project -->
+			<div class="video-container">
+				<div class="work-img">
+					<img src="img/logo/work.svg" alt="Donnie Plumly Work logo">
 				</div>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/huddles/huddle-website.jpg" alt="beaglebone diagram"><img src="img/work/huddles/huddle-website-thumb.jpg"></a></li>
+				<div class="row">
+					<div class="video-description nine columns centered">
+						<h3>Video introducing the huddles website to Team One employees.
+						</h3>
+					</div>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno1.jpg" alt="Sensor device"><img src="img/work/huddles/motieno1-thumb.jpg"></a></li>
+					<div class="fadeIn youtube-responsive">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/0IM0OmvwUSM?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div><!-- end video container -->
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno2.jpg" alt="inside of device"><img src="img/work/huddles/motieno2-thumb.jpg"></a></li>
+			
+			<!-- Image gallery -->
+			<div class="gallery">
+				<div id="project-color"></div>
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>This project is a huge success.</h3>
+						<div class="header-copy ten columns centered">
+							<h4>When Team One moved into the new office the architects quoted the project to be $500,000. We were able to accomplish this under $10,000.</h4>
+						</div>
+					</div>
+				</div>
+				
+				<ul class="row">
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/huddles/huddle-website.jpg" alt="beaglebone diagram"><img src="img/work/huddles/huddle-website.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno3.jpg" alt="inside of device"><img src="img/work/huddles/motieno3-thumb.jpg"></a></li>
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno1.jpg" alt="Sensor device"><img src="img/work/huddles/motieno1.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno4.jpg" alt="device"><img src="img/work/huddles/motieno4-thumb.jpg"></a></li>
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno2.jpg" alt="inside of device"><img src="img/work/huddles/motieno2.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno-sensor.jpg" alt="sensor diagram "><img src="img/work/huddles/motieno-sensor-thumb.jpg"></a></li>
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno3.jpg" alt="inside of device"><img src="img/work/huddles/motieno3.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/huddles/arduino-gate.jpg" alt="beaglebone diagram"><img src="img/work/huddles/arduino-gate-thumb.jpg"></a></li>
-			</ul>
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno4.jpg" alt="device"><img src="img/work/huddles/motieno4.jpg"></a></li>
 
-			<div class="row">
-				<h2>Other Projects</h2>
-					<hr>
-				<ul class="project-buttons">
-					<li><a class="button" href="dustins_words.html">dustin's words</a></li>
-					<li><a class="home-logo" href="index.html"><img src="img/logo/button-logo.svg" alt="Home logo button"></a></li>
-					<li><a class="button" href="paperproto.html">paperproto</a></li>
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/huddles/motieno-sensor.jpg" alt="sensor diagram "><img src="img/work/huddles/motieno-sensor.jpg"></a></li>
+
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/huddles/arduino-gate.jpg" alt="beaglebone diagram"><img src="img/work/huddles/arduino-gate.jpg"></a></li>
+
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/huddles/new-huddles.jpg" alt="beaglebone diagram"><img src="img/work/huddles/new-huddles.jpg"></a></li>
 				</ul>
-			</div><!-- end row -->	
-		</div><!-- end gallery -->
+			</div>
+
+				
+			<!-- Link to project site  -->
+			<div id="huddle-site-bg" class="site-link">
+				<span id="huddle-bar"></span>
+				<div class="row">
+					<div class="six columns centered">
+						<a href="http://huddle.t1.la" target="blank">
+							<img src="img/page-img/huddles/huddles.svg" alt="huddle system logo">
+						</a>
+						<h4>Click the logo to check out the Huddles Website.</h4>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Files associated with project -->
+			<div class="project-files">
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>
+							You can find everything you need at our Github to be able to make you own Huddle system.
+						</h3>
+					</div>
+				</div>
+
+
+				<div class="project-files-single"> 
+					<div class="row>">
+						<div class="columns six">
+							<img class="single-img" src="img/page-img/huddles/huddles-content.png" alt="3D model photo">
+						</div>
+
+						<div class="single-info columns six">
+							<h4>The system has even surprised us with how little we need to maintenance support is needed. All files needed are in this repo. It is a very useful tool for any project needing room automation!
+							</h4>
+							<img src="img/icons/projectIcons/github.svg" alt="Github icon">
+							<a href="https://github.com/Team-One/The-Huddles " target="_blank">The Huddles Github</a>
+						</div>
+					</div>
+				</div>
+				<div class="more-projects-single row>">
+					<a class="toggle-menu menu-right" href="#">More Projects</a>
+				</div>
+			</div><!-- end project files -->
+		</div><!-- end project container -->
 
 
 		
 		<footer id="contact">
 			<ul>
 				<li class="fadeIn">
-					<a href="http://donnieplumly.tumblr.com/" target="_blank">
+					<a id="blog" href="http://donnieplumly.tumblr.com/" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -175,7 +250,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="http://instagram.com/donnieplumly" target="_blank">
+					<a id="instagram" href="http://instagram.com/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -215,7 +290,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">
+					<a id="thingiverse" href="https://www.thingiverse.com/dplumly/designs" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<style type="text/css">
@@ -239,7 +314,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://github.com/dplumly" target="_blank">
+					<a id="github" href="https://github.com/dplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -260,7 +335,7 @@
 
 
 				<li class="fadeIn">
-					<a href="http://www.linkedin.com/in/donnieplumly" target="_blank">
+					<a id="linkedin" href="http://www.linkedin.com/in/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -285,7 +360,7 @@
 				</li>
 
 				<li id="resume" class="fadeIn">
-					<a href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
+					<a id="resume" href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -318,10 +393,8 @@
 					</a>
 				</li>
 
-
-
 				<li class="fadeIn">
-					<a href="mailto:donnie.plumly@gmail.com" target="_blank">
+					<a id="email" href="mailto:donnie.plumly@gmail.com" target="_blank">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 			viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -340,12 +413,16 @@
 					</a>
 				</li>
 			</ul>
-			<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
-			<p>Think, Make, Repeat.</p>
+			<div id="footer-info" class="column eight centered">
+				<p>donnie.plumly@gmail.com</p>
+				<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
+				<p>Think, Make, Repeat.</p>
+			</div>
 		</footer>
 
 
-<!-- JavaScript -->	
+
+	<!-- JavaScript -->	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
 	<script src="js/scrolline-minified.js"></script>
     <script src="js/menu-minified.js"></script>
@@ -366,30 +443,10 @@
 
 
 
-    <!-- Scroll Reveal Script -->
-    <script>
-    	// Changing the defaults
-		window.sr = ScrollReveal({ reset: false});
-
-		// Customizing a reveal set
-		sr.reveal('.fadeIn', { duration: 800 });
-    </script>
-
-
-    <!-- Code for scroll line at top of page -->
-    <script>
-    	$.scrolline({
-		    reverse : false,
-		    position : 'top',
-		    backColor : '#262626',
-		    frontColor : '#61e3d3',
-		    weight : 8
-		});
-    </script>
 
     <script>
 		$(function() {
-		  $('nav ul li a').click(function() {
+		  $('nav ul li a, #menu-contact, #nav-contact').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -405,18 +462,44 @@
     </script>
 
    
-    <!--push menu-->
+    
 	<script>
+		// Scroll Reveal Script /////////////////////////////////////
+    	// Changing the defaults
+		window.sr = ScrollReveal({ reset: false});
+		// Customizing a reveal set
+		sr.reveal('.fadeIn', { duration: 800 });
+
+
+
+		// Code for scroll line at top of page /////////////////////////////////////
+    	$.scrolline({
+		    reverse : false,
+		    position : 'top', 
+		    backColor : '#9e1c2c',
+		    frontColor : '#61e3d3',
+		    weight : 3
+		});
+
+
+		// Push Menu Script /////////////////////////////////////
 		jQuery(document).ready(function($) {
 			$('.toggle-menu').jPushMenu();
 		});
-	</script>
 
-	<script type="text/javascript">
-	   $(document).ready(function() {
+
+		// Transformicon Script /////////////////////////////////////
+		$(document).ready(function(){
+			$('.hamburger-menu').click(function(){
+				$(this).toggleClass('open');
+			});
+		});
+		
+
+		// Image Gallery Script /////////////////////////////////////
+	    $(document).ready(function() {
 	      $(".img-gallery").tosrus();
-
-	   });
+	    });	
 	</script>
 
 	</body>

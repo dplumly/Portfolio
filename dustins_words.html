@@ -3,9 +3,11 @@
 	<head>
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino">
+	    <meta name="keywords" content="html,css,photography,videography,building,woodworking,web design,hacking,prototyping,3d modeling,arduino,autism,dustin's words">
 	    <meta name="author" content="Donnie Plumly">
-	    <meta name="description" content="Donnie Plumly's Dustin's Words">
+	    <meta name="description" content="Donnie Plumly's Dustin's Words is a product to help people that suffer from non-communicative disorders to communicate with the touch of a button">
+	    <meta name="robots" content="Autism, non-communicative, disorder, help, sms, text messages, ux design, experience design, prototype, paper prototyping, web design, app design, ui design, ux design, LA, product, 3d printing, tools, tool, user experience, designers"/>
+      	<meta name="googlebot" content="Autism, non-communicative, disorder, help, sms, text messages, ux design, experience design, prototype, paper prototyping, web design, app design, ui design, ux design, LA, product, 3d printing, tools, tool, user experience, designers"/>
 		<title>Dustin's Words</title>
 
 		<!-- <css> -->
@@ -13,35 +15,75 @@
 		<link rel="stylesheet" href="css/reset.css"> 
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/gallery.css">
+		<link rel="stylesheet" href="fonts/Lato/latofonts.css">
+		<link rel="stylesheet" href="fonts/OpenSans/open-sans.css">
 		<link rel="stylesheet" href="css/grid.css"> 
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr-minified.js"></script>
 	</head>
  
 	<body>
-		<div id="transformicon" class="toggle-menu menu-right">
-	  		<span></span>
-	  		<span></span>
-	  		<span></span>
+		<!-- Navigation Bar -->
+		<nav>
+			<ul class="row">
+				<li class="columns four"><a href="index.html">home</a></li> 
+				<li class="columns four toggle-menu menu-right"><a href="#">menu</a></li>
+				<li class="columns four"><a id="nav-contact" href="#contact">contact</a></li>
+			</ul>
+		</nav>
+
+		<!-- Mobile Navigation Bar -->
+		<div id="mobile-nav">
+			<ul class="row">
+				<li class="mobile-four">
+					<a id="menu-home" href="index.html">
+						<img src="img/icons/mobileIcons/mobile-home.svg">
+					</a>
+				</li> 
+				<li class="mobile-four">
+					<a href="#">
+						<div class="hamburger-menu toggle-menu menu-right">
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						    <span></span>
+						</div>
+					</a>
+				</li>
+				<li class="mobile-four">
+					<a id="nav-contact" href="#contact">
+						<img src="img/icons/mobileIcons/mobile-contact.svg">
+					</a>
+				</li>
+			</ul>
 		</div>
 
 
-
-		<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
-			<div id="transformiconSpace"></div> 	
+		<!-- Push SIde Menu -->
+		<div id="push-nav" class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
+			<div id="top-space" class="toggle-menu menu-right">
+				<div id="close-button">
+					<span></span>
+					<span></span>
+				</div>
+			</div> 	
 			<ul>
 				<li><img src="img/icons/logo-icon.svg"><a href="index.html">HOME</a></li>
-				<li><img src="img/icons/visceral_reality.svg"><a href="visceral_reality.html">Viceral Reality</a></li>
-				<li><img src="img/icons/soundbooth.svg"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
-				<li><img src="img/icons/litIS.svg"><a href="litIS.html">Lit IS</a></li>
-				<li><img src="img/icons/hologram.svg"><a href="hologram.html">hologram</a></li>
-				<li><img src="img/icons/eeg.svg"><a href="eeg.html">EEG Hacking</a></li>
-				<li><img src="img/icons/huddle.svg"><a href="huddles.html">The Huddles</a></li>
-				<li><img src="img/icons/dustins-words.svg"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
-				<li><img src="img/icons/paperproto.svg"><a href="paperproto.html">PAPERPROTO</a></li>
-				<li><img src="img/icons/contact.svg"><a href="#contact">CONTACT</a></li>
+				<li><img src="img/icons/soundbooth.svg" alt="Sound booth icon"><a href="LC_soundbooth.html">LC Soundbooth</a></li>
+				<li><img src="img/icons/litIS.svg" alt="Led icon"><a href="litIS.html">Lit IS</a></li>
+				<li><img src="img/icons/dustins-words.svg" alt="Dustin's Words icon"><a href="dustins_words.html">DUSTIN'S WORDS</a></li>
+				<li><img src="img/icons/visceral_reality.svg" alt="VR icon"><a href="visceral_reality.html">Visceral Reality</a></li>
+				<li><img src="img/icons/huddle.svg" alt="Huddle room icon"><a href="huddles.html">The Huddles</a></li>
+				<li><img src="img/icons/chingonPong.svg" alt="Chingon Pong icon"><a href="chingon_pong.html">Chingon Pong</a></li>
+				<li><img src="img/icons/paperproto.svg" alt="Phone icon"><a href="paperproto.html">PAPERPROTO</a></li>
+				<li><img src="img/icons/origami.svg" alt="Origami icon"><a href="origami.html">LS Origami</a></li>
+				<li><img src="img/icons/contact.svg" alt="Contact icon"><a id="menu-contact" href="#contact">CONTACT</a></li>
 			</ul>
-		</nav>
+		</div>
+
+		
 
 
 
@@ -52,10 +94,9 @@
 		</div><!-- end landing -->
 
 
-
 		<div class="project-container">
 			<div class="bg-logo">
-				<img src="img/logo/gear.svg" alt="logo">
+				<img src="img/logo/gear.svg" alt="Donnie Plumly logo">
 			</div>
 
 			<div class="row">
@@ -68,98 +109,144 @@
 					<br>
 					<br>
 
-					We started with Dustin, but are looking to help others. We are finding issues with the cost and functionality of similar devices on the market. Our goal is to come up with solutions for anyone that suffers from communication complications and make devices obtainable for them.
+					We started with Dustin, but have found others. The cost and functionality of similar devices on the market make devices like these unobtainable for most. Our goal is to get this device into the hands of people that need it. 
+
+					<br>
+					<br>
+
+					In 2015 our Indegogo raised enough money for us to figure things out and do the work. With the help of the generous people that donated these devices are cost free for the ones in need. It has been a long road with a lot of bumps, but we are almost to the end. 
 					</h4>
 				</div><!-- end project-copy -->
 			</div><!-- end row -->
 
 
-			<div class="project-links">
-				<div class="row">
-					<div class="project-copy-right">
-
-						
-					<h4>Dustin's Words:</h4>
-					<a href="http://dustinswords.com" target="blank">Website</a>
-
-								
-					<br>
-					<br>
-
-					<h4>3D Models:</h4>
-					<a href="http://www.thingiverse.com/dplumly/designs/page:1" target="_blank">Thingiverse</a>
-
-					<br>
-					<br>
-
-					<h4>code:</h4>
-					<a href="https://github.com/Dustins-Words/hardware-code" target="_blank">Github Spark</a>
-
-					<br>
-
-					<a href="https://github.com/Dustins-Words/Dustins-Words-Sharp-Memory-Keycap" target="_blank">Github Custom Keycap</a>
-
-					<br>
-
-					<a href="https://github.com/dplumly/Dustins-Words" target="_blank">Github Website</a>
-
-					<br>
-					<br>
-
-					</div><!-- end project-copy-right -->
-				</div><!-- end row -->
-			</div><!-- end project-links -->
-		</div><!-- end project-container -->
-
-
-
-
-		<div class="gallery">
-			<ul class="row">
-				<div class="work">
-					<img src="img/logo/work.svg" alt="logo">
+			<!-- Video for project -->
+			<div class="video-container">
+				<div class="work-img">
+					<img src="img/logo/work.svg" alt="Donnie Plumly Work logo">
 				</div>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/foam_core_prototype.jpg" alt="prototype"><img src="img/work/dustins-words/foam_core_prototype-thumb.jpg"></a></li>
+				<div class="row">
+					<div class="video-description nine columns centered">
+						<h3>Video from our Indegogo campaign from 2015.
+						</h3>
+						<div class="ten columns centered">
+							<h4>Explains the project, our intentions and motives.</h4>
+						</div>
+					</div>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/foam_core_prototype2.jpg" alt="prototype"><img src="img/work/dustins-words/foam_core_prototype2-thumb.jpg"></a></li>
+					<div class="fadeIn" style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/128172017" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+				</div>
+			</div><!-- end video container -->
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/buttons.jpg" alt="prototype"><img src="img/work/dustins-words/buttons-thumb.jpg"></a></li>
+			
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/button_cables.jpg" alt="buttons"><img src="img/work/dustins-words/button_cables-thumb.jpg"></a></li>
+			<div class="gallery">
+				<div id="project-color"></div>
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>Photos of the many iterations to the current device.  
+						</h3>
+						<div class="header-copy ten columns centered">
+							<h4>We started out with a foam core box full of wires, then a 3d printed enclosure, and finally created the polished version.</h4>
+						</div>
+					</div>
+				</div>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/DW-3D-Printing.jpg" alt="3d printed box"><img src="img/work/dustins-words/DW-3D-Printing-thumb.jpg"></a></li>
+				<ul class="row">
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/foam_core_prototype.jpg" alt="prototype"><img src="img/work/dustins-words/foam_core_prototype.jpg"></a></li>
 
-				<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/hole-saw.jpg" alt="drilling holes"><img src="img/work/dustins-words/hole-saw-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/foam_core_prototype2.jpg" alt="prototype"><img src="img/work/dustins-words/foam_core_prototype2.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/3d_printed_prototype.jpg" alt="prototype 3d printed"><img src="img/work/dustins-words/3d_printed_prototype-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/buttons.jpg" alt="prototype"><img src="img/work/dustins-words/buttons.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/3d_printed_prototype2.jpg" alt="prototype 3d printed"><img src="img/work/dustins-words/3d_printed_prototype2-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/button_cables.jpg" alt="buttons"><img src="img/work/dustins-words/button_cables.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work//dustins-words/custom-buttons.jpg" alt="custom screen button prototype"><img src="img/work/dustins-words/custom-buttons-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/DW-3D-Printing.jpg" alt="3d printed box"><img src="img/work/dustins-words/DW-3D-Printing.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/DW-Device.jpg" alt="3d render"><img src="img/work/dustins-words/DW-Device-thumb.jpg"></a></li>
+					<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/hole-saw.jpg" alt="drilling holes"><img src="img/work/dustins-words/hole-saw.jpg"></a></li>
 
-			  	<li class="two column fadeIn"><a class="img-gallery" href="img/work/dustins-words/Exploaded.jpg" alt="3d render"><img src="img/work/dustins-words/Exploaded-thumb.jpg"></a></li>
-			</ul>
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/3d_printed_prototype.jpg" alt="prototype 3d printed"><img src="img/work/dustins-words/3d_printed_prototype.jpg"></a></li>
 
-			<div class="row">
-				<h2>Other Projects</h2>
-					<hr>
-				<ul class="project-buttons">
-					<li><a class="button" href="paperproto.html">paperproto</a></li>
-					<li><a class="home-logo" href="index.html"><img src="img/logo/button-logo.svg" alt="Home logo button"></a></li>
-					<li><a class="button" href="visceral_reality.html">visceral reality</a></li>
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/3d_printed_prototype2.jpg" alt="prototype 3d printed"><img src="img/work/dustins-words/3d_printed_prototype2.jpg"></a></li>
+
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work//dustins-words/custom-buttons.jpg" alt="custom screen button prototype"><img src="img/work/dustins-words/custom-buttons2.jpg"></a></li>
+
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/dw-mold.jpg" alt="first completed version"><img src="img/work/dustins-words/dw-mold.jpg" alt="Dustin's Words final prototype"></a></li>
+
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/DW-Device.jpg" alt="3d render"><img src="img/work/dustins-words/DW-Device.jpg"></a></li>
+
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/Exploaded.jpg" alt="3d render"><img src="img/work/dustins-words/Exploaded.jpg"></a></li>
+
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/sanded.jpg" alt="Enclosure ready for paint"><img src="img/work/dustins-words/sanded.jpg"></a></li>
+
+				  	<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/first_version.jpg" alt="first completed version"><img src="img/work/dustins-words/first_version.jpg" alt="Dustin's Words final prototype"></a></li>
 				</ul>
-			</div><!-- end row -->	
-		</div><!-- end gallery -->
+			</div><!-- end gallery -->
 
 
-		
+			<!-- Link to project site  -->
+			<div id="dw-site-bg" class="site-link">
+				<div class="row">
+					<div class="six columns centered">
+						<a href="http://www.dustinswords.com" target="blank">
+							<img src="img/page-img/dustins-words/DW-logo.svg" alt="Dustin's Words Logo">
+						</a>
+						<h4>Click the logo to check out the Dustin's Words Website.</h4>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- Files associated with project -->
+			<div class="project-files">
+				<div class="row">
+					<div class="nine columns centered">
+						<h3>
+							Dustin's Words is an open source project.
+						</h3>
+					</div>
+				</div>
+
+				<div class="left-content"> 
+					<div class="row>">
+						<div class="columns six">
+							<img class="left-img" src="img/page-img/dustins-words/dw-model.png" alt="3D model photo">
+						</div>
+
+						<div class="left-info columns six">
+							<h4>Models can be found at Thingiverse from the link below. At Thingiverse you can find completed models like the final DW version and the older version. Both will work, but the older version is a little easier to print and work with. 
+							</h4>
+							<img src="img/icons/projectIcons/3d.svg" alt="3d icon">
+							<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">Dustin's Word's Thingiverse</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="right-content">
+					<div class="row">
+						<div class="right-info columns six">
+							<h4>We built Dustin's Word's using a Particle Board. Here you can find all the code for the project. We believe  in this product and want to spread the word and get them in the hands of people that need them!</h4>
+
+							<img src="img/icons/projectIcons/github.svg" alt="Github icon">
+							<a href="https://github.com/Dustins-Words" target="_blank">Dustin's Words Github</a>
+							<div class="more-projects-doubled row>">
+								<a class="toggle-menu menu-right" href="#">More Projects</a>
+							</div>
+						</div>
+						<div class="columns six">
+							<img class="right-img" src="img/page-img/dustins-words/dw-code.jpg" alt="Dustin's Words Code photo">
+						</div>
+					</div>	
+				</div>
+			</div><!-- end project files -->
+		</div><!-- end project container -->
+
+
 		<footer id="contact">
 			<ul>
 				<li class="fadeIn">
-					<a href="http://donnieplumly.tumblr.com/" target="_blank">
+					<a id="blog" href="http://donnieplumly.tumblr.com/" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -188,7 +275,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="http://instagram.com/donnieplumly" target="_blank">
+					<a id="instagram" href="http://instagram.com/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -228,7 +315,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">
+					<a id="thingiverse" href="https://www.thingiverse.com/dplumly/designs" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<style type="text/css">
@@ -252,7 +339,7 @@
 				</li>
 
 				<li class="fadeIn">
-					<a href="https://github.com/dplumly" target="_blank">
+					<a id="github" href="https://github.com/dplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 							<g>
@@ -273,7 +360,7 @@
 
 
 				<li class="fadeIn">
-					<a href="http://www.linkedin.com/in/donnieplumly" target="_blank">
+					<a id="linkedin" href="http://www.linkedin.com/in/donnieplumly" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -298,7 +385,7 @@
 				</li>
 
 				<li id="resume" class="fadeIn">
-					<a href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
+					<a id="resume" href="img/resume/Donnies-Awesome-Resume.pdf" download="Donnie Plumly's Awesome Resume!" target="_blank">
 						<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 					viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<style type="text/css">
@@ -331,10 +418,8 @@
 					</a>
 				</li>
 
-
-
 				<li class="fadeIn">
-					<a href="mailto:donnie.plumly@gmail.com" target="_blank">
+					<a id="email" href="mailto:donnie.plumly@gmail.com" target="_blank">
 					<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 			viewBox="0 0 27 27" style="enable-background:new 0 0 27 27;" xml:space="preserve">
 						<g>
@@ -353,8 +438,11 @@
 					</a>
 				</li>
 			</ul>
-			<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
-			<p>Think, Make, Repeat.</p>
+			<div id="footer-info" class="column eight centered">
+				<p>donnie.plumly@gmail.com</p>
+				<p>COPYRIGHT 2018 | DONNIE PLUMLY</p>
+				<p>Think, Make, Repeat.</p>
+			</div>
 		</footer>
 
 
@@ -380,30 +468,10 @@
 
 
 
-    <!-- Scroll Reveal Script -->
-    <script>
-    	// Changing the defaults
-		window.sr = ScrollReveal({ reset: false});
-
-		// Customizing a reveal set
-		sr.reveal('.fadeIn', { duration: 800 });
-    </script>
-
-
-    <!-- Code for scroll line at top of page -->
-    <script>
-    	$.scrolline({
-		    reverse : false,
-		    position : 'top',
-		    backColor : '#262626',
-		    frontColor : '#61e3d3',
-		    weight : 8
-		});
-    </script>
 
     <script>
 		$(function() {
-		  $('nav ul li a').click(function() {
+		  $('nav ul li a, #menu-contact, #nav-contact').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
 		      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -419,18 +487,44 @@
     </script>
 
    
-    <!--push menu-->
+    
 	<script>
+		// Scroll Reveal Script /////////////////////////////////////
+    	// Changing the defaults
+		window.sr = ScrollReveal({ reset: false});
+		// Customizing a reveal set
+		sr.reveal('.fadeIn', { duration: 800 });
+
+
+
+		// Code for scroll line at top of page /////////////////////////////////////
+    	$.scrolline({
+		    reverse : false,
+		    position : 'top', 
+		    backColor : '#9e1c2c',
+		    frontColor : '#61e3d3',
+		    weight : 3
+		});
+
+
+		// Push Menu Script /////////////////////////////////////
 		jQuery(document).ready(function($) {
 			$('.toggle-menu').jPushMenu();
 		});
-	</script>
 
-	<script type="text/javascript">
-	   $(document).ready(function() {
+
+		// Transformicon Script /////////////////////////////////////
+		$(document).ready(function(){
+			$('.hamburger-menu').click(function(){
+				$(this).toggleClass('open');
+			});
+		});
+		
+
+		// Image Gallery Script /////////////////////////////////////
+	    $(document).ready(function() {
 	      $(".img-gallery").tosrus();
-
-	   });
+	    });	
 	</script>
 
 	</body>
