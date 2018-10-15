@@ -872,7 +872,13 @@ paperproto
     line-height: 60px;
 }
 
-#paperproto-site-bg { background: url('../img/page-img/paperproto/paperproto-bg.jpg') fixed center no-repeat; }
+#paperproto-site-bg { 
+    background: url('../img/page-img/paperproto/paperproto-bg.jpg') fixed center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
 /*===================================
 
 Dustin's Words
@@ -1048,7 +1054,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     #thumbnails.row .six.columns h2, #thumbnails.row .six.columns h5 { opacity: 1; }
     #thumbnails.row .six.columns img { opacity: .5; }
     .gallery ul li a { float: none; margin: 0 auto; display: table }
-    .video-description h3, .gallery h3, .project-files h3, .header-copy h4 {padding: 10px; }
+    .video-description h3, .gallery h3, .project-files h3, .header-copy h4 {padding: 0 20px; }
     .single-info { margin: 0 auto 25px auto; }
     .left-img, #paperproto-8 { /*position: absolute; left: -369px; top: 20px;*/ display: none; }
     .single-img { position: absolute; left: -369px; top: 20px; }
@@ -1069,6 +1075,12 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     #landing li:nth-child(2) { margin-left: 13px; }
     #landing li:nth-child(3) { margin-left: 25px; }
     #landing li:nth-child(4) { margin-left: 38px; }
+
+    #paperproto-site-bg { background: url('../img/page-img/paperproto/paperproto-bgMobile.jpg') fixed center no-repeat; }
+    #dw-site-bg { background: url('../img/page-img/dustins-words/dw-bgMobile.jpg') fixed center no-repeat; }
+    #huddle-site-bg { background: url('../img/page-img/huddles/huddles-bgMobile.jpg') fixed center no-repeat; position: relative; }
+    #soundbooth-site-bg { background: url('../img/page-img/soundbooth/sound-waveMobile.jpg') fixed center no-repeat; }
+    
     footer ul li { display: -webkit-inline-box; margin: 5px; font-size: 14px; }
 }
 
