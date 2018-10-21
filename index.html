@@ -89,19 +89,11 @@
 			<div class="row">
 				<ul>
 					<li><h1>nerd,</h1></li>
-					<li><h1>entrepreneur,</h1></li>
-					<li><h1>experiential designer,</h1></li>
-					<li><h1>creative technologist.</h1></li>
+					<li><h1>experiential,</h1></li>
+					<li><h1>creative tech,</h1></li>
+					<li><h1>entrepreneur.</h1></li>
 				</ul>
 			</div>
-			<!--<div id="heading">
-				<span></span>
-				<span></span>
-				<h1>X</h1>
-				<h1>D</h1>
-				<h1>C</h1>
-				<h1>T</h1>
-			</div> -->
 		</div><!-- end landing -->
 
 
@@ -517,12 +509,19 @@
 			$('.toggle-menu').jPushMenu();
 		});
 
-
 		// Transformicon Script /////////////////////////////////////
 		$(document).ready(function(){
 			$('.hamburger-menu').click(function(){
 				$(this).toggleClass('open');
 			});
+		});
+
+	
+
+		$(document).ready(function(){
+    		$('more-projects-doubled a').click(function(){
+        		$(this).toggleClass('open');
+    		});
 		});
 		
 

@@ -794,13 +794,6 @@ Lit IS
     pointer-events:none;
     z-index:1;
 }
-#paperproto-site-bg { background: url('../img/page-img/paperproto/paperproto-bg.jpg') fixed center no-repeat; }
-#paperproto-8 {
-    left: -65px;
-    height: 513px;
-    transform: rotate(-5deg);
-    top: -62px;
-}
 
 /*===================================
 
@@ -826,7 +819,13 @@ The Huddles Page
     z-index:1;
 }
 
-#huddle-site-bg { background: url('../img/page-img/huddles/huddles-bg.jpg') fixed center no-repeat; position: relative; }
+#huddle-site-bg { 
+    background: url('../img/page-img/huddles/huddles-bg.jpg') fixed center no-repeat; position: relative; 
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
 span#huddle-bar { 
     height: 10px;
     width: 100%;
@@ -879,6 +878,13 @@ paperproto
     -o-background-size: cover;
     background-size: cover; 
 }
+
+#paperproto-8 {
+    left: -65px;
+    height: 513px;
+    transform: rotate(-5deg);
+    top: -62px;
+}
 /*===================================
 
 Dustin's Words
@@ -902,7 +908,13 @@ Dustin's Words
     pointer-events:none;
     z-index:1;
 }
-#dw-site-bg { background: url('../img/page-img/dustins-words/dw-bg.jpg') fixed center no-repeat; }
+#dw-site-bg { 
+    background: url('../img/page-img/dustins-words/dw-bg.jpg') fixed center no-repeat; 
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
 
 /*========================
 
@@ -1046,7 +1058,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     #landing ul { left: 25px; }
     #color { transform: skewX(20deg); }
     #project-color { display: none; }
-    #landing h1 { font-size: 1.7em; margin: 7px 0; line-height: 35px; }
+    #landing h1 { font-size: 2.2em; margin: 12px 0; line-height: 35px; }
     #landing li:nth-child(1) { margin-left: 0px; }
     #landing li:nth-child(2) { margin-left: 18px; }
     #landing li:nth-child(3) { margin-left: 36px; }
@@ -1080,7 +1092,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     #dw-site-bg { background: url('../img/page-img/dustins-words/dw-bgMobile.jpg') fixed center no-repeat; }
     #huddle-site-bg { background: url('../img/page-img/huddles/huddles-bgMobile.jpg') fixed center no-repeat; position: relative; }
     #soundbooth-site-bg { background: url('../img/page-img/soundbooth/sound-waveMobile.jpg') fixed center no-repeat; }
-    
+
     footer ul li { display: -webkit-inline-box; margin: 5px; font-size: 14px; }
 }
 
@@ -1115,7 +1127,6 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
                 margin: 0 auto;
                 width: 350%; 
             }
-    #landing h1 { font-size: 1.2em; margin: 4px 0; }
     #about h2, .project-container h2  { font-size: 2em; }
     figurecaption h2  { font-size: 1.8em;  }
     #about hr, .project-container hr   { width: 180px; }
