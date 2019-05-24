@@ -392,7 +392,8 @@ Landing Page Thumbnails
 }
 
 #thumbnails figure.tint { 
-    margin: 0 0 20px 0; 
+    /*margin: 0 0 20px 0;*/
+    margin: 0; 
     float: left; 
     background: #000;
     overflow: hidden;
@@ -420,6 +421,72 @@ Landing Page Thumbnails
     opacity: .3;
     cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+#thumbnails.row .twelve.columns h2 {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    color: #eaeaea;
+    text-transform: uppercase;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+#thumbnails.row .twelve.columns h5 {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    color: #eaeaea;
+    max-width: 400px;
+    font-family: 'Open Sans', sans-serif; 
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+#thumbnails .twelve.columns.fadein a figure.tint { 
+    margin: 0 0 20px 0; 
+    float: left; 
+    background: #000;
+    overflow: hidden;
+}
+
+#thumbnails figurecaption h2 span { color: #61e3d3; font-family: 'LatoWeb', sans-serif; }
+#thumbnails.row .twelve.columns img {
+    /*opacity: .5;*/
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    -moz-transform: scale(1);
+    -webkit-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+#thumbnails.row .twelve.columns:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: .3;
+    cursor: pointer;
+}
+
+
+
+
 /*===================================
 
 Project container
