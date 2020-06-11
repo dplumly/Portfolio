@@ -253,9 +253,6 @@ Landing Page
     text-transform: uppercase;
  }
 
-#landing li:nth-child(1) {
-    
-}
 #landing li:nth-child(2) { margin-left: 40px; }
 #landing li:nth-child(3) { margin-left: 76px; }
 #landing li:nth-child(4) { margin-left: 107px; }
