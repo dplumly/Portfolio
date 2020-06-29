@@ -5,7 +5,7 @@ body, html { height: 100%; -webkit-font-smoothing: antialiased; }
 ul { list-style-type: none; }
 a { text-decoration: none; font-family: 'LatoWebLight', sans-serif; }
 ::-webkit-scrollbar { display: none; }
-h1, h2, h3, h4, h5, h6, p { color: #eaeaea; letter-spacing: 2px; line-height: 20px; }
+h1, h2, h3, h4, h5, h6, p { color: #eaeaea; letter-spacing: 2px; /*line-height: 20px;*/ }
 h1, h2, h3 { font-family: 'LatoWebLight', sans-serif; }
 h4, h5, h6 { font-family: 'LatoWeb', sans-serif; }
 p { font-family: 'Open-Sans-Regular', sans-serif; color: #262626; }
@@ -197,7 +197,6 @@ Landing Page
 #landing {
     position: relative;
 	min-height: 600px;
-    height: 50%;
     width: 100%;
     background: url('../img/backgrounds/landing.jpg') no-repeat right center;
     background-color: #262626;
@@ -287,30 +286,6 @@ Landing Page
     transform: rotate(-45deg); /* Equal to rotateZ(45deg) */
 }
 
-/* X */
-#heading h1:nth-child(3) {
-    position: absolute;
-    top: 25px;
-    right: -16px;
-}
-/* D */
-#heading h1:nth-child(4) {
-    position: absolute;
-    left: -14px;
-    top: 147px;
-}
-/* C */
-#heading h1:nth-child(5) {
-    position: absolute;
-    left: -80px;
-    top: 87px;
-}/* T */
-#heading h1:nth-child(6) {
-    position: absolute;
-    left: 59px;
-    top: 87px;
-}
-
 /*===================================
 
 About 
@@ -377,7 +352,7 @@ Landing Page Thumbnails
 
 #thumbnails.row .six.columns h5 {
     position: absolute;
-    top: 130px;
+    top: 137px;
     left: 30px;
     color: #eaeaea;
     max-width: 400px;
@@ -415,7 +390,7 @@ Landing Page Thumbnails
     -webkit-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
-    opacity: .3;
+    opacity: .8;
     cursor: pointer;
 }
 
@@ -572,7 +547,7 @@ Project container
     -webkit-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
-    opacity: .3;
+    opacity: .8;
     cursor: pointer;
 }
 
@@ -599,11 +574,11 @@ Project container
 
 /*--Project Files Single
 ==============================================================================================*/
-
 .single-info {
     max-width: 600px;
     text-align: right;
     margin-bottom: 50px;
+    z-index: 1;
 }
 .single-img { position: absolute; left: -170px; }
 
@@ -631,15 +606,13 @@ Project container
 }
 
 .more-projects-single { padding-bottom: 50px; }
-
 .more-projects-single a {
     text-transform: uppercase;
     background: #262626 !important;
-    padding: 15px 160px !important;
+    padding: 15px 160px ;
     color: #f3f3f3;
     margin: 0 auto;
     display: table;
-    padding-bottom: 50px;
     white-space:nowrap;
     text-align: center;
 }
@@ -649,19 +622,19 @@ Project container
 .more-projects-doubled { position: relative; bottom: -25px; }
 .more-projects-doubled a {
     text-transform: uppercase;
-    background: #262626 !important;
-    padding: 15px 160px !important;
+    background:  #262626 !important;
+    padding: 15px 160px;
     color: #f3f3f3;
     margin: 50px auto;
     display: table;
+    white-space:nowrap;
 }
-
 
 /*--Files associated with project
 ==============================================================================================*/
 .left-content, .right-content  { min-height: 320px; position: relative; } 
 .left-img { position: absolute; left: -170px; }
-.left-info { max-width: 600px; text-align: right; }
+.left-info { max-width: 600px; text-align: right; z-index: 1;}
 .left-info a {
     margin: 10px auto;
     display: table;
@@ -679,7 +652,7 @@ Project container
 }
 .left-info img {
     height: 75px;
-    margin: 20px auto 10px auto;
+    margin: 40px auto 10px auto;
     display: table;
 }
 
@@ -706,14 +679,30 @@ Project container
 }
 .right-info img {
     height: 75px;
-    margin: 20px auto 10px auto;
+    margin: 40px auto 10px auto;
     display: table;
 }
 
+/*--IBM Digital activation globals
+==============================================================================================*/
+.visit-experience a {
+      text-transform: uppercase;
+    background: #262626;
+    padding: 15px 160px;
+    color: #f3f3f3;
+    margin: 25px auto;
+    display: table;
+    white-space:nowrap;
+}
+.project-files h3 span { color: #61e3d3; }
+
+
+
 /*===================================
+
 LS Origami Page
 
-===================================*/
+===================================
 #origami-landing {
     position: relative;
     background: url('../img/backgrounds/origami.jpg') left center no-repeat;
@@ -737,7 +726,71 @@ LS Origami Page
     position: absolute;
     right: -235px;
     top: -23px;
+}*/
+
+/*===================================
+
+IBM 2020 Activations Page
+
+===================================*/
+#activations-landing {
+    position: relative;
+    background: url('../img/backgrounds/activations-landing.jpg') left center no-repeat;
+    min-height: 600px;
+    width: 100%;
+    background-color: #262626;
 }
+#activations-landing:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    box-shadow: 0px 0px 220px black inset;
+    pointer-events:none;
+    z-index:1;
+}
+.quantum-section {
+    background: url('../img/page-img/ibm-digital-activations/quantum-machine.jpg') right center no-repeat;
+    background-color: #000;
+    min-height: 500px;;
+}
+
+.left-img { top: -50px; }
+
+.center-activation-text h4 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 400px;
+  color: #f3f3f3;;
+}
+
+.activation-link { background-color: #eaeaea; }
+.ibm-more-projects { background-color: #f3f3f3; }
+
+.more-projects-ibm-link a {
+    text-transform: uppercase;
+    background: #262626 ;
+    padding: 15px 160px ;
+    color: #f3f3f3;
+    margin: 0 auto;
+    display: table;
+    white-space:nowrap;
+    text-align: center;
+}
+
+
+
+/*#ripple-container {
+   background-image: url('../img/page-img/ibm-digital-activations/ripple-animation.gif');
+  background-repeat: repeat;
+}*/
+.ripple-section {
+    background: url('../img/page-img/ibm-digital-activations/ripple-fixed-bg.jpg') right center no-repeat;
+    background-color: #000;
+    min-height: 500px;;
+}
+
 /*===================================
 
 Chingon Pong Page
@@ -747,7 +800,6 @@ Chingon Pong Page
     position: relative;
     background: url('../img/backgrounds/chingon-pong.jpg') right center no-repeat;
     min-height: 600px;
-    height: 50%;
     width: 100%;
     background-color: #262626;
 }
@@ -778,7 +830,6 @@ Visceral Velocity Page
     position: relative;
     background: url('../img/backgrounds/visceral_reality.jpg') left center no-repeat;
     min-height: 600px;
-    height: 50%;
     width: 100%;
     background-color: #262626;
 }
@@ -803,7 +854,6 @@ LC 500 Soundbooth Page
     position: relative;
     background: url('../img/backgrounds/LC_soundbooth.jpg') center center no-repeat;
     min-height: 600px;
-    height: 50%;
     width: 100%;
     background-color: #262626;
 }
@@ -817,7 +867,7 @@ LC 500 Soundbooth Page
     pointer-events:none;
     z-index:1;
 }
-#soundbooth-site-bg { background: url('../img/page-img/soundbooth/sound-wave.jpg') fixed center no-repeat; }
+#soundbooth-site-bg { background: url('../img/page-img/soundbooth/sound-wave.jpg') fixed center no-repeat; background-color: #000; }
 img.soundbooth-right-img { 
     position: absolute;
     right: -525px;
@@ -833,7 +883,6 @@ Lit IS
     position: relative;
     background: url('../img/backgrounds/litIS.jpg') no-repeat center center;
     min-height: 600px;
-    height: 50%;
     width: 100%;
     background-color: #262626;
 }
@@ -857,7 +906,6 @@ The Huddles Page
     position: relative;
     background: url('../img/backgrounds/huddles.jpg') no-repeat center left;
     min-height: 600px;
-    height: 50%;
     width: 100%;
     background-color: #262626;
 }
@@ -887,7 +935,8 @@ span#huddle-bar {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    top: 42%;
+    /*top: 42%;*/
+    top: 50%;
 }
 huddle-bar h4 {
     white-space: nowrap;
@@ -902,7 +951,6 @@ paperproto
     position: relative;
     background: url('../img/backgrounds/paperproto.jpg') no-repeat center center;
     min-height: 600px;
-    height: 50%;
     width: 100%;
     background-color: #262626;
 }
@@ -947,7 +995,6 @@ Dustin's Words
     position: relative;
     background: url('../img/backgrounds/dustins-words.jpg') no-repeat center center;
     min-height: 600px;
-    height: 50%;
     width: 100%;
     background-color: #262626;
 }
@@ -988,7 +1035,6 @@ footer ul {
 }
 
 footer li { display: -webkit-inline-box; margin: 15px; }
-
 footer ul li a { 
     color: #eaeaea;
     font-size: 1.7em;
@@ -1042,6 +1088,7 @@ footer p {
     font-size: 0.625em;
     text-align: center;
     font-family: 'LatoWebLight', sans-serif;
+    padding: 5px;
 }
 
 footer #footer-info { position: relative; top: -17px; }
@@ -1051,15 +1098,15 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
 
 /* 2001 */
 @media only screen and (min-width: 125.063em) {
-    #landing { background: url('../img/backgrounds/large/landing_big.jpg') no-repeat center center; }
-    #chingon-pong-landing { background: url('../img/backgrounds/large/chingon-pong-bg.jpg') right center no-repeat; }
-    #origami-landing { background: url('../img/backgrounds/large/origami_big.jpg') left center no-repeat;}
-    #visceral_reality-landing  { background: url('../img/backgrounds/large/visceral_reality_big.jpg') no-repeat center center; }
-    #LC_soundbooth-landing  { background: url('../img/backgrounds/large/LC_soundbooth_big.jpg') no-repeat center center; }
-    #litIS-landing  { background: url('../img/backgrounds/large/litIS_big.jpg') no-repeat center center; }
-    #the-huddles-landing { background: url('../img/backgrounds/large/huddles_big.jpg') no-repeat center center; }
-    #paperproto-landing { background: url('../img/backgrounds/large/paperproto_big.jpg') no-repeat center center; }
-    #dustins-words-landing  { background: url('../img/backgrounds/large/dustins-words_big.jpg') no-repeat center center; }
+    #landing { background: url('../img/backgrounds/large/landing-big.jpg') no-repeat center center; }
+    #chingon-pong-landing { background: url('../img/backgrounds/large/chingon-pong-big.jpg') right center no-repeat; }
+    #visceral_reality-landing  { background: url('../img/backgrounds/large/visceral-reality-big.jpg') no-repeat center center; }
+    #LC_soundbooth-landing  { background: url('../img/backgrounds/large/LC-soundbooth-big.jpg') no-repeat center center; }
+    #litIS-landing  { background: url('../img/backgrounds/large/litIS-big.jpg') no-repeat center center; }
+    #the-huddles-landing { background: url('../img/backgrounds/large/huddles-big.jpg') no-repeat center center; }
+    #paperproto-landing { background: url('../img/backgrounds/large/paperproto-big.jpg') no-repeat center center; }
+    #dustins-words-landing  { background: url('../img/backgrounds/large/dustins-words-big.jpg') no-repeat center center; }
+    #activations-landing  { background: url('../img/backgrounds/large/activations-big.jpg') no-repeat center center; }
     #color { left: 19%; }
 }
 
@@ -1071,11 +1118,15 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
 
 /* 1000 */
 @media only screen and (max-width: 62.500em) {
+    .project-landing h1 { padding: 50px 20px 0 20px;}
     #description { padding: 0 10px; }
     #about h2 { padding: 20px 0 0 0; }
     #about div  { margin: 0 20px; }
     .left-info { margin-right: 20px; float: right; }
-    .project-container h2, .project-container h4 { padding: 0 20px; }
+    .project-container h2, .project-container h4 { padding: 20px; }
+    .project-container .row, .left-info { padding: 20px; }
+    .center-activation-text { margin: 20px 0;}
+    .quantum-section { background: url('../img/page-img/ibm-digital-activations/quantum-machine-med.jpg') center center no-repeat; }
     .header-copy h4 {margin-top: 20px}
     .project-container hr { margin: 10px 20px 35px 20px; }
 }
@@ -1088,7 +1139,6 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
 @media only screen and (min-width: 48.000em) { 
     #mobile-nav { display: none; }
 }
-
 
 /* 768 */
 @media only screen and (max-width: 48.000em) {
@@ -1129,7 +1179,6 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     footer ul li#resume { display: none; }
 }
 
-
 /* 600 */
 @media only screen and (max-width: 37.500em) {
     #color { width: 45%; left: 0; transform: skewX(15deg); }
@@ -1138,13 +1187,13 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     #landing li:nth-child(2) { margin-left: 13px; }
     #landing li:nth-child(3) { margin-left: 25px; }
     #landing li:nth-child(4) { margin-left: 38px; }
-
-    #paperproto-site-bg { background: url('../img/page-img/paperproto/paperproto-bgMobile.jpg') fixed center no-repeat; }
+    /*#paperproto-site-bg { background: url('../img/page-img/paperproto/paperproto-bgMobile.jpg') fixed center no-repeat; }
     #dw-site-bg { background: url('../img/page-img/dustins-words/dw-bgMobile.jpg') fixed center no-repeat; }
     #huddle-site-bg { background: url('../img/page-img/huddles/huddles-bgMobile.jpg') fixed center no-repeat; position: relative; }
-    #soundbooth-site-bg { background: url('../img/page-img/soundbooth/sound-waveMobile.jpg') fixed center no-repeat; }
-
+    #soundbooth-site-bg { background: url('../img/page-img/soundbooth/sound-waveMobile.jpg') fixed center no-repeat; }*/
     footer ul li { display: -webkit-inline-box; margin: 5px; font-size: 14px; }
+    .center-activation-text h4 { height: auto; }
+    .visit-experience a, .more-projects-doubled a,  .more-projects-single a, .more-projects-ibm-link a { padding: 15px 60px;   width: 100%; text-align: center;  }
 }
 
 
@@ -1160,10 +1209,20 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     #the-huddles-landing { background: url('../img/backgrounds/mobile/huddleMobile.jpg') no-repeat center center; }
     #paperproto-landing { background: url('../img/backgrounds/mobile/paperprotoMobile.jpg') no-repeat center center; }
     #dustins-words-landing  { background: url('../img/backgrounds/mobile/dustinsWordsMobile.jpg') no-repeat center center; }
+
+    #activations-landing { background: url('../img/backgrounds/mobile/quantumMobile.jpg') no-repeat center center; }
+    .quantum-section { background: url('../img/page-img/ibm-digital-activations/ibmMobile.jpg') center center no-repeat; }
+
+
     #about h4, .project-container h4  { font-size: 1.2em; line-height: 30px; }
     .project-landing h1 { line-height: 45px; padding: 50px 20px 0 20px; letter-spacing: 0; }
     .project-container h2 { font-size: 2.5em; }
     .project-container hr { width: 230px; }
+
+
+
+
+
     /*#landing li { margin-left: 0 !important; }*/
 }
 
@@ -1186,7 +1245,24 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     .single-img { left: -310px; }
     .right-img { top: -100px; }
     .right-info a, .left-info a { padding: 15px 50px; }
-    .more-projects-doubled a, .more-projects-single a { padding: 15px 110px !important; }
+
+
+
+    /*.more-projects-doubled a, .more-projects-single a { padding: 15px 110px; }*/
+
+
+
+    footer { height: auto; padding-bottom: 65px;; }
+    footer ul li {     
+        display: inline-block;
+        margin: auto;
+        font-size: 25px;
+        text-align: center;
+        padding: 25px;
+        height: auto;
+        width: 50%;
+    }
+/*
     footer { height: 800px; }
     footer ul li {     
         display: block;
@@ -1195,6 +1271,9 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
         text-align: center;
         padding: 20px; 
     }
+    */
+
+
     footer #footer-info p:nth-child(1) { display: none; }
     footer ul li a svg { height: 30px; }
 
@@ -1203,6 +1282,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
 /* 400px */
 @media only screen and (max-width: 25.000em) {
     figurecaption h2 { letter-spacing: 0px; }
+    /*.left-content, .right-content { padding: 40px 0; }*/
     #landing ul { left: 0; }
     #landing li:nth-child(1) { margin-left: 0px; }
     #landing li:nth-child(2) { margin-left: 17px; }

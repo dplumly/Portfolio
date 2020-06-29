@@ -212,21 +212,21 @@
 .tos-touch .tos-wrapper.tos-hover .tos-prev,
 .tos-touch .tos-wrapper.tos-hover .tos-next,
 .tos-touch .tos-wrapper.tos-hover .tos-close {
-  opacity: 0.5; }
+  opacity: 0.7; }
   .tos-desktop .tos-wrapper:hover .tos-prev:hover,
   .tos-desktop .tos-wrapper:hover .tos-next:hover,
   .tos-desktop .tos-wrapper:hover .tos-close:hover,
   .tos-touch .tos-wrapper.tos-hover .tos-prev:hover,
   .tos-touch .tos-wrapper.tos-hover .tos-next:hover,
   .tos-touch .tos-wrapper.tos-hover .tos-close:hover {
-    opacity: 0.9; }
+    opacity: 0.7; }
   .tos-desktop .tos-wrapper:hover .tos-prev.tos-disabled,
   .tos-desktop .tos-wrapper:hover .tos-next.tos-disabled,
   .tos-desktop .tos-wrapper:hover .tos-close.tos-disabled,
   .tos-touch .tos-wrapper.tos-hover .tos-prev.tos-disabled,
   .tos-touch .tos-wrapper.tos-hover .tos-next.tos-disabled,
   .tos-touch .tos-wrapper.tos-hover .tos-close.tos-disabled {
-    opacity: 0.2; }
+    opacity: 0.7; }
 
 .tos-prev span,
 .tos-next span,
