@@ -1,0 +1,237 @@
+
+/*--Contact Modal 
+==============================================================================================*/
+.form-container {
+  display: none; 
+  position: fixed; 
+  z-index: 3; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4); 
+}
+
+.form-container::after {
+  content: "";
+    background: url('../img/contact-modal/contact-form-bg.jpg') top center;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+.form-card {
+  width: 790px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 72px 55px 90px 55px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+   position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 80%;
+}
+
+.form-title {
+  display: block;
+  font-family: Poppins-Bold;
+  font-size: 39px;
+  color: #232323;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.close {
+    font-size: 3em;
+    right: 25px;
+    top: 10px;
+    position: absolute;
+}
+.close:hover,
+.close:focus {
+  color: #232323;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.submit-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 13px;
+}
+
+.submit-container input {
+    cursor: pointer;
+     text-transform: uppercase;
+    background: #262626 !important;
+    padding: 15px 160px ;
+    color: #f3f3f3;
+    margin: 0 auto;
+    display: table;
+    white-space:nowrap;
+    text-align: center;
+}
+/*------------------------------------------------------------------
+Thank you modal 
+------------------------------------------------------------------*/
+#thumbsUp {
+  margin: 30px auto;
+  display: table;
+  width: 140px;
+}
+
+#thank-you-modal  h2 {
+  color: #232323;
+  margin: 0 auto;
+  display: table;
+}
+/*------------------------------------------------------------------*/
+.input-wrapper {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #232323;
+  margin-bottom: 37px;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  color: #232323;
+  line-height: 1.2;
+}
+
+.focus-input {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  background: #61e3d3;
+}
+
+.focus-input::after {
+  content: attr(data-placeholder);
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  font-size: 13px;
+  color: #232323;
+  line-height: 1.2;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+input.input { height: 45px; }
+input.input + .focus-input::after { top: 16px; left: 0; }
+textarea.input {
+  min-height: 115px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+textarea.input + .focus-input::after { top: 16px; left: 0; }
+.input:focus + .focus-input::after { top: -13px; }
+.input:focus + .focus-input::before { width: 100%; }
+.has-val.input + .focus-input::after { top: -13px; }
+.has-val.input + .focus-input::before { width: 100%; }
+
+input { outline: none; border: none; }
+textarea { outline: none; border: none; }
+textarea:focus, input:focus { border-color: transparent !important; }
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+
+/*------------------------------------------------------------------
+[ Responsive ]*/
+@media (max-width: 576px) {
+  .form-container { padding-top: 70px;}
+  .wrap-contact-form { padding: 72px 15px 90px 15px; }
+  .submit-container input { padding: 15px 100px; }
+  .form-card { padding: 72px 55px 40px 55px; }
+}
+
+
+/*------------------------------------------------------------------*/
+.validate-input { position: relative; }
+.alert-validate::after {
+  content: "\f12a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  color: #9e1c2b;
+  font-size: 16px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 8px;
+}

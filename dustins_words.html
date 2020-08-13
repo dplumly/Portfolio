@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/contact-modal.css">
 	<link rel="stylesheet" href="fonts/Lato/latofonts.css">
 	<link rel="stylesheet" href="fonts/OpenSans/open-sans.css">
 	<link rel="stylesheet" href="css/grid.css">
@@ -31,9 +32,9 @@
 	<!-- Navigation Bar -->
 	<nav>
 		<ul class="row">
-			<li class="columns four"><a href="index.html">home</a></li>
-			<li class="columns four toggle-menu menu-right"><a href="#">projects</a></li>
-			<li class="columns four"><a id="nav-contact" href="#contact">contact</a></li>
+			<li class="columns four"><a href="index.html"><span>home</span></a></li>
+			<li class="columns four toggle-menu menu-right"><a href="#"><span>projects</span></a></li>
+			<li class="columns four"><a id="nav-contact" href="#"><span>contact</span></a></li>
 		</ul>
 	</nav>
 
@@ -58,7 +59,7 @@
 				</a>
 			</li>
 			<li class="mobile-four">
-				<a id="nav-contact" href="#contact">
+				<a id="mobile-nav-contact" href="#/">
 					<img src="img/icons/mobileIcons/mobile-contact.svg">
 				</a>
 			</li>
@@ -113,9 +114,11 @@
 			<img src="img/logo/gear.svg" alt="Donnie Plumly logo">
 		</div>
 
-		<div class="row">
-			<h2>Overview</h2>
-			<hr>
+		<div class="row project-overview">
+			<div class="company">
+				<h3>Company: <span>Dustin's Words</span></h3>
+			</div>
+			<br>
 
 			<div class="project-copy">
 				<h4>Imagine a life where you could understand everything that is being said, but physically can’t
@@ -143,13 +146,13 @@
 
 		<!-- Video for project -->
 		<div class="video-container">
-			<div class="work-img">
+			<!-- <div class="work-img">
 				<img src="img/logo/work.svg" alt="Donnie Plumly Work logo">
-			</div>
+			</div> -->
 
 			<div class="row">
 				<div class="video-description nine columns centered">
-					<h3>Video from our Indegogo campaign from 2015.
+					<h3>Indegogo campaign from 2015
 					</h3>
 					<div class="ten columns centered">
 						<h4>Explains the project, our intentions and motives.</h4>
@@ -165,10 +168,10 @@
 		</div><!-- end video container -->
 
 		<div class="gallery">
-			<div id="project-color"></div>
+			<!-- <div id="project-color"></div> -->
 			<div class="row">
 				<div class="nine columns centered">
-					<h3>Photos of the many iterations to the current device.
+					<h3>Many iterations to the current device
 					</h3>
 					<div class="header-copy ten columns centered">
 						<h4>We started out with a foam core box full of wires, then a 3d printed enclosure, and finally
@@ -179,52 +182,60 @@
 
 			<ul class="row">
 				<li class="four column fadeIn"><a class="img-gallery"
-						href="img/work/dustins-words/foam_core_prototype.jpg" alt="prototype"><img
-							src="img/work/dustins-words/foam_core_prototype.jpg"></a></li>
+						href="img/projects/dustins-words/work/foam_core_prototype.jpg" alt="prototype"><img
+							src="img/projects/dustins-words/work/foam_core_prototype.jpg"></a></li>
 
 				<li class="four column fadeIn"><a class="img-gallery"
-						href="img/work/dustins-words/foam_core_prototype2.jpg" alt="prototype"><img
-							src="img/work/dustins-words/foam_core_prototype2.jpg"></a></li>
+						href="img/projects/dustins-words/work/foam_core_prototype2.jpg" alt="prototype"><img
+							src="img/projects/dustins-words/work/foam_core_prototype2.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/buttons.jpg"
-						alt="prototype"><img src="img/work/dustins-words/buttons.jpg"></a></li>
-
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/button_cables.jpg"
-						alt="buttons"><img src="img/work/dustins-words/button_cables.jpg"></a></li>
-
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/DW-3D-Printing.jpg"
-						alt="3d printed box"><img src="img/work/dustins-words/DW-3D-Printing.jpg"></a></li>
-
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/hole-saw.jpg"
-						alt="drilling holes"><img src="img/work/dustins-words/hole-saw.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/dustins-words/work/buttons.jpg"
+						alt="prototype"><img src="img/projects/dustins-words/work/buttons.jpg"></a></li>
 
 				<li class="four column fadeIn"><a class="img-gallery"
-						href="img/work/dustins-words/3d_printed_prototype.jpg" alt="prototype 3d printed"><img
-							src="img/work/dustins-words/3d_printed_prototype.jpg"></a></li>
+						href="img/projects/dustins-words/work/button_cables.jpg" alt="buttons"><img
+							src="img/projects/dustins-words/work/button_cables.jpg"></a></li>
 
 				<li class="four column fadeIn"><a class="img-gallery"
-						href="img/work/dustins-words/3d_printed_prototype2.jpg" alt="prototype 3d printed"><img
-							src="img/work/dustins-words/3d_printed_prototype2.jpg"></a></li>
+						href="img/projects/dustins-words/work/DW-3D-Printing.jpg" alt="3d printed box"><img
+							src="img/projects/dustins-words/work/DW-3D-Printing.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work//dustins-words/custom-buttons.jpg"
-						alt="custom screen button prototype"><img src="img/work/dustins-words/custom-buttons2.jpg"></a>
+				<li class="four column fadeIn"><a class="img-gallery"
+						href="img/projects/dustins-words/work/hole-saw.jpg" alt="drilling holes"><img
+							src="img/projects/dustins-words/work/hole-saw.jpg"></a></li>
+
+				<li class="four column fadeIn"><a class="img-gallery"
+						href="img/projects/dustins-words/work/3d_printed_prototype.jpg" alt="prototype 3d printed"><img
+							src="img/projects/dustins-words/work/3d_printed_prototype.jpg"></a></li>
+
+				<li class="four column fadeIn"><a class="img-gallery"
+						href="img/projects/dustins-words/work/3d_printed_prototype2.jpg" alt="prototype 3d printed"><img
+							src="img/projects/dustins-words/work/3d_printed_prototype2.jpg"></a></li>
+
+				<li class="four column fadeIn"><a class="img-gallery"
+						href="img/projects//dustins-words/work/custom-buttons.jpg"
+						alt="custom screen button prototype"><img
+							src="img/projects/dustins-words/work/custom-buttons2.jpg"></a>
 				</li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/dw-mold.jpg"
-						alt="first completed version"><img src="img/work/dustins-words/dw-mold.jpg"
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/dustins-words/work/dw-mold.jpg"
+						alt="first completed version"><img src="img/projects/dustins-words/work/dw-mold.jpg"
 							alt="Dustin's Words final prototype"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/DW-Device.jpg"
-						alt="3d render"><img src="img/work/dustins-words/DW-Device.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery"
+						href="img/projects/dustins-words/work/DW-Device.jpg" alt="3d render"><img
+							src="img/projects/dustins-words/work/DW-Device.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/Exploaded.jpg"
-						alt="3d render"><img src="img/work/dustins-words/Exploaded.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery"
+						href="img/projects/dustins-words/work/Exploaded.jpg" alt="3d render"><img
+							src="img/projects/dustins-words/work/Exploaded.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/sanded.jpg"
-						alt="Enclosure ready for paint"><img src="img/work/dustins-words/sanded.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/dustins-words/work/sanded.jpg"
+						alt="Enclosure ready for paint"><img src="img/projects/dustins-words/work/sanded.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/dustins-words/first_version.jpg"
-						alt="first completed version"><img src="img/work/dustins-words/first_version.jpg"
+				<li class="four column fadeIn"><a class="img-gallery"
+						href="img/projects/dustins-words/work/first_version.jpg" alt="first completed version"><img
+							src="img/projects/dustins-words/work/first_version.jpg"
 							alt="Dustin's Words final prototype"></a></li>
 			</ul>
 		</div><!-- end gallery -->
@@ -235,9 +246,9 @@
 			<div class="row">
 				<div class="six columns centered">
 					<a href="https://dustins-words.github.io/Dustins-Words/index.html" target="blank">
-						<img src="img/page-img/dustins-words/DW-logo.svg" alt="Dustin's Words Logo">
+						<img src="img/projects/dustins-words/results/DW-logo.svg" alt="Dustin's Words Logo">
 					</a>
-					<h4>Click the logo to check out the Dustin's Words Website.</h4>
+					<h4>Click the logo to check out the Dustin's Words Website</h4>
 				</div>
 			</div>
 		</div>
@@ -248,7 +259,7 @@
 			<div class="row">
 				<div class="nine columns centered">
 					<h3>
-						Dustin's Words is an open source project.
+						Dustin's Words is an open source project
 					</h3>
 				</div>
 			</div>
@@ -256,7 +267,8 @@
 			<div class="left-content">
 				<div class="row>">
 					<div class="columns six">
-						<img class="left-img" src="img/page-img/dustins-words/dw-model.png" alt="3D model photo">
+						<img class="left-img" src="img/projects/dustins-words/results/dw-model.png"
+							alt="3D model photo">
 					</div>
 
 					<div class="left-info columns six">
@@ -264,9 +276,12 @@
 							completed models like the final DW version and the older version. Both will work, but the
 							older version is a little easier to print and work with.
 						</h4>
-						<img src="img/page-img/dustins-words/3d.svg" alt="3d icon">
-						<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">Dustin's Word's
-							Thingiverse</a>
+						<img src="img/projects/dustins-words/results/3d.svg" alt="3d icon">
+						<div class="button-container">
+							<a class="btn btn-1 btn-1e" href="https://www.thingiverse.com/dplumly/designs"
+								target="_blank">
+								Thingiverse</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -278,14 +293,18 @@
 							project. We believe in this product and want to spread the word and get them in the hands of
 							people that need them!</h4>
 
-						<img src="img/page-img/dustins-words/github.svg" alt="Github icon">
-						<a href="https://github.com/Dustins-Words" target="_blank">Dustin's Words Github</a>
-						<div class="more-projects-doubled row>">
-							<a class="toggle-menu menu-right" href="#">More Projects</a>
+						<img src="img/projects/dustins-words/results/github.svg" alt="Github icon">
+						<div class="button-container">
+							<a class="btn btn-1 btn-1e" href="https://github.com/Dustins-Words"
+								target="_blank">Github</a>
+						</div>
+						<div class="button-container">
+							<a class="btn btn-1 btn-1e toggle-menu menu-right" href="#">More
+								Projects</a>
 						</div>
 					</div>
 					<div class="columns six">
-						<img class="right-img" src="img/page-img/dustins-words/dw-code.jpg"
+						<img class="right-img" src="img/projects/dustins-words/results/dw-code.jpg"
 							alt="Dustin's Words Code photo">
 					</div>
 				</div>
@@ -395,7 +414,7 @@
 			</li>
 
 			<li class="fadeIn">
-				<a id="email" href="mailto:donnie.plumly@gmail.com" target="_blank">
+				<a id="email" href="#/">
 					<svg xmlns="http://www.w3.org/2000/svg" width="26.98" height="20.23" viewBox="0 0 26.98 20.23">
 						<path
 							d="M0,21.06V6.75a.75.75,0,0,0,.05-.16,3.44,3.44,0,0,1,1-1.91,3.48,3.48,0,0,1,2.43-.89H23.25c.24,0,.47,0,.71,0a3.22,3.22,0,0,1,2.62,1.76A8.65,8.65,0,0,1,27,6.75V21.06c0,.09-.06.19-.08.28a3.28,3.28,0,0,1-1,1.77,3.41,3.41,0,0,1-2.41.91h-20a3.28,3.28,0,0,1-3.17-2A8.17,8.17,0,0,1,0,21.06ZM3,22.2v.07a5,5,0,0,0,.65.08H23.44c.21,0,.42-.06.69-.09L16.8,13.89c-.15.12-.29.23-.42.35l-2.32,2a.87.87,0,0,1-1.11,0L11.49,15l-1.27-1.09Zm10.56-7.72L24,5.52c-.2,0-.34-.06-.47-.06H3.54c-.14,0-.28,0-.48.06Zm4.56-1.69L25.22,21l.06,0c0-.15,0-.3,0-.46V7.34a4.23,4.23,0,0,0-.05-.5,1.15,1.15,0,0,0-.08-.15ZM1.85,6.7H1.78a3.33,3.33,0,0,0-.07.54q0,6.65,0,13.29a2.6,2.6,0,0,0,.05.39l.06,0L9,12.78Z"
@@ -410,12 +429,52 @@
 		</div>
 	</footer>
 
+
+	<!-- Contact Modal Section-->
+	<div id="contact-modal" class="form-container">
+		<div class="form-card">
+			<span class="close closeContactModal">&times;</span>
+			<form id="form-trigger" class="validate-form" method="post" name="contact-form"
+				action="https://formspree.io/mqkywppn">
+				<span class="form-title">Hit me up!</span>
+
+				<div class="input-wrapper validate-input">
+					<input class="input" type="text" name="name">
+					<span class="focus-input" data-placeholder="NAME"></span>
+				</div>
+
+				<div class="input-wrapper validate-input">
+					<input class="input" type="text" name="email">
+					<span class="focus-input" data-placeholder="EMAIL"></span>
+				</div>
+
+				<div class="input-wrapper validate-input">
+					<textarea class="input" name="message"></textarea>
+					<span class="focus-input" data-placeholder="MESSAGE"></span>
+				</div>
+
+				<div class="submit-container">
+					<input class="form-button" type="submit" value="Send">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="thank-you-modal" class="form-container">
+		<div class="form-card">
+			<span class="close closeThanks">&times;</span>
+			<h2>Thanks!</h2>
+			<object type="image/svg+xml" data="img/contact-modal/thumbsUp.svg" id="thumbsUp"></object>
+		</div>
+	</div>
+
 	<!-- JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/scrolline-minified.js"></script>
 	<script src="js/menu-minified.js"></script>
 	<script src="js/jPushMenu.js"></script>
 	<script src="js/scrollreveal.js"></script>
+	<script src="js/contact-form.js"></script>
 	<script src="js/gallery.js"></script>
 
 
@@ -427,23 +486,6 @@
 		gtag('js', new Date());
 
 		gtag('config', 'UA-38779390-1');
-	</script>
-
-	<script>
-		$(function () {
-			$('nav ul li a, #menu-contact, #nav-contact').click(function () {
-				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-					if (target.length) {
-						$('html,body').animate({
-							scrollTop: target.offset().top
-						}, 1000);
-						return false;
-					}
-				}
-			});
-		});
 	</script>
 
 
@@ -463,7 +505,7 @@
 			position: 'top',
 			backColor: '#9e1c2c',
 			frontColor: '#61e3d3',
-			weight: 3
+			weight: 4
 		});
 
 
@@ -484,7 +526,53 @@
 		// Image Gallery Script /////////////////////////////////////
 		$(document).ready(function () {
 			$(".img-gallery").tosrus();
-		});	
+		});
+
+		//  Contact Modal Script /////////////////////////////////////
+		window.addEventListener("DOMContentLoaded", function () {
+
+			// Variable to put on the <form>
+			let form = document.getElementById("form-trigger");
+			let button = document.getElementById("submit-container");
+			let emailSuccess = document.getElementById("contact-modal");
+			let thankModal = document.getElementById("thank-you-modal");
+
+			function thanks() {
+				emailSuccess.style.display = "none";
+				setTimeout(function () { thankModal.style.display = "block"; }, 30);
+				form.reset();
+			}
+
+			// Success and Error functions for after the form is submitted
+			function success() {
+				thanks();
+			}
+
+			function error() { status.innerHTML = "Oops! There was a problem."; }
+
+			// handle the form submission event
+			form.addEventListener("submit", function (ev) {
+				ev.preventDefault();
+				let data = new FormData(form);
+				ajax(form.method, form.action, data, success, error);
+			});
+		});
+
+		// helper function for sending an AJAX request
+		function ajax(method, url, data, success, error) {
+			let xhr = new XMLHttpRequest();
+			xhr.open(method, url);
+			xhr.setRequestHeader("Accept", "application/json");
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState !== XMLHttpRequest.DONE) return;
+				if (xhr.status === 200) {
+					success(xhr.response, xhr.responseType);
+				} else {
+					error(xhr.status, xhr.response, xhr.responseType);
+				}
+			};
+			xhr.send(data);
+		}
 	</script>
 
 </body>

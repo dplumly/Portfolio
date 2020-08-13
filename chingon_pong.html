@@ -20,6 +20,7 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/contact-modal.css">
 	<link rel="stylesheet" href="fonts/Lato/latofonts.css">
 	<link rel="stylesheet" href="fonts/OpenSans/open-sans.css">
 	<link rel="stylesheet" href="css/grid.css">
@@ -31,9 +32,9 @@
 	<!-- Navigation Bar -->
 	<nav>
 		<ul class="row">
-			<li class="columns four"><a href="index.html">home</a></li>
-			<li class="columns four toggle-menu menu-right"><a href="#">projects</a></li>
-			<li class="columns four"><a id="nav-contact" href="#contact">contact</a></li>
+			<li class="columns four"><a href="index.html"><span>home</span></a></li>
+			<li class="columns four toggle-menu menu-right"><a href="#"><span>projects</span></a></li>
+			<li class="columns four"><a id="nav-contact" href="#"><span>contact</span></a></li>
 		</ul>
 	</nav>
 
@@ -58,7 +59,7 @@
 				</a>
 			</li>
 			<li class="mobile-four">
-				<a id="nav-contact" href="#contact">
+				<a id="mobile-nav-contact" href="#contact">
 					<img src="img/icons/mobileIcons/mobile-contact.svg">
 				</a>
 			</li>
@@ -94,8 +95,7 @@
 			<li><img src="img/icons/nav-icons/paperproto.svg" alt="Phone icon"><a href="paperproto.html">PAPERPROTO</a>
 			</li>
 			<!--<li><img src="img/icons/origami.svg" alt="Origami icon"><a href="origami.html">LS Origami</a></li>-->
-			<li><img src="img/icons/nav-icons/contact.svg" alt="Contact icon"><a id="menu-contact"
-					href="#contact">CONTACT</a>
+			<li><img src="img/icons/nav-icons/contact.svg" alt="Contact icon"><a id="menu-contact" href="#/">CONTACT</a>
 			</li>
 		</ul>
 	</div>
@@ -115,9 +115,12 @@
 			<img src="img/logo/gear.svg" alt="logo">
 		</div>
 
-		<div class="row">
-			<h2>Overview</h2>
-			<hr>
+		<div class="row project-overview">
+			<div class="company">
+				<h3>Company: <span>Team One</span></h3>
+				<h3>Pitch: <span>Four Corner Brewery Co</span></h3>
+			</div>
+			<br>
 
 			<div class="project-copy">
 				<h4>Team One has events called Moonshot where speakers come tell their story. At some of these events we
@@ -148,7 +151,6 @@
 					build it. Not to mention we were building this in LA and then shipping it to Dallas. Therefore, the
 					design of the machine was critical.
 
-
 					<br>
 					<br>
 
@@ -161,13 +163,15 @@
 		<div class="video-container">
 			<div class="row">
 				<div class="video-description nine columns centered">
-					<h3>Chingon Pong case study video.
+					<h3>Case study
 					</h3>
 				</div>
 
-				<div class="fadeIn youtube-responsive">
-					<iframe width="560" height="315" src="https://www.youtube.com/embed/-dLw3ipWiNo" frameborder="0"
-						allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				<div class="row">
+					<div class="fadeIn youtube-responsive">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/-dLw3ipWiNo" frameborder="0"
+							allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</div>
 				</div>
 			</div>
 		</div><!-- end video container -->
@@ -177,7 +181,7 @@
 			<div id="project-color"></div>
 			<div class="row">
 				<div class="nine columns centered">
-					<h3>Shots of the machine in action.</h3>
+					<h3>The machine</h3>
 					<div class="header-copy ten columns centered">
 						<h4>The machine was played at 3 locations. Team one LA (not nearly long enough) Team One Dallas
 							Moonshot, and Four Corner Brewery. In LA, we had about 20 minutes to play it for testing and
@@ -187,44 +191,45 @@
 				</div>
 			</div>
 			<ul class="row">
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong1.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong1.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong1.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong1.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong2.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong2.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong2.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong2.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong3.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong3.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong3.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong3.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong4.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong4.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong4.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong4.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong5.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong5.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong5.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong5.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong6.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong6.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong6.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong6.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong7.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong7-thumb.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong7.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong7-thumb.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong8.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong8.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong8.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong8.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong9.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong9.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong9.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong9.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong10.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong10.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong10.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong10.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong11.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong11.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong11.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong11.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong12.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong12.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/pong12.jpg"
+						alt="Hero image"><img src="img/projects/chingonPong/work/pong12.jpg"></a></li>
 
-				<li class="push-four four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/pong13.jpg"
-						alt="Hero image"><img src="img/work/chingonPong/pong13-thumb.jpg"></a></li>
+				<li class="push-four four column fadeIn"><a class="img-gallery"
+						href="img/projects/chingonPong/work/pong13.jpg" alt="Hero image"><img
+							src="img/projects/chingonPong/work/pong13-thumb.jpg"></a></li>
 			</ul>
 		</div><!-- end gallery -->
 
@@ -232,58 +237,58 @@
 		<div class="gallery">
 			<div class="row">
 				<div class="nine columns centered">
-					<h3>Photos of the build process.</h3>
+					<h3>Build process</h3>
 					<div class="header-copy ten columns centered">
 						<h4>We tried to document the best we could with the little extra time we had. These show the
-							overall construction, wiring, and testing of the game.</h4>
+							overall construction, wiring and testing of the game.</h4>
 					</div>
 				</div>
 			</div>
 			<ul class="row">
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build1.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build1.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build1.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build1.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build2.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build2.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build2.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build2.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build3.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build3.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build3.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build3.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build4.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build4.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build4.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build4.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build5.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build5.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build5.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build5.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build6.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build6.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build6.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build6.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build7.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build7.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build7.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build7.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build8.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build8.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build8.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build8.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build9.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build9-thumb.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build9.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build9-thumb.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build10.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build10.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build10.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build10.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build11.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build11.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build11.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build11.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build12.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build12.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build12.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build12.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build13.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build13.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build13.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build13.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build14.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build14.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build14.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build14.jpg"></a></li>
 
-				<li class="four column fadeIn"><a class="img-gallery" href="img/work/chingonPong/build15.jpg"
-						alt="prototype build"><img src="img/work/chingonPong/build15.jpg"></a></li>
+				<li class="four column fadeIn"><a class="img-gallery" href="img/projects/chingonPong/work/build15.jpg"
+						alt="prototype build"><img src="img/projects/chingonPong/work/build15.jpg"></a></li>
 			</ul>
 		</div><!-- end gallery -->
 
@@ -293,7 +298,7 @@
 			<div class="row">
 				<div class="nine columns centered">
 					<h3>
-						We could not be happier with the results.
+						We could not be happier with the results
 					</h3>
 					<div class="header-copy ten columns centered">
 						<h4>Four Corners Brewery wants to keep the machine at their brewery for patrons to play. Chingon
@@ -305,7 +310,7 @@
 			<div class="left-content">
 				<div class="row>">
 					<div class="columns six">
-						<img class="chingon left-img" src="img/page-img/chingon-pong/chingon-pong.png"
+						<img class="chingon left-img" src="img/projects/chingonPong/results/chingon-pong.png"
 							alt="photo of machine">
 					</div>
 
@@ -314,15 +319,14 @@
 							very challenging to get done in the 2 weeks we had. I knew we could pull it off, but I don't
 							think my wife will ever forget.
 						</h4>
-						<img src="img/page-img/chingon-pong/chingon-icon.svg" alt="logo icon">
-						<!--<a href="https://www.thingiverse.com/dplumly/designs" target="_blank">Dustin's Word's Thingiverse</a>-->
+						<img src="img/projects/chingonPong/results/chingon-icon.svg" alt="logo icon">
 					</div>
 				</div>
 			</div>
 
-			<div class="more-projects-single">
-				<div class="row">
-					<a class="toggle-menu menu-right" href="#">More Projects</a>
+			<div class="row">
+				<div class="button-container">
+					<a class="btn btn-1 btn-1e toggle-menu menu-right" href="#">More projects</a>
 				</div>
 			</div>
 		</div><!-- end project files -->
@@ -430,7 +434,7 @@
 			</li>
 
 			<li class="fadeIn">
-				<a id="email" href="mailto:donnie.plumly@gmail.com" target="_blank">
+				<a id="email" href="#/">
 					<svg xmlns="http://www.w3.org/2000/svg" width="26.98" height="20.23" viewBox="0 0 26.98 20.23">
 						<path
 							d="M0,21.06V6.75a.75.75,0,0,0,.05-.16,3.44,3.44,0,0,1,1-1.91,3.48,3.48,0,0,1,2.43-.89H23.25c.24,0,.47,0,.71,0a3.22,3.22,0,0,1,2.62,1.76A8.65,8.65,0,0,1,27,6.75V21.06c0,.09-.06.19-.08.28a3.28,3.28,0,0,1-1,1.77,3.41,3.41,0,0,1-2.41.91h-20a3.28,3.28,0,0,1-3.17-2A8.17,8.17,0,0,1,0,21.06ZM3,22.2v.07a5,5,0,0,0,.65.08H23.44c.21,0,.42-.06.69-.09L16.8,13.89c-.15.12-.29.23-.42.35l-2.32,2a.87.87,0,0,1-1.11,0L11.49,15l-1.27-1.09Zm10.56-7.72L24,5.52c-.2,0-.34-.06-.47-.06H3.54c-.14,0-.28,0-.48.06Zm4.56-1.69L25.22,21l.06,0c0-.15,0-.3,0-.46V7.34a4.23,4.23,0,0,0-.05-.5,1.15,1.15,0,0,0-.08-.15ZM1.85,6.7H1.78a3.33,3.33,0,0,0-.07.54q0,6.65,0,13.29a2.6,2.6,0,0,0,.05.39l.06,0L9,12.78Z"
@@ -445,14 +449,51 @@
 		</div>
 	</footer>
 
+	<!-- Contact Modal Section-->
+	<div id="contact-modal" class="form-container">
+		<div class="form-card">
+			<span class="close closeContactModal">&times;</span>
+			<form id="form-trigger" class="validate-form" method="post" name="contact-form"
+				action="https://formspree.io/mqkywppn">
+				<span class="form-title">Hit me up!</span>
 
+				<div class="input-wrapper validate-input">
+					<input class="input" type="text" name="name">
+					<span class="focus-input" data-placeholder="NAME"></span>
+				</div>
+
+				<div class="input-wrapper validate-input">
+					<input class="input" type="text" name="email">
+					<span class="focus-input" data-placeholder="EMAIL"></span>
+				</div>
+
+				<div class="input-wrapper validate-input">
+					<textarea class="input" name="message"></textarea>
+					<span class="focus-input" data-placeholder="MESSAGE"></span>
+				</div>
+
+				<div class="submit-container">
+					<input class="form-button" type="submit" value="Send">
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<div id="thank-you-modal" class="form-container">
+		<div class="form-card">
+			<span class="close closeThanks">&times;</span>
+			<h2>Thanks!</h2>
+			<object type="image/svg+xml" data="img/contact-modal/thumbsUp.svg" id="thumbsUp"></object>
+		</div>
+	</div>
 
 	<!-- JavaScript -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+	<script src="js/jquery-3.2.1.min.js"></script>
 	<script src="js/scrolline-minified.js"></script>
 	<script src="js/menu-minified.js"></script>
 	<script src="js/jPushMenu.js"></script>
 	<script src="js/scrollreveal.js"></script>
+	<script src="js/contact-form.js"></script>
 	<script src="js/gallery.js"></script>
 
 
@@ -465,27 +506,6 @@
 
 		gtag('config', 'UA-38779390-1');
 	</script>
-
-
-
-
-	<script>
-		$(function () {
-			$('nav ul li a, #menu-contact, #nav-contact').click(function () {
-				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-					if (target.length) {
-						$('html,body').animate({
-							scrollTop: target.offset().top
-						}, 1000);
-						return false;
-					}
-				}
-			});
-		});
-	</script>
-
 
 
 	<script>
@@ -502,7 +522,7 @@
 			position: 'top',
 			backColor: '#9e1c2c',
 			frontColor: '#61e3d3',
-			weight: 3
+			weight: 4
 		});
 
 
@@ -523,7 +543,54 @@
 		// Image Gallery Script /////////////////////////////////////
 		$(document).ready(function () {
 			$(".img-gallery").tosrus();
-		});	
+		});
+
+
+		//  Contact Modal Script /////////////////////////////////////
+		window.addEventListener("DOMContentLoaded", function () {
+
+			// Variable to put on the <form>
+			let form = document.getElementById("form-trigger");
+			let button = document.getElementById("submit-container");
+			let emailSuccess = document.getElementById("contact-modal");
+			let thankModal = document.getElementById("thank-you-modal");
+
+			function thanks() {
+				emailSuccess.style.display = "none";
+				setTimeout(function () { thankModal.style.display = "block"; }, 30);
+				form.reset();
+			}
+
+			// Success and Error functions for after the form is submitted
+			function success() {
+				thanks();
+			}
+
+			function error() { status.innerHTML = "Oops! There was a problem."; }
+
+			// handle the form submission event
+			form.addEventListener("submit", function (ev) {
+				ev.preventDefault();
+				let data = new FormData(form);
+				ajax(form.method, form.action, data, success, error);
+			});
+		});
+
+		// helper function for sending an AJAX request
+		function ajax(method, url, data, success, error) {
+			let xhr = new XMLHttpRequest();
+			xhr.open(method, url);
+			xhr.setRequestHeader("Accept", "application/json");
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState !== XMLHttpRequest.DONE) return;
+				if (xhr.status === 200) {
+					success(xhr.response, xhr.responseType);
+				} else {
+					error(xhr.status, xhr.response, xhr.responseType);
+				}
+			};
+			xhr.send(data);
+		}
 	</script>
 </body>
 
