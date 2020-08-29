@@ -55,7 +55,7 @@
 
 .g-recaptcha {
     margin: 70px auto 15px auto;
-    display: none;
+    display: table;
 }
 
 .close {
