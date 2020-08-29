@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/modernizr-minified.js"></script>
+	<script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -407,12 +408,16 @@
 					<span class="focus-input" data-placeholder="MESSAGE"></span>
 				</div>
 
+				<div class="g-recaptcha" data-sitekey="6Lf358QZAAAAAKFwfdDHJyRCvqVcm25L_WzwTGLn"></div>
+
+
 				<div class="submit-container">
-					<input class="form-button" type="submit" value="Send">
+					<input class="form-button" data-action='submit' type="submit" value="Send">
 				</div>
 			</form>
 		</div>
 	</div>
+
 
 	<div id="thank-you-modal" class="form-container">
 		<div class="form-card">
@@ -434,14 +439,22 @@
 
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-38779390-1"></script>
+	<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38779390-1"></script> -->
 
+	<!-- Google Analytics -->
 	<script>
 		window.dataLayer = window.dataLayer || [];
 		function gtag() { dataLayer.push(arguments); }
 		gtag('js', new Date());
 
 		gtag('config', 'UA-38779390-1');
+	</script>
+
+	<!--reCaptcha -->
+	<script>
+		function onSubmit(token) {
+			document.getElementsByClassName("form-button").submit();
+		}
 	</script>
 
 	<!-- <script>
