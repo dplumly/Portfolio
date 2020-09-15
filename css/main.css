@@ -107,7 +107,7 @@ h6 { font-size: .625rem;  /* 10px */}
     transition: all 0.2s ease; 
 }
 /* .cbp-spmenu-vertical a:hover { color: #61e3d3; } */
-.cbp-spmenu-right { right: -350px; top: 46px; }
+.cbp-spmenu-right { right: -710px; top: 46px; }
 .cbp-spmenu-right.cbp-spmenu-open { right: 0px; top: 46px; z-index: 4; }
 .cbp-spmenu a { display: block; font-size: 18px; }
 .cbp-spmenu {
@@ -794,8 +794,13 @@ Chingon Pong Page
     bottom: 7px;
     color: #eaeaea;
 }
-.chingon.left-img { position: absolute; top: -310px; left: -218px; }
-
+/* .chingon.left-img { position: absolute; top: -310px; left: -218px; } */
+#chingon-machine {
+    position: absolute;
+    left: -200px;
+    top: -150px;
+    max-height: none;
+}
 /*===================================
 
 Visceral Velocity Page
@@ -820,7 +825,12 @@ Visceral Velocity Page
     z-index:1;
 }
 #vr-platform { max-width: 1000px; right: -383px; position: absolute} 
-.haptics.left-img { top: -50px; position: absolute; }
+#haptics { 
+    left: -300px;
+    position: absolute;
+    min-width: 615px;
+    max-height: none;
+}
 /*===================================
 
 LC 500 Soundbooth Page
@@ -851,6 +861,11 @@ img.soundbooth-right-img {
     /* top: -110px; */
     max-width: none;
 }
+#soundwave {
+    left: -400px;
+    position: absolute;
+    min-width: 800px;
+}
 /*===================================
 
 Lit IS 
@@ -874,6 +889,11 @@ Lit IS
     z-index:1;
 }
 
+#lit-is-model {
+    left: -400px;
+    position: absolute;
+    min-width: 900px;
+}
 /*===================================
 
 The Huddles Page
@@ -959,10 +979,10 @@ paperproto
 }
 
 #paperproto-8 {
-    left: -19px;
+    left: -85px;
     height: 535px;
     transform: rotate(-5deg);
-    top: -62px;
+    /* top: -62px; */
     position: absolute;
 }
 /*===================================
@@ -995,6 +1015,11 @@ Dustin's Words
         background-size: cover;
 }
 
+#dustins-words-model {
+    left: -400px;
+    position: absolute;
+    min-width: 900px;
+}
 /*========================
 
 Footer
@@ -1083,10 +1108,12 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     #LC_soundbooth-landing  { background: url('../img/projects/LC_soundbooth/backgrounds/LC-soundbooth-big.jpg') no-repeat center center; }
     #litIS-landing  { background: url('../img/projects/LitIS/backgrounds/litIS-big.jpg') no-repeat center center; }
     #the-huddles-landing { background: url('../img/projects/huddles/backgrounds/huddles-langing-big.jpg') no-repeat center center; }
-    #paperproto-landing { background: url('../img/projects/paperproto/backgrounds/paperproto-bg.jpg') no-repeat center center; }
+    #paperproto-landing { background: url('../img/projects/paperproto/backgrounds/paperproto-big.jpg') no-repeat center center; }
     #dustins-words-landing  { background: url('../img/projects/dustins-words/backgrounds/dustins-words-big.jpg') no-repeat center center; }
     #activations-landing  { background: url('../img/projects/IBMactivations/backgrounds/activations-big.jpg') no-repeat center center; }
     #color { left: 19%; }
+    /* #soundwave { min-width: 900px;} */
+    /* #dustin-words-model img { left: -600px; } */
 }
 
 /* 1120 */
@@ -1108,8 +1135,9 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     /* .project-container .row, .left-info { padding: 20px; } */
     .center-activation-text { margin: 20px 0;}
     .quantum-section { background: url('../img/projects/IBMactivations/backgrounds/quantum-machine-med.jpg') center center no-repeat; }
-    .header-copy h4 {margin-top: 20px}
-    .project-container hr { margin-left: 20px; }
+    .header-copy h4 {margin-top: 20px; }
+    .right-info h4 { padding-left: 10px; }
+    /* .project-container hr { margin-left: 20px; } */
 }
 
 /* 850 */
@@ -1129,8 +1157,9 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     /* #push-nav { right: -270px; } */
     /* .cbp-spmenu-right { right: -350px; } */
         /* #top-space { display: none; } */
-    .cbp-spmenu-vertical { width: 100%; }
-    .cbp-spmenu-right { right: -375px; }
+    /* .cbp-spmenu-vertical { width: 100%; } */
+    /* .cbp-spmenu-right { right: -375px; } */
+    #close-button { display: none;}
     #mobile-nav {
         position: fixed;
         height: 55px;
@@ -1151,10 +1180,14 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     #landing li:nth-child(3) { margin-left: 36px; }
     #landing li:nth-child(4) { margin-left: 53px; }
     #thumbnails.row .six.columns h2, #thumbnails.row .six.columns h5 { opacity: 1; }
-    #thumbnails.row .six.columns img { opacity: .5; }
+    #thumbnails.row .six.columns img,  #thumbnails.row .twelve.columns img { opacity: 1; }
     .gallery ul li a { float: none; margin: 0 auto; display: table }
     /* .video-description h3, .gallery h3, .project-files h3, .header-copy h4, .left-info h4 {padding: 0 20px; } */
-        .video-description h3, .gallery h3, .project-files h3, .header-copy h4, .left-info, .right-info h4  {padding: 0 20px; }
+    .video-description h3, .gallery h3, .project-files h3, .header-copy h4, .left-info, .right-info h4  {padding: 0 20px; }
+
+    .form-container { padding-top: 0;}
+    .input-wrapper { margin-bottom: 10px; }
+    .form-card { width: auto; padding: 72px 55px 100px 55px;}
 
     .single-info { margin: 0 auto 25px auto; }
     .left-img, #paperproto-8 { /*position: absolute; left: -369px; top: 20px;*/ display: none; }
@@ -1215,7 +1248,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
 /* 450px */
 @media only screen and (max-width: 28.125em) {
     .cbp-spmenu-right { top: 0; }
-    .cbp-spmenu-right.cbp-spmenu-open { top: 0; }
+    .cbp-spmenu-right.cbp-spmenu-open { top: 0; width: 100%; }
     #mobile-nav { bottom: 0; }
     .bg-logo    { position: absolute;
                 z-index: 0;
