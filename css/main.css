@@ -129,10 +129,7 @@ nav {
     width: 100%;
 }
 
-nav, nav ul, nav ul li {
-    height: 49px;
-}
-
+nav, nav ul, nav ul li { height: 49px; }
 nav li { 
     padding: 0;
     -webkit-transition: all 0.2s;
@@ -156,12 +153,8 @@ nav span {
     top: -6px;
 }
 
-nav ul li:hover {
-    background-color: #61e3d3; 
-}
-nav ul li:hover span {
-        color: #232323;
-}
+nav ul li:hover { background-color: #61e3d3; }
+nav ul li:hover span { color: #232323; }
 /*===================================
 
 Mobile Fixed Nav
@@ -656,7 +649,7 @@ Project container
 
 /*--Files associated with project
 ==============================================================================================*/
-.left-content, .right-content  { min-height: 405px; position: relative; } 
+.left-content, .right-content  { min-height: 315px; position: relative; } 
 .ripple-section { background-color: #000;}
 .left-info { max-width: 600px; text-align: right; z-index: 1; }
 
@@ -684,35 +677,6 @@ Project container
 ==============================================================================================*/
 .project-files h3 span { color: #61e3d3; }
 
-/*===================================
-
-LS Origami Page
-
-===================================
-#origami-landing {
-    position: relative;
-    background: url('../img/backgrounds/origami.jpg') left center no-repeat;
-    min-height: 600px;
-    height: 50%;
-    width: 100%;
-    background-color: #262626;
-}
-
-#origami-landing:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    content: "";
-    box-shadow: 0px 0px 220px black inset;
-    pointer-events:none;
-    z-index:1;
-}
-
-.origami-right-img {
-    position: absolute;
-    right: -235px;
-    top: -23px;
-}*/
 
 /*===================================
 
@@ -735,10 +699,14 @@ IBM 2020 Activations Page
     pointer-events:none;
     z-index:1;
 }
-.quantum-section {
-    background: url('../img/projects/IBMactivations/backgrounds/quantum-machine.jpg') right center no-repeat;
+.section-one {
+    background: url('../img/projects/IBMactivations/backgrounds/section-one-dust.jpg') right center no-repeat;
     background-color: #000;
-    min-height: 500px;;
+    min-height: 500px;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .computer-in-front {z-index: 1;}
@@ -752,19 +720,36 @@ IBM 2020 Activations Page
   color: #f3f3f3;
 }
 
-/* .activation-link { background-color: #eaeaea; } */
-/* .ibm-more-projects { background-color: #f3f3f3; } */
 
+/*--Ripple Effect
+==============================================================================================*/
 .right-content.ripple-section::before {
   content: "";
-    background: url(../img/projects/IBMactivations/backgrounds/ripple-fixed-bg.jpg) right center no-repeat;
+    background: url('../img/projects/IBMactivations/backgrounds/section-two-bg.jpg') right center no-repeat; 
     opacity: 1;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+#progress-bar-copy h4 { margin: 0 0 0 20px; }
+.padding-bottom-adjustment { padding-bottom: 0 !important; }
+.gif-container ul { padding: 50px 0 50px 0; }
+.gif-row { padding: 0 !important; }
+.gif-row img { 
+    width: 300px;
+    margin: 10px auto;
+    display: block;
+ }
+
+
+ 
 
 /*===================================
 
@@ -1134,7 +1119,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     /* .project-container h2, .project-container h4 { padding: 20px; } */
     /* .project-container .row, .left-info { padding: 20px; } */
     .center-activation-text { margin: 20px 0;}
-    .quantum-section { background: url('../img/projects/IBMactivations/backgrounds/quantum-machine-med.jpg') center center no-repeat; }
+    /* .section-one { background: url('../img/projects/IBMactivations/backgrounds/quantum-machine-med.jpg') center center no-repeat; } */
     .header-copy h4 {margin-top: 20px; }
     .right-info h4 { padding-left: 10px; }
     /* .project-container hr { margin-left: 20px; } */
@@ -1218,7 +1203,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
 
     #soundbooth-site-bg { background: url('../img/projects/LC_soundbooth/backgrounds/sound-waveMobile.jpg') fixed center no-repeat; }
     footer ul li { display: -webkit-inline-box; margin: 5px; font-size: 14px; }
-    .center-activation-text h4 { height: auto; }
+    /* .center-activation-text h4 { height: auto; } */
     .visit-experience a, .more-projects-doubled a,  .more-projects-single a, .more-projects-ibm-link a { padding: 15px 60px;   width: 100%; text-align: center;  }
 }
 
@@ -1237,8 +1222,8 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     #paperproto-landing { background: url('../img/projects/paperproto/backgrounds/paperprotoMobile.jpg') no-repeat center center; }
     #dustins-words-landing  { background: url('../img/projects/dustins-words/backgrounds/dustinsWordsMobile.jpg') no-repeat center center; }
     #dw-site-bg { background: url('../img/projects/dustins-words/backgrounds/dw-bgMobile.jpg') no-repeat center center; }
-    #activations-landing { background: url('../img/projects/IBMactivations/backgrounds/quantumMobile.jpg') no-repeat center center; }
-    .quantum-section { background: url('../img/projects/IBMactivations/backgrounds/quantum-machine-Mobile.jpg') center center no-repeat; }
+    #activations-landing { background: url('../img/projects/IBMactivations/backgrounds/section-one-mobile.jpg') no-repeat center center; }
+    .section-one { background: url('../img/projects/IBMactivations/backgrounds/section-one-dust-mobile.jpg') center center no-repeat; }
     #about h4, .project-container h4  { font-size: 1.2em; line-height: 28px; }
     .project-landing h1 { line-height: 45px; padding: 50px 20px 0 20px; letter-spacing: 0; }
     .project-container h2 { font-size: 2.5em; }
