@@ -280,7 +280,13 @@ Button
 .btn-1e:active {color: #232323; }
 .btn-1e:hover:after {height: 260%;	opacity: 1;}
 .btn-1e:active:after {height: 400%;	opacity: 1;}
-.btn-1 {border: 3px solid #232323;color: #232323; z-index: 1;}
+.btn-1 {
+    border: 3px solid #232323; 
+    color: #232323; 
+    z-index: 1;
+    text-align: center;
+    line-height: 22px;
+}
 
 .button-container { margin: 0 auto; display: table; }
 
@@ -681,7 +687,7 @@ Project container
 /*===================================
 
 IBM 2020 Activations Page
-
+Watson Harmonic State
 ===================================*/
 #activations-landing {
     position: relative;
@@ -721,11 +727,11 @@ IBM 2020 Activations Page
 }
 
 
-/*--Ripple Effect
+/*--Systems Backbone and Brains
 ==============================================================================================*/
 .right-content.ripple-section::before {
   content: "";
-    background: url('../img/projects/IBMactivations/backgrounds/section-two-bg.jpg') right center no-repeat; 
+    background: url('../img/projects/IBMactivations/backgrounds/section-two-bg.jpg') left center no-repeat; 
     opacity: 1;
     top: 0;
     left: 0;
@@ -747,9 +753,6 @@ IBM 2020 Activations Page
     margin: 10px auto;
     display: block;
  }
-
-
- 
 
 /*===================================
 
@@ -921,10 +924,7 @@ span#huddle-bar {
     /*top: 42%;*/
     top: 50%;
 }
-/* #huddle-bar h4 {
-    white-space: nowrap;
-    font-size: 1em;
-} */
+
 /*===================================
 
 paperproto 
@@ -1228,6 +1228,7 @@ footer #footer-info p:nth-child(3)  { margin-top: -6px; }
     .project-landing h1 { line-height: 45px; padding: 50px 20px 0 20px; letter-spacing: 0; }
     .project-container h2 { font-size: 2.5em; }
     .project-container hr { width: 230px; }
+    .button-container { margin-top: 30px; }
 }
 
 /* 450px */
