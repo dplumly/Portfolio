@@ -40,7 +40,7 @@
 		});
 		var jPushMenu = {
 			close: function (o) {
-				$('.jPushMenuBtn,body,.cbp-spmenu').removeClass('disabled active cbp-spmenu-open cbp-spmenu-push-toleft cbp-spmenu-push-toright open');
+				$('.jPushMenuBtn, body, .cbp-spmenu').removeClass('disabled active cbp-spmenu-open cbp-spmenu-push-toleft cbp-spmenu-push-toright open');
 			}
 		}
 

@@ -62,6 +62,12 @@ Form validation script
 })(jQuery);
 
 
+
+// add my code here
+//You can submit without entering any info 
+
+
+
 /*==================================================================
 Modal 
 ==================================================================*/
